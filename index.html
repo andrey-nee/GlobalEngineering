@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page wrapper" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,13 +36,263 @@
     </div>
   </header>
 
+
   <main class="main-content wrapper">
+
+    <nav class="main-content__sidebar side-bar">
+      <div class="side-bar__top">
+        <a href="index.html" class="side-bar__link">
+          <img src="" alt="Логотип Global Engineering" class="side-bar__logo">
+        </a>
+      </div>
+      <div class="side-bar__middle">
+        <div class="side-bar__burger-menu burger-menu"></div>
+      </div>
+      <div class="side-bar__bottom">
+        <div class="side-bar__language language">
+          <p class="language__ru"></p>
+          <div class="language__switch"></div>
+          <p class="language__uz"></p>
+        </div>
+      </div>
+    </nav>
+
     <section class="intro">
       <h1 class="intro__title title visually-hidden">Главная страница</h1>
+      <div class="intro__slider slider">
+        <div class="intro__slide intro__slide-1">
+          <div class="intro__column-left">
+            <h2 class="intro__subtitle">Медицинский инжиринг</h2>
+            <h3 class="intro__tag">Global Engineering</h3>
+            <p class="intro__description">Лишь базовые сценарии поведения пользователей, инициированные исключительно синтетически, разоблачены</p>
+            <button class="intro__request-button">+</button>
+          </div>
+        </div>
+        <div class="intro__slide intro__slide-2">
+          <div class="intro__column-left">
+            <h2 class="intro__subtitle">Операционные блоки</h2>
+            <h3 class="intro__tag">Услуга</h3>
+            <p class="intro__description">Операционный блок представляет собой подразделение больницы, которое состоит из ряда операционных, а также вспомогательных помещений, предназначенных для проведения хирургических операций</p>
+            <button class="intro__request-button">+</button>
+          </div>
+        </div>
+        <div class="intro__slide intro__slide-3">
+          <div class="intro__column-left">
+            <h2 class="intro__subtitle">Кислородные станции</h2>
+            <h3 class="intro__tag">Услуга</h3>
+            <p class="intro__description">Кислородные газовые станции подходят для установки в любых климатических условиях, а благодаря небольшим размерам и малому весу подходит для размещения в любом необходимом для покупателя месте.</p>
+            <button class="intro__request-button">+</button>
+          </div>
+        </div>
+        <div class="intro__column-right">
+          <ul class="intro__list">
+            <li class="intro__item intro__item__active">Компания</li>
+            <li class="intro__item">Операционные блоки</li>
+            <li class="intro__item">Кислородные станции</li>
+            <li class="intro__item">Промышленный альпинизм</li>
+            <li class="intro__item">Системы вентиляции</li>
+          </ul>
+          <div class="intro__pagination pagination">
+            <div class="pagination__page">
+              <p class="pagination__current-page">1</p>
+              <div class="pagination__progress-bar progress-bar">
+                <div class="progress-bar__background"></div>
+                <div class="progress-bar__current"></div>
+              </div>
+              <p class="pagination__last-page">5</p>
+            </div>
+            <div class="pagination__buttons">
+              <button class="pagination__button-left">Prev</button>
+              <button class="pagination__button-right">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2 class="about__title visually-hidden">О нас</h2>
+      <h3 class="about__subtitle">Global Engineering</h3>
+      <p class="about__description">Мы единственная компания в Узбекистане с локализацией, производящая стерильные панели для операционных, фармацевтических помещений на ровне по качеству с Европейскими производителями и с доступной ценой</p>
+    </section>
+
+    <section class="services">
+      <h2 class="services__title">Услуги</h2>
+      <div class="services__slider">
+        <div class="services__slide services__slide-1">
+          <article class="services__item">
+            <div class="services__item-image">
+              <img src="" alt="Два мужчины в белых комбинезонах работают с медицинским оборудованием">
+            </div>
+            <div class="setvices__item-desctription">
+              <p class="services__item-name">Операционные
+                блоки</p>
+                <p class="services__item-page">01</p>
+            </div>
+          </article>
+        </div>
+        <div class="services__slide services__slide-2">
+          <article class="services__item">
+            <div class="services__item-image">
+              <img src="" alt="Мужчина в спец-одежде висит на веревке">
+            </div>
+            <div class="setvices__item-desctription">
+              <p class="services__item-name">Промышленный альпинизм</p>
+                <p class="services__item-page">02</p>
+            </div>
+          </article>
+        </div>
+        <div class="services__slide services__slide-3">
+          <article class="services__item">
+            <div class="services__item-image">
+              <img src="" alt="Мужчина в черной кепке и черных очках делает монтаж кислородного трубопровода">
+            </div>
+            <div class="setvices__item-desctription">
+              <p class="services__item-name">Кислородные
+                станции</p>
+                <p class="services__item-page">03</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reasons">
+      <h2 class="reasons__title">Почему мы</h2>
+      <div class="reasons__column-left">
+        <p class="reasons__main-subtitle">Специалисты <span>Глобал Инжиниринг</span> предоставляют чертеж проекта и проектное обоснование.</p>
+        <p class="reasons__main-description">В составе команды проектировщики с Запада и Востока рисующие по международным стандартам JCI и ISO</p>
+        <a href="about.html" class="reasons__link button__type__blue">Подробнее о компании</a>
+      </div>
+      <div class="reasons__column-right">
+        <ul class="reasons__list">
+          <li class="reasons__item">
+            <h3 class="reasons__subtitle">Рабочие проекты</h3>
+            <div class="reasons__icon">
+              <img src="" alt="Иконка">
+            </div>
+            <p class="reasons__description">Наши проекты обоснованны и подтверждены от нескольких инстанций РУз и других частных зарубежных компаний</p>
+          </li>
+          <li class="reasons__item">
+            <h3 class="reasons__subtitle">Локальное производство</h3>
+            <div class="reasons__icon">
+              <img src="" alt="Иконка">
+            </div>
+            <p class="reasons__description">Непосредственные участники технического прогресса своевременно верифицированы.</p>
+          </li>
+          <li class="reasons__item">
+            <h3 class="reasons__subtitle">Экономия времени
+              и средств</h3>
+            <div class="reasons__icon">
+              <img src="" alt="Иконка">
+            </div>
+            <p class="reasons__description">А также независимые государства представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом </p>
+          </li>
+          <li class="reasons__item">
+            <h3 class="reasons__subtitle">Соблюдаем сроки и договоренности</h3>
+            <div class="reasons__icon">
+              <img src="" alt="Иконка">
+            </div>
+            <p class="reasons__description">Высокотехнологичная концепция общественного уклада представляет собой интересный</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="ceo">
+      <h2 class="ceo__title visually-hidden">Руководитель</h2>
+      <div class="ceo__column-left">
+        <img src="" alt="Мужчина в белой футболке, стоит в парке скрестив руки на груди">
+        <p class="ceo__position">CEO</p>
+      </div>
+      <div class="ceo__column-right">
+        <h3 class="ceo__subtitle">Цитата руководителя</h3>
+        <blockquote class="ceo__quote">Следует отметить, что перспективное планирование однозначно определяет каждого участника как способного принимать собственные решения касаемо позиций, занимаемых участниками в отношении поставленных задач.</blockquote>
+        <p class="ceo__name">Сарвар Курбанов</p>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <h2 class="feedback__title visually-hidden">Обратная связь</h2>
+      <div class="feedback__column-left">
+        <h3 class="feedback__subtitle">Будем рады ответить на ваши вопросы</h3>
+        <form action="" method="post" class="feedback__form form">
+          <div class="form__line-box">
+            <input type="text" name="name" id="name" class="form__name" placeholder="Ваше имя">
+            <input type="tel" name="phone" id="phone" class="form__phone" placeholder="Ваш телефон">
+          </div>
+          <input type="text" name="question" id="question" class="form__question" placeholder="Ваш вопрос">
+          <div class="form__line-box">
+            <p class="form__lock-person">Ваши данные не будут переданы третьим лицам</p>
+            <input type="submit" value="Отправить заявку" class="form__submit-button">
+          </div>
+        </form>
+      </div>
+      <div class="feedback__column-right">
+        <div class="feedback__contacts contacts">
+          <p class="contacts__descrioption"></p>
+          <a href="tel:+998977077771" class="contacts__phone">+998 97 707 77 71</a>
+          <a href="mailto:info@ge.uz" class="contacts__mail">info@ge.uz</a>
+          <p class="contacts__address">Ташкент, Пресненская набережная, дом 12</p>
+          <a href="" class="contacts__map">показать на карте</a>
+          <div class="contacts__socials socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a href="#" class="socials__link">Instagtam</a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">Telegram</a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link">VKontakte</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="main-footer wrapper"></footer>
+
+  <footer class="main-footer wrapper">
+    <div class="main-footer__company">
+      <a href="index.html" class="main-footer__link">
+        <img src="" alt="Логотип Global Engineering">
+      </a>
+      <p class="main-footer__description">Инжиринговые услуги по Узбекистану и Центральной Азии</p>
+    </div>
+    <div class="main-footer__contacts">
+      <a href="tel:+998977077771" class="main-footer__phone">+998 97 707 77 71</a>
+      <a href="mailto:info@ge.uz" class="main-footer__phone">info@ge.uz</a>
+      <div class="contacts__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link">Instagtam</a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">Telegram</a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">VKontakte</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-footer__info">
+      <ul class="main-footer__list">
+        <li class="main-footer__item">
+          <a href="" class="main-footer__link">Услуги</a>
+        </li>
+        <li class="main-footer__item">
+          <a href="" class="main-footer__link">О компании</a>
+        </li>
+        <li class="main-footer__item">
+          <a href="" class="main-footer__link">Контакты</a>
+        </li>
+      </ul>
+      <p class="main-footer__copyrights">Сделано в <a href="#" class="main-footer__link">Bamboo</a></p>
+    </div>
+  </footer>
 
 </body>
 </html>
