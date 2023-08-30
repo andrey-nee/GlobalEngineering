@@ -1,0 +1,21 @@
+.slider-controls {
+  display: flex;
+  color: $white;
+}
+.slider-controls__counter {
+  display: flex;
+}
+.slider-controls__count-current,
+.swiper-pagination-current {
+}
+.slider-controls__scrollbar {
+}
+.slider-controls__slide-total {
+}
+.slider-controls__arrows {
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+}

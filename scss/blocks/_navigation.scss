@@ -1,0 +1,25 @@
+.navigation {
+  @media (max-width: 1200px) {
+		display: none;
+	}
+}
+.navigation__list {
+  padding: 0;
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+
+
+}
+.navigation__item {
+}
+.navigation__link {
+  color: $white;
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.navigation__link__current {
+  color: $white;
+}

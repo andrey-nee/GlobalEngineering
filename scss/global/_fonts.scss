@@ -1,19 +1,39 @@
 @font-face {
-  font-family: "PT Sans";
-  font-weight: normal;
+  font-family: "Inter";
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
   src:
-    url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
+    url("/fonts/Inter-Regular.woff2") format("woff2"),
+    url("/fonts/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "PT Sans";
-  font-weight: bold;
+  font-family: "Inter";
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
   src:
-    url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
+    url("/fonts/Inter-Medium.woff2") format("woff2"),
+    url("/fonts/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("/fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("/fonts/Inter-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("/fonts/Inter-ExtraBold.woff2") format("woff2"),
+    url("/fonts/Inter-ExtraBold.woff") format("woff");
 }

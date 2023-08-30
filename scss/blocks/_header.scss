@@ -1,0 +1,56 @@
+.header {
+  height: 100vh;
+  position: relative;
+  background-color: #FFFFFF;
+
+  // Временно вставляем фон
+  background-image: url(/img/intro/intro-bg-01.jpg);
+}
+.header__slide {
+}
+.header__content {
+  position: absolute;
+  z-index: 9;
+  top: 28px;
+  left: 144px;
+  right: 100px;
+  bottom: 62px;
+
+  background-color: rgba(0, 0, 0, 0.589);
+
+  pointer-events: none;
+
+  @media (max-width: 1200px) {
+		top: 40px;
+		left: 40px;
+		right: 40px;
+		bottom: 60px;
+	}
+
+	@media (max-width: 767px) {
+		top: 30px;
+		left: 5%;
+		right: 5%;
+		bottom: 30px;
+	}
+}
+
+.header__navigation {
+  pointer-events: all;
+}
+.header__column-right {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.header__services {
+  pointer-events: all;
+  margin-bottom: 51px;
+}
+.header__slider-controls {
+  display: flex;
+  justify-content: space-between;
+  pointer-events: all;
+}
