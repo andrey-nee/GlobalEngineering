@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная | Global Engineering</title>
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/simple-adaptive-slider.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 </head>
 
 <body class="page__body wrapper">
@@ -13,16 +13,59 @@
   <header class="header">
     <!-- Slider -->
 
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <div class="slide">
+          <div class="slide__main-content">
+            <h2 class="slide__subtitle">Медицинский инжиринг</h2>
+            <h3 class="slide__tag">Global Engineering</h3>
+            <p class="slide__description">Лишь базовые сценарии поведения пользователей, инициированные исключительно синтетически, разоблачены</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide">
+          <div class="slide__main-content">
+            <h2 class="slide__subtitle">Медицинский инжиринг</h2>
+            <h3 class="slide__tag">Global Engineering</h3>
+            <p class="slide__description">Лишь базовые сценарии поведения пользователей, инициированные исключительно синтетически, разоблачены</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide">
+          <div class="slide__main-content">
+            <h2 class="slide__subtitle">Медицинский инжиринг</h2>
+            <h3 class="slide__tag">Global Engineering</h3>
+            <p class="slide__description">Лишь базовые сценарии поведения пользователей, инициированные исключительно синтетически, разоблачены</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div> -->
+    <!-- <div class="swiper-button-next"></div> -->
+
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+  </div>
+
     <!-- Slide content -->
     <div class="header__slide">
-      <div class="slide">
+      <!-- <div class="slide">
         <div class="slide__main-content">
           <h2 class="slide__subtitle">Медицинский инжиринг</h2>
           <h3 class="slide__tag">Global Engineering</h3>
           <p class="slide__description">Лишь базовые сценарии поведения пользователей, инициированные исключительно синтетически, разоблачены</p>
-          <button class="slide__request-button">+</button>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Header content -->
@@ -68,21 +111,20 @@
           </ul>
         </div>
         <div class="header__slider-controls slider-controls">
-          <div class="slider-controls__counter">
-            <div class="slider-controls__count-current">1</div>
-            <div class="slider-controls__scrollbar"></div>
-            <div class="slider-controls__slide-total">5</div>
-          </div>
+          <div class="slider-controls__counter"></div>
+          <div class="slider-controls__scrollbar"></div>
           <div class="slider-controls__arrows">
-            <button id="sliderPrev">
+            <button id="sliderPrev" class="slider-controls__button">
               <img src="/img/intro/intro-icon-left.svg" alt="">
             </button>
-            <button id="sliderNext">
+            <button id="sliderNext" class="slider-controls__button">
               <img src="/img/intro/intro-icon-right.svg" alt="">
             </button>
           </div>
         </div>
       </div>
+
+      <button class="header__request-button">+</button>
     </div>
 
     <!-- <div class="intro__container">
@@ -391,5 +433,7 @@
     </div>
   </footer>
 
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 </html>

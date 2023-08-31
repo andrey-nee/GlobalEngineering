@@ -1,36 +1,91 @@
+:root {
+  --mask-bg: url(/img/intro/intro-pattern.png) repeat 0% 0%/14.9%;
+  --linear-bg: linear-gradient(
+      180deg, #000 0%,
+      rgba(0, 0, 0, 0.00) 32.29%),
+      rgba(0, 0, 0, 0.70
+    );
+}
+
 .slide {
-  // display: flex;
-  padding-bottom: 62px;
   height: 100vh;
+  max-height: 832px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 144px;
+  padding-bottom: calc(60px + 158px); //нижний отступ + высота кнопки "+"
+  justify-content: space-between;
   overflow: hidden;
   color: $white;
+  box-sizing: border-box;
+
+  background:
+    url(/img/intro/intro-bg-01.jpg) no-repeat center,
+    var(--mask-bg),
+    var(--linear-bg);
+  background-blend-mode: overlay;
+
+  &::before {
+    content: '';
+    box-sizing: border-box;
+  }
+
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  @media (max-width: 1200px) {
+    padding-left: 84px;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 5%;
+    padding-bottom: calc(30px + 158px); //нижний отступ + высота кнопки "+"
+  }
 }
+
 .slide__main-content {
   display: flex;
   flex-direction: column;
+  max-width: 60%;
 }
 .slide__subtitle {
+  margin: 0 0 39px 0;
+  padding: 0;
+  order: 2;
   font-size: 100px;
   font-weight: 800;
   line-height: 1.0;
+
+  @media (max-width: 1512px) {
+    // Шрифт подстраивается под ширину экрана
+    font-size: 6.61vw; // Значение при котором font-size:100px при ширине экрана 1512px
+  }
+  @media (max-width: 767px) {
+    // Шрифт подстраивается под ширину экрана
+    font-size: 9vw; // Увеличиваем значение, чтобы шрифт не был мелким
+  }
 }
 .slide__tag {
+  margin: 0 0 28px 0;
+  padding: 6px 12px;
+  width: min-content;
+  order: 1;
+  white-space: nowrap;
   font-size: 12px;
   line-height: 1.2;
+  background-color: $dark-blue;
+  border-radius: 100px;
 }
 .slide__description {
+  margin: 0;
+  padding: 0;
+  order: 3;
+  max-width: 54%;
   font-size: 16px;
   line-height: 1.6;
-}
-.slide__request-button {
-  width: 79px;
-  height: 79px;
-  min-width: 79px;
-  min-height: 79px;
-  border: none;
-  border-radius: 50%;
-  background-color: $dark-blue;
-  color: $white;
 }
 .slide__navigation {
 }

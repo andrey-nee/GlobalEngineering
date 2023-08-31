@@ -4,21 +4,27 @@
 	}
 }
 .navigation__list {
+  margin: auto 0;
   padding: 0;
   display: flex;
   column-gap: 20px;
   list-style: none;
-
+  // align-self: center;
 
 }
 .navigation__item {
+  margin: auto 0;
 }
 .navigation__link {
-  color: $white;
-  color: rgba(255, 255, 255, 0.50);
+  display: flex;
+  align-items: center;
+  margin: auto 0;
+  white-space: nowrap;
   font-size: 14px;
   line-height: 1.2;
   text-decoration: none;
+  color: $white;
+  color: rgba(255, 255, 255, 0.50);
 }
 .navigation__link__current {
   color: $white;

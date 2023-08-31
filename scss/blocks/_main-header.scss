@@ -8,11 +8,17 @@
   column-gap: 30px;
 }
 .main-header__company {
-  // width: min-content;
-  color: rgba(255, 255, 255, 0.60);
+  margin: auto 0;
+  padding: 0;
+  max-width: 15%;
   font-size: 11px;
   font-weight: 400;
   line-height: 1.4;
+  color: rgba(255, 255, 255, 0.60);
+
+  @media (max-width: 1200px) {
+    max-width: 20%;
+	}
 }
 .main-header__navigation {
 }
@@ -21,18 +27,23 @@
   column-gap: 45px;
 }
 .main-header__number {
+  margin: auto 0;
 }
 .main-header__link {
-  color: $white;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
   font-size: 14px;
   line-height: 1.2;
   text-decoration: none;
+  color: $white;
 }
 .main-header__button {
 }
 .main-header__link__button {
-  display: inline-flex;
+  display: flex;
   padding: 15px 40px;
+  white-space: nowrap;
   justify-content: center;
   align-items: center;
   border-radius: 100px;

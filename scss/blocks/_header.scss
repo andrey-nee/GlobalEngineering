@@ -1,10 +1,8 @@
 .header {
   height: 100vh;
+  max-height: 832px;
   position: relative;
   background-color: #FFFFFF;
-
-  // Временно вставляем фон
-  background-image: url(/img/intro/intro-bg-01.jpg);
 }
 .header__slide {
 }
@@ -14,21 +12,15 @@
   top: 28px;
   left: 144px;
   right: 100px;
-  bottom: 62px;
-
-  background-color: rgba(0, 0, 0, 0.589);
-
+  bottom: 60px;
   pointer-events: none;
 
   @media (max-width: 1200px) {
-		top: 40px;
-		left: 40px;
+		left: 84px;
 		right: 40px;
-		bottom: 60px;
 	}
 
 	@media (max-width: 767px) {
-		top: 30px;
 		left: 5%;
 		right: 5%;
 		bottom: 30px;
@@ -53,4 +45,22 @@
   display: flex;
   justify-content: space-between;
   pointer-events: all;
+}
+
+.header__request-button {
+  position: absolute;
+  bottom: 0;
+  right: 31%;
+  transform: translate(-50%, 0%);
+  padding: 0;
+  width: 158px;
+  height: 158px;
+  min-width: 158px;
+  min-height: 158px;
+  pointer-events: all;
+  order: 4;
+  border: none;
+  border-radius: 50%;
+  background-color: $dark-blue;
+  color: $white;
 }
