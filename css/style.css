@@ -251,16 +251,22 @@ img {
   overflow: hidden;
   color: #ffffff;
   box-sizing: border-box;
-  background: url(/img/intro/intro-bg-01.jpg) no-repeat center, var(--mask-bg), var(--linear-bg);
-  background-blend-mode: overlay;
-  cursor: grab;
 }
 .slide::before {
   content: "";
   box-sizing: border-box;
 }
-.slide:active {
-  cursor: grabbing;
+.slide--medical {
+  background: url(/img/intro/intro-bg-01.jpg) no-repeat center, var(--mask-bg), var(--linear-bg);
+  background-blend-mode: overlay;
+}
+.slide--blocks {
+  background: url(/img/intro/intro-bg-02.jpg) no-repeat center, var(--mask-bg), var(--linear-bg);
+  background-blend-mode: overlay;
+}
+.slide--oxygen {
+  background: url(/img/intro/intro-bg-03.jpg) no-repeat center, var(--mask-bg), var(--linear-bg);
+  background-blend-mode: overlay;
 }
 @media (max-width: 1200px) {
   .slide {
