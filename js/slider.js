@@ -8,11 +8,10 @@ const swiper = new Swiper('.swiper', {
     enabled: true,
   },
 
-    // If we need pagination
+    // Pagination
   pagination: {
     el: '.slider-controls__counter',
     type: 'fraction',
-
     // Номер текущего слайда в формате "01"
     formatFractionCurrent: function (number) {
       if (number < 10) {
@@ -21,7 +20,6 @@ const swiper = new Swiper('.swiper', {
           return number;
       }
     },
-
     // Номер последнего слайда в формате "01"
     formatFractionTotal: function (number) {
       if (number < 10) {
@@ -30,26 +28,18 @@ const swiper = new Swiper('.swiper', {
           return number;
       }
     },
-
-    // Настраиваем номера слайдов
+    // Кастомные номера слайдов (type: fraction)
     renderFraction: function (currentClass, totalClass) {
       return '<div class="' + currentClass + '"></div>' + '<div class="' + totalClass + '"></div>';
     },
-
-    // Настраиваем шкалу слайдера
-    // renderProgressbar: function (progressbarFillClass) {
-    //   return '<span class="' + progressbarFillClass + '"></span>';
-    // },
   },
-
 
   // Navigation arrows
   navigation: {
     nextEl: '#sliderNext',
     prevEl: '#sliderPrev',
   },
-
-  // And if we need scrollbar
+  // Scrollbar
   scrollbar: {
     el: '.slider-controls__scrollbar',
   },
