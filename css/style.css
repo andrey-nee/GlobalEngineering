@@ -411,8 +411,60 @@ img {
   background-color: rgb(255, 255, 255) !important;
 }
 
-.intro__slide-1 {
-  background-image: url(/img/intro/intro-bg-01.jpg);
+.about {
+  padding: 39px 15px;
+  background-color: #07286f;
+}
+
+.about__container {
+  margin: 0 85px 0 129px;
+  height: 540px;
+  background-image: url(/img/about/about-logo.svg);
+  background-position: 40% center;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-size: contain;
+}
+@media (max-width: 1200px) {
+  .about__container {
+    margin: 0 25px 0 69px;
+  }
+}
+@media (max-width: 767px) {
+  .about__container {
+    margin: 0 calc(5% - 15px) 0 calc(5% - 15px);
+  }
+}
+
+.about__main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 105px 0 0;
+}
+
+.about__subtitle {
+  margin: 0;
+  max-width: 40%;
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1;
+}
+@media (max-width: 1512px) {
+  .about__subtitle {
+    font-size: 4.76vw;
+  }
+}
+@media (max-width: 767px) {
+  .about__subtitle {
+    font-size: 7vw;
+  }
+}
+
+.about__description {
+  margin: 0;
+  padding: 0;
+  max-width: 50%;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.6;
 }/*# sourceMappingURL=style.css.map */
