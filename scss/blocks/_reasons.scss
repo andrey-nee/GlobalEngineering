@@ -65,6 +65,8 @@
   gap: 20px;
 }
 .reasons__item {
+  display: flex;
+  flex-direction: column;
   padding: 24px;
   list-style: none;
   border-radius: 20px;
@@ -72,13 +74,15 @@
   backdrop-filter: blur(9px);
 }
 .reasons__subtitle {
-  margin: 0;
+  margin: 0 0 17px;
   padding: 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
 }
 .reasons__icon {
+  order: -1;
+  margin: 0 0 24px;
   width: 60px;
   height: 60px;
 }

@@ -138,6 +138,7 @@
           <p class="about__description">Мы единственная компания в Узбекистане с локализацией, производящая стерильные панели для операционных, фармацевтических помещений на ровне по качеству с Европейскими производителями и с доступной ценой</p>
         </div>
       </div>
+      <div class="about__decoration"></div>
     </section>
 
     <section class="services">
@@ -264,51 +265,59 @@
         <div class="ceo__column-left">
           <div class="ceo__photo">
             <img src="/img/ceo/ceo-photo.jpg" alt="Мужчина в белой футболке, стоит в парке скрестив руки на груди">
+            <p class="ceo__position">CEO</p>
           </div>
-          <p class="ceo__position">CEO</p>
         </div>
         <div class="ceo__column-right">
           <h3 class="ceo__subtitle title-underline">Цитата руководителя</h3>
-          <blockquote class="ceo__quote">Следует отметить, что перспективное планирование однозначно определяет каждого участника как способного принимать собственные решения касаемо позиций, занимаемых участниками в отношении поставленных задач.</blockquote>
+          <div class="ceo__quote-container">
+            <blockquote class="ceo__quote">Следует отметить, что перспективное планирование однозначно определяет каждого участника как способного принимать собственные решения касаемо позиций, занимаемых участниками в отношении поставленных задач.</blockquote>
+          </div>
           <p class="ceo__name">Сарвар Курбанов</p>
         </div>
       </div>
     </section>
 
     <section class="feedback">
-      <div class="feedback__container">
+      <div class="feedback__container inner-wrapper">
         <h2 class="feedback__title visually-hidden">Обратная связь</h2>
         <div class="feedback__column-left">
           <h3 class="feedback__subtitle">Будем рады ответить на ваши вопросы</h3>
           <form action="" method="post" class="feedback__form form">
             <div class="form__line-box">
-              <input type="text" name="name" id="name" class="form__name" placeholder="Ваше имя">
-              <input type="tel" name="phone" id="phone" class="form__phone" placeholder="Ваш телефон">
+              <input type="text" name="name" id="name" class="form__input form__name" placeholder="Ваше имя">
+              <input type="tel" name="phone" id="phone" class="form__input form__phone" placeholder="Ваш телефон">
             </div>
-            <input type="text" name="question" id="question" class="form__question" placeholder="Ваш вопрос">
+            <input type="text" name="question" id="question" class="form__input form__question" placeholder="Ваш вопрос">
             <div class="form__line-box">
               <p class="form__lock-person">Ваши данные не будут переданы третьим лицам</p>
-              <input type="submit" value="Отправить заявку" class="form__submit-button">
+              <input type="submit" value="Отправить заявку" class="form__submit-button button__type__blue">
             </div>
           </form>
         </div>
         <div class="feedback__column-right">
           <div class="feedback__contacts contacts">
-            <p class="contacts__descrioption"></p>
-            <a href="tel:+998977077771" class="contacts__phone">+998 97 707 77 71</a>
-            <a href="mailto:info@ge.uz" class="contacts__mail">info@ge.uz</a>
+            <p class="contacts__description">Вы так же можете связаться с нами по телефону или написать нам на почту</p>
+            <a href="tel:+998977077771" class="contacts__link contacts__phone">+998 97 707 77 71</a>
+            <a href="mailto:info@ge.uz" class="contacts__link contacts__mail">info@ge.uz</a>
             <p class="contacts__address">Ташкент, Пресненская набережная, дом 12</p>
-            <a href="" class="contacts__map">показать на карте</a>
+            <a href="" class="contacts__link contacts__map">показать на карте</a>
             <div class="contacts__socials socials">
               <ul class="socials__list">
                 <li class="socials__item">
-                  <a href="#" class="socials__link">Instagtam</a>
+                  <a href="#" class="socials__link">
+                    <img src="/img/feedback/feedback-icon-instagram.svg" width="18px" height="18px" alt="Иконка Инстаграм">
+                  </a>
                 </li>
                 <li class="socials__item">
-                  <a href="#" class="socials__link">Telegram</a>
+                  <a href="#" class="socials__link">
+                    <img src="/img/feedback/feedback-icon-telegram.svg" width="18px" height="18px" alt="Иконка Телеграм">
+                  </a>
                 </li>
                 <li class="socials__item">
-                  <a href="#" class="socials__link">VKontakte</a>
+                  <a href="#" class="socials__link">
+                    <img src="/img/feedback/feedback-icon-vk.svg" width="18px" height="18px" alt="Иконка ВКонтакте">
+                  </a>
                 </li>
               </ul>
             </div>
@@ -320,26 +329,32 @@
 
 
   <footer class="main-footer">
-    <div class="main-footer__container">
+    <div class="main-footer__container inner-wrapper">
       <div class="main-footer__company">
         <a href="index.html" class="main-footer__link">
-          <img src="" alt="Логотип Global Engineering">
+          <img src="/img/footer/footer-logo.svg" alt="Логотип Global Engineering">
         </a>
         <p class="main-footer__description">Инжиринговые услуги по Узбекистану и Центральной Азии</p>
       </div>
       <div class="main-footer__contacts">
         <a href="tel:+998977077771" class="main-footer__phone">+998 97 707 77 71</a>
-        <a href="mailto:info@ge.uz" class="main-footer__phone">info@ge.uz</a>
+        <a href="mailto:info@ge.uz" class="main-footer__mail">info@ge.uz</a>
         <div class="contacts__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
-              <a href="#" class="socials__link">Instagtam</a>
+              <a href="#" class="socials__link">
+                <img src="/img/footer/footer-icon-instagram.svg" width="18px" height="18px" alt="Иконка Инстаграм">
+              </a>
             </li>
             <li class="socials__item">
-              <a href="#" class="socials__link">Telegram</a>
+              <a href="#" class="socials__link">
+                <img src="/img/footer/footer-icon-telegram.svg" width="18px" height="18px" alt="Иконка Телеграм">
+              </a>
             </li>
             <li class="socials__item">
-              <a href="#" class="socials__link">VKontakte</a>
+              <a href="#" class="socials__link">
+                <img src="/img/footer/footer-icon-vk.svg" width="18px" height="18px" alt="Иконка ВКонтакте">
+              </a>
             </li>
           </ul>
         </div>
@@ -356,7 +371,7 @@
             <a href="" class="main-footer__link">Контакты</a>
           </li>
         </ul>
-        <p class="main-footer__copyrights">Сделано в <a href="#" class="main-footer__link">Bamboo</a></p>
+        <p class="main-footer__copyrights">Сделано в <a>Bamboo</a></p>
       </div>
     </div>
   </footer>

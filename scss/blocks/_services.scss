@@ -1,6 +1,6 @@
 .services {
   margin: 0 0 120px;
-  background-color: $dark-blue;
+  // background-color: $dark-blue;
 }
 .services__container {
 }
@@ -13,6 +13,8 @@
   line-height: 1.0;
 }
 .services__slider {
+  display: flex;
+  overflow: hidden;
 }
 .services__slide {
   position: relative;

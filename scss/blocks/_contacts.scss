@@ -1,0 +1,44 @@
+.contacts {
+  padding: 53px;
+  border-radius: 40px;
+  background: $light-grey;
+}
+.contacts__description {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.contacts__link {
+  color: $black;
+  text-decoration: none;
+}
+.contacts__phone {
+  margin: 0 0 16px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.contacts__mail {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.contacts__address {
+  margin: 0 0 16px;
+  color: #898989;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.contacts__map {
+  margin: 0 0 55px;
+  color: $blue;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.contacts__socials {
+
+}

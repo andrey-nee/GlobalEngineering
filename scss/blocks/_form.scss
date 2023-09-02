@@ -1,0 +1,51 @@
+.form {
+}
+.form__line-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 21px;
+  column-gap: 24px;
+}
+.form__input {
+  padding: 24px 0;
+  width: 100%;
+  color: #9CA0AE;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.0;
+  background-color: transparent;
+
+  border: none;
+  border-bottom: 1px solid #dcdce0;
+}
+.form__name {
+}
+.form__phone {
+}
+.form__question {
+  margin: 0 0 50px;
+}
+.form__lock-person {
+  position: relative;
+  padding: 0 0 0 31px;
+  max-width: 39%;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(/img/feedback/feedback-icon-lock.svg);
+  }
+}
+.form__submit-button {
+  border: none;
+  color: $white;
+}

@@ -1,0 +1,29 @@
+.feedback__container {
+  padding: 120px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-image: url(/img/feedback/feedback-logo.svg);
+  background-position: 45% 55%;
+  background-repeat: no-repeat;
+  background-size: 322px;
+}
+.feedback__column-left {
+  width: 50%;
+}
+.feedback__subtitle {
+  margin: 0 0 53px;
+  width: 90%;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.feedback__form {
+}
+.feedback__column-right {
+}
+.feedback__contacts {
+  max-width: 390px;
+  box-sizing: border-box;
+}
