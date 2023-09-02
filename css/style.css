@@ -65,28 +65,28 @@ img {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/Inter-Regular.woff2") format("woff2"), url("/fonts/Inter-Regular.woff") format("woff");
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/Inter-Medium.woff2") format("woff2"), url("/fonts/Inter-Medium.woff") format("woff");
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/Inter-SemiBold.woff2") format("woff2"), url("/fonts/Inter-SemiBold.woff") format("woff");
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Inter";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/Inter-ExtraBold.woff2") format("woff2"), url("/fonts/Inter-ExtraBold.woff") format("woff");
+  src: url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff");
 }
 .page {
   height: 100%;
@@ -267,7 +267,7 @@ img {
 }
 
 :root {
-  --mask-bg: url(/img/intro/intro-pattern.png) repeat 0% 0%/14.9%;
+  --mask-bg: url("../img/intro/intro-pattern.png") repeat 0% 0%/14.9%;
   --linear-bg: linear-gradient(
       180deg, #000 0%,
       rgba(0, 0, 0, 0.00) 32.29%),
@@ -292,15 +292,15 @@ img {
   box-sizing: border-box;
 }
 .slide--medical {
-  background: url(/img/intro/intro-bg-01.jpg) no-repeat center, var(--mask-bg), var(--linear-bg);
+  background: url("../img/intro/intro-bg-01.jpg") no-repeat center, var(--mask-bg), var(--linear-bg);
   background-blend-mode: overlay;
 }
 .slide--blocks {
-  background: url(/img/intro/intro-bg-02.jpg) no-repeat center, var(--mask-bg), var(--linear-bg);
+  background: url("../img/intro/intro-bg-02.jpg") no-repeat center, var(--mask-bg), var(--linear-bg);
   background-blend-mode: overlay;
 }
 .slide--oxygen {
-  background: url(/img/intro/intro-bg-03.jpg) no-repeat center, var(--mask-bg), var(--linear-bg);
+  background: url("../img/intro/intro-bg-03.jpg") no-repeat center, var(--mask-bg), var(--linear-bg);
   background-blend-mode: overlay;
 }
 @media (max-width: 1200px) {
@@ -454,7 +454,7 @@ img {
 
 .about__container {
   height: 540px;
-  background-image: url(/img/about/about-logo.svg);
+  background-image: url("../img/about/about-logo.svg");
   background-position: 40% center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -564,7 +564,7 @@ img {
 
 .reasons {
   margin-bottom: 135px;
-  background-image: url(/img/reasons/reasons-logo.svg);
+  background-image: url("../img/reasons/reasons-logo.svg");
   background-position: 3% 33%;
   background-repeat: no-repeat;
   background-size: 368px;
@@ -749,7 +749,7 @@ img {
 }
 .ceo__quote::before {
   content: "";
-  background-image: url(/img/ceo/ceo-icon-quote.svg);
+  background-image: url("../img/ceo/ceo-icon-quote.svg");
   position: absolute;
   top: -61px;
   left: -166px;
@@ -774,7 +774,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(/img/feedback/feedback-logo.svg);
+  background-image: url("../img/feedback/feedback-logo.svg");
   background-position: 45% 55%;
   background-repeat: no-repeat;
   background-size: 322px;
@@ -838,7 +838,7 @@ img {
   left: 0;
   width: 24px;
   height: 24px;
-  background-image: url(/img/feedback/feedback-icon-lock.svg);
+  background-image: url("../img/feedback/feedback-icon-lock.svg");
 }
 
 .form__submit-button {
