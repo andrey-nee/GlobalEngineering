@@ -1,5 +1,6 @@
 img {
-  max-width: 100%;
+  width: 100%;
+  // max-width: 100%;
   height: auto;
 }
 
@@ -18,5 +19,40 @@ img {
 
 .wrapper {
   margin: 0 auto;
-  // outline: 2px solid red;
+}
+
+.inner-wrapper {
+  margin: 0 100px 0 144px;
+
+  @media (max-width: 1200px) {
+    margin: 0 40px 0 84px;
+	}
+	@media (max-width: 767px) {
+    margin: 0 5% 0 5%;
+	}
+}
+
+.title-underline {
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.button__type__transparent {
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  border-radius: 100px;
+  border: 2px solid rgba(255, 255, 255, 0.24);
+}
+
+.button__type__blue {
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  border-radius: 100px;
+  background-color: $blue;
 }

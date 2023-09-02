@@ -16,13 +16,13 @@
   pointer-events: none;
 
   @media (max-width: 1200px) {
-		left: $left1200;
-		right: $right1200;
+	  left: 84px; //$left1200: 84px;
+    right: 40px; //$rigth1200: 40px;
 	}
 
 	@media (max-width: 767px) {
-		left: $left767;
-		right: $left767;
+		left: 5%; //$left767: 5%;
+		right: 5%; //$rigth767: 5%;
 		bottom: 30px;
 	}
 }

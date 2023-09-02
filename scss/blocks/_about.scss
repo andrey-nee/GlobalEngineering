@@ -1,27 +1,13 @@
 .about {
-  padding: 39px 15px;
+  padding: 39px 0;
   background-color: $dark-blue;
 }
 .about__container {
-  margin: 0 calc(100px - 15px) 0 calc(144px - 15px); //С учётом padding .about
   height: 540px;
   background-image: url(/img/about/about-logo.svg);
   background-position: 40% center;
   background-repeat: no-repeat;
   background-size: contain;
-
-  @media (max-width: 1200px) {
-    margin: 0 calc($right1200 - 15px) 0 calc($left1200 - 15px); //С учётом padding .about
-		// left: 84px;
-		// right: 40px;
-	}
-
-	@media (max-width: 767px) {
-    margin: 0 calc($right767 - 15px) 0 calc($left767 - 15px); //С учётом padding .about
-		// left: 5%;
-		// right: 5%;
-		// bottom: 30px;
-	}
 }
 .about__main-content {
   display: flex;
