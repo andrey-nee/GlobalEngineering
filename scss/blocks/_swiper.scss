@@ -1,9 +1,16 @@
 .swiper {
   min-width: 320px;
   max-width: 1512px;
-  // width: 98.5vw;
-  width: 100vw;
+
+  &.mySwiper {
+    width: 100vw;
+  }
+  &.mySwiper2 {
+    padding-left: 144px;
+    box-sizing: border-box;
+  }
 }
+
 
 .swiper-pagination-current {
   display: flex;
@@ -22,8 +29,9 @@
   line-height: 1.4;
 }
 
-.swiper-scrollbar {
+.swiper-scrollbar-horizontal {
   height: 2px !important;
+  width: 70px !important;
   border-radius: 0 !important;
   background-color: rgba(255, 255, 255, 0.21) !important;
 }

@@ -21,14 +21,28 @@ img {
   margin: 0 auto;
 }
 
+// .inner-wrapper {
+//   margin: 0 100px 0 144px;
+
+//   @media (max-width: 1200px) {
+//     margin: 0 40px 0 84px;
+// 	}
+// 	@media (max-width: 767px) {
+//     margin: 0 5% 0 5%;
+// 	}
+// }
+
 .inner-wrapper {
-  margin: 0 100px 0 144px;
+  padding-left:144px;
+  padding-right: 100px;
 
   @media (max-width: 1200px) {
-    margin: 0 40px 0 84px;
+    padding-left:84px;
+    padding-right: 40px;
 	}
 	@media (max-width: 767px) {
-    margin: 0 5% 0 5%;
+    padding-left:5%;
+    padding-right: 5%;
 	}
 }
 

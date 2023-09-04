@@ -4,16 +4,11 @@
 }
 .slider-controls__counter {
   display: flex;
-  column-gap: 96px;
-  // justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   max-width: 135px;
 }
 .slider-controls__scrollbar {
-  position: absolute;
-  bottom: 15px;
-  right: 166px;
-  height: 2px;
-  width: 70px;
   pointer-events: all;
 }
 .slider-controls__count-current,

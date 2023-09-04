@@ -1,8 +1,10 @@
 .services {
   margin: 0 0 120px;
+  overflow: hidden;
   // background-color: $dark-blue;
 }
 .services__container {
+  // margin-left: 144px;
 }
 .services__title {
   position: relative;
@@ -13,8 +15,10 @@
   line-height: 1.0;
 }
 .services__slider {
-  display: flex;
+  // display: flex;
+  // width: calc(1512px - 100px - 144px);
   overflow: hidden;
+  // box-sizing: border-box;
 }
 .services__slide {
   position: relative;
@@ -25,9 +29,8 @@
   border-radius: 40px;
   overflow: hidden;
 }
-.services__slide-1 {
-}
 .services__item {
+  backdrop-filter: blur(0px); //Нужен чтобы избавиться от бага в .setvices__item-desctription
 }
 .services__item-image {
   display: flex;
@@ -36,18 +39,19 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   padding: 21px 29px 23px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
   background: rgba(216, 222, 236, 0.80);
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px); //Нужно добавить родителю blur(0px), чтобы убрать баг с краями блока
 }
 .services__item-name {
   margin: 0;
   padding: 0;
-  max-width: 65%;
+  max-width: 71%;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.2;

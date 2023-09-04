@@ -11,18 +11,19 @@
   height: 100vh;
   max-height: 832px;
   display: flex;
-  flex-direction: column;
-  padding-left: 144px;
-  padding-bottom: calc(60px + 158px); //нижний отступ + высота кнопки "+"
+  // flex-direction: column;
+  // padding-left: 144px;
+  // padding-bottom: calc(60px + 158px); //нижний отступ + высота кнопки "+"
   justify-content: space-between;
+  align-items: center;
   overflow: hidden;
   color: $white;
   box-sizing: border-box;
 
-  &::before {
-    content: '';
-    box-sizing: border-box;
-  }
+  // &::before {
+  //   content: '';
+  //   box-sizing: border-box;
+  // }
 
   &--medical {
     background:
@@ -98,20 +99,4 @@
   max-width: 54%;
   font-size: 16px;
   line-height: 1.6;
-}
-.slide__navigation {
-}
-.slide-navigation__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.4;
-  color: rgba(255, 255, 255, 0.32);
-}
-.slide-navigation__item {
-}
-.slide-navigation__item__active {
-  color: $white;
 }
