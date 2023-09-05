@@ -4,6 +4,11 @@ var swiper = new Swiper(".mySwiper", {
   speed: 1000,
   hashNavigation: true,
 
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+
   keyboard: {
     enabled: true,
   },
@@ -52,14 +57,25 @@ var swiper = new Swiper(".mySwiper", {
 
 
 var swiper2 = new Swiper(".mySwiper2", {
-  slidesPerView: 3,
-  // freeMode: true,
-  // speed: 5000,
-  // freeModeMomentum: false,
+  slidesPerView: 1,
   spaceBetween: 44,
+  centeredSlides: true,
   mousewheel: true,
   mousewheel: {
-    // sensitivity: 5,
     releaseOnEdges: true,
-  }
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
 });

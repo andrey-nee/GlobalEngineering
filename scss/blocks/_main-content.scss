@@ -1,4 +1,12 @@
 .main-content {
+  position: relative;
 }
 .main-content__sidebar {
+  position: fixed;
+  top: 0;
+  margin-left: -1px; // Убираем просвечивающую полосу
+  width: calc(100px + 1px); // + 1px для отступа слева
+  height: 100vh;
+  z-index: 20;
+  pointer-events: all;
 }

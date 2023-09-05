@@ -19,18 +19,7 @@
   margin: 0;
   max-width: 40%;
   color: $white;
-  font-size: 72px;
-  font-weight: 600;
-  line-height: 1.0;
 
-  @media (max-width: 1512px) {
-    // Шрифт подстраивается под ширину экрана
-    font-size: 4.76vw; // Значение при котором font-size:72px при ширине экрана 1512px
-  }
-  @media (max-width: 767px) {
-    // Шрифт подстраивается под ширину экрана
-    font-size: 7vw; // Увеличиваем значение, чтобы шрифт не был мелким
-  }
 }
 .about__description {
   margin: 0;

@@ -12,6 +12,10 @@
 .contacts__link {
   color: $black;
   text-decoration: none;
+
+  &__white {
+    color: $white;
+  }
 }
 .contacts__phone {
   margin: 0 0 16px;
@@ -38,7 +42,10 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
+
+  &__white {
+    color: $white;
+  }
 }
 .contacts__socials {
-
 }

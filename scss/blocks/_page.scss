@@ -8,6 +8,10 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.6;
+
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 .page__body {
@@ -17,4 +21,9 @@
   min-width: 320px;
   min-height: 100%;
   margin: 0;
+  overflow-x: hidden;
+
+  &.lock {
+    overflow: hidden;
+  }
 }

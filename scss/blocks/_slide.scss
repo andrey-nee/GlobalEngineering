@@ -11,6 +11,8 @@
   height: 100vh;
   max-height: 832px;
   display: flex;
+  padding-top: 85px;
+  padding-bottom: 60px;
   // flex-direction: column;
   // padding-left: 144px;
   // padding-bottom: calc(60px + 158px); //нижний отступ + высота кнопки "+"
@@ -49,14 +51,14 @@
   background-blend-mode: overlay;
   }
 
-  @media (max-width: 1200px) {
-    padding-left: 84px;
-  }
+  // @media (max-width: 1200px) {
+  //   padding-left: 84px;
+  // }
 
-  @media (max-width: 767px) {
-    padding-left: 5%;
-    padding-bottom: calc(30px + 158px); //нижний отступ + высота кнопки "+"
-  }
+  // @media (max-width: 767px) {
+  //   padding-left: 5%;
+  //   padding-bottom: calc(30px + 158px); //нижний отступ + высота кнопки "+"
+  // }
 }
 
 .slide__main-content {
@@ -68,18 +70,7 @@
   margin: 0 0 39px 0;
   padding: 0;
   order: 2;
-  font-size: 100px;
-  font-weight: 800;
-  line-height: 1.0;
 
-  @media (max-width: 1512px) {
-    // Шрифт подстраивается под ширину экрана
-    font-size: 6.61vw; // Значение при котором font-size:100px при ширине экрана 1512px
-  }
-  @media (max-width: 767px) {
-    // Шрифт подстраивается под ширину экрана
-    font-size: 9vw; // Увеличиваем значение, чтобы шрифт не был мелким
-  }
 }
 .slide__tag {
   margin: 0 0 28px 0;
