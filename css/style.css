@@ -54,10 +54,11 @@
 }
 
 .header {
+  position: relative;
   height: 100vh;
   max-height: 832px;
-  position: relative;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 .header__content {
@@ -137,11 +138,8 @@
 .header__menu {
   position: absolute;
   top: 0;
-  left: 100px;
-  width: 100%;
-  height: 100vh;
-  background-color: #07286f;
-  z-index: 10;
+  height: 100%;
+  max-width: 1512px;
 }
 
 .main-header {
@@ -578,19 +576,20 @@
 }
 
 .menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100vw;
+  position: fixed;
   display: flex;
+  width: 100%;
+  min-height: 100vh;
   padding: 203px 121px;
   -moz-column-gap: 100px;
        column-gap: 100px;
   box-sizing: border-box;
+  background-color: #07286f;
+  z-index: 10;
   transition: 0.2s;
 }
 .menu.deactivated {
-  transform: translate(-100%, 0%);
+  transform: translate(0%, -100%);
   transition: 0.2s;
 }
 @media (max-width: 1512px) {

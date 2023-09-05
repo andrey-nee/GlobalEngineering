@@ -6,7 +6,7 @@ var langSwitch = document.querySelector('.language__switch')
 var langPos = document.querySelector('.language__position')
 var lang = document.querySelector('.side-bar__language')
 var langCur = document.querySelector('.language__current')
-var menu = document.querySelector('.header__menu')
+var menu = document.querySelector('.menu')
 var page = document.querySelector('.page')
 var body = document.querySelector('.page__body')
 
