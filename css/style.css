@@ -270,10 +270,20 @@
   max-width: 60%;
 }
 
-.slide__subtitle {
+.slide__title-box {
+  order: 2;
+}
+
+.slide__title {
+  position: relative;
   margin: 0 0 39px 0;
   padding: 0;
-  order: 2;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+.slide__title .anim-title {
+  position: absolute;
 }
 
 .slide__tag {
@@ -403,9 +413,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100px;
-  background-color: red;
-  z-index: 25;
+  margin: 0 auto;
+  height: 200px;
+  max-width: 100%;
+  background-color: tomato;
 }
 .mySwiper2 .slide__subtitle {
   max-width: 60%;

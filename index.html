@@ -16,13 +16,13 @@
   <header class="header">
 
     <!-- Слайдер Текста -->
-    <!-- <div class="swiper mySwiper2">
+    <!-- <div class="swiper mySwiper2 swiper-no-swiping">
       <div class="swiper-wrapper">
         <div class="swiper-slide main-title">
-          <h2 class="slide__subtitle main-title">Операционные блоки</h2>
+          <h2 class="slide__subtitle main-title">Медицинский инжиринг</h2>
         </div>
         <div class="swiper-slide main-title">
-          <h2 class="slide__subtitle main-title">Медицинский инжиринг</h2>
+          <h2 class="slide__subtitle main-title">Операционные блоки</h2>
         </div>
         <div class="swiper-slide main-title">
           <h2 class="slide__subtitle main-title">Кислородные станции</h2>
@@ -30,36 +30,53 @@
       </div>
     </div> -->
 
+
     <!-- Слайдер на главной -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+
         <div class="swiper-slide" data-hash="slide1">
           <div class="slide slide--medical inner-wrapper">
             <div class="slide__main-content">
-              <h2 class="slide__subtitle main-title anim-title">Медицинский инжиринг</h2>
-              <h3 class="slide__tag anim-tag">Global Engineering</h3>
-              <p class="slide__description anim-description">Лишь базовые сценарии поведения пользователей, инициированные исключительно синтетически, разоблачены</p>
+              <div class="slide__title-box">
+                <h2 class="slide__title main-title">
+                  <span class="anim-title elevator">Медицинский инжиринг</span>
+                </h2>
+              </div>
+              <h3 class="slide__tag anim-tag fade">Global Engineering</h3>
+              <p class="slide__description anim-description fade">Лишь базовые сценарии поведения пользователей, инициированные исключительно синтетически, разоблачены</p>
             </div>
           </div>
         </div>
+
         <div class="swiper-slide" data-hash="slide2">
-          <div class="slide slide--blocks inner-wrapper">
+          <div class="slide slide--medical inner-wrapper">
             <div class="slide__main-content">
-              <h2 class="slide__subtitle main-title anim-title">Операционные блоки</h2>
-              <h3 class="slide__tag anim-tag">Услуга</h3>
-              <p class="slide__description anim-description">Операционный блок представляет собой подразделение больницы, которое состоит из ряда операционных, а также вспомогательных помещений, предназначенных для проведения хирургических операций</p>
+              <div class="slide__title-box">
+                <h2 class="slide__title main-title">
+                  <span class="anim-title elevator">Операционные блоки</span>
+                </h2>
+              </div>
+              <h3 class="slide__tag anim-tag fade">Услуга</h3>
+              <p class="slide__description anim-description fade">Операционный блок представляет собой подразделение больницы, которое состоит из ряда операционных, а также вспомогательных помещений, предназначенных для проведения хирургических операций</p>
             </div>
           </div>
         </div>
+
         <div class="swiper-slide" data-hash="slide3">
-          <div class="slide slide--oxygen inner-wrapper">
+          <div class="slide slide--medical inner-wrapper">
             <div class="slide__main-content">
-              <h2 class="slide__subtitle main-title anim-title">Кислородные станции</h2>
-              <h3 class="slide__tag anim-tag">Услуга</h3>
-              <p class="slide__description anim-description">Кислородные газовые станции подходят для установки в любых климатических условиях, а благодаря небольшим размерам и малому весу подходит для размещения в любом необходимом для покупателя месте</p>
+              <div class="slide__title-box">
+                <h2 class="slide__title main-title">
+                  <span class="anim-title elevator">Кислородные станции</span>
+                </h2>
+              </div>
+              <h3 class="slide__tag anim-tag fade">Услуга</h3>
+              <p class="slide__description anim-description fade">Кислородные газовые станции подходят для установки в любых климатических условиях, а благодаря небольшим размерам и малому весу подходит для размещения в любом необходимом для покупателя месте</p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -96,35 +113,40 @@
         </div>
       </div>
 
-      <div class="header__column-right">
-        <div class="header__services slide-navigation">
-          <ul class="slide-navigation__list">
-            <li class="slide-navigation__item slide-navigation__item__active">
-              <a href="#slide1" class="slide-navigation__link">Компания</a>
-            </li>
-            <li class="slide-navigation__item">
-              <a href="#slide2" class="slide-navigation__link">Операционные блоки</a>
-            </li>
-            <li class="slide-navigation__item">
-              <a href="#slide3" class="slide-navigation__link">Кислородные станции</a>
-            </li>
-            <li class="slide-navigation__item">
-              <a href="#slide4" class="slide-navigation__link">Промышленный альпинизм</a>
-            </li>
-            <li class="slide-navigation__item">
-              <a href="#slide5" class="slide-navigation__link">Системы вентиляции</a>
-            </li>
-          </ul>
+      <div class="header__slider-content">
+        <div class="header__column-left">
+
         </div>
-        <div class="header__slider-controls slider-controls">
-          <div class="slider-controls__counter"></div>
-          <div class="slider-controls__arrows">
-            <button id="sliderPrev" class="slider-controls__button">
-              <img src="./img/intro/intro-icon-left.svg" alt="">
-            </button>
-            <button id="sliderNext" class="slider-controls__button">
-              <img src="./img/intro/intro-icon-right.svg" alt="">
-            </button>
+        <div class="header__column-right">
+          <div class="header__services slide-navigation">
+            <ul class="slide-navigation__list">
+              <li class="slide-navigation__item slide-navigation__item__active">
+                <a href="#slide1" class="slide-navigation__link">Компания</a>
+              </li>
+              <li class="slide-navigation__item">
+                <a href="#slide2" class="slide-navigation__link">Операционные блоки</a>
+              </li>
+              <li class="slide-navigation__item">
+                <a href="#slide3" class="slide-navigation__link">Кислородные станции</a>
+              </li>
+              <li class="slide-navigation__item">
+                <a href="#slide4" class="slide-navigation__link">Промышленный альпинизм</a>
+              </li>
+              <li class="slide-navigation__item">
+                <a href="#slide5" class="slide-navigation__link">Системы вентиляции</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__slider-controls slider-controls">
+            <div class="slider-controls__counter"></div>
+            <div class="slider-controls__arrows">
+              <button id="sliderPrev" class="slider-controls__button">
+                <img src="./img/intro/intro-icon-left.svg" alt="">
+              </button>
+              <button id="sliderNext" class="slider-controls__button">
+                <img src="./img/intro/intro-icon-right.svg" alt="">
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -222,6 +244,8 @@
 
 
   <main class="main-content wrapper">
+
+
     <nav class="main-content__sidebar side-bar theme-white">
       <div class="side-bar__container">
         <div class="side-bar__top">

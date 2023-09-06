@@ -1,14 +1,12 @@
 var swiper = new Swiper(".mySwiper", {
   // Optional parameters
   loop: true,
-  speed: 1500,
+  speed: 1000,
   hashNavigation: true,
-
   // autoplay: {
   //   delay: 2500,
   //   disableOnInteraction: false,
   // },
-
   keyboard: {
     enabled: true,
   },
@@ -52,7 +50,6 @@ var swiper = new Swiper(".mySwiper", {
     replaceState: true,
     watchState: true,
   },
-
 });
 
 // // Прокрутка текста на слайдере (слайдер поверх слайдера)
@@ -68,14 +65,10 @@ var swiper = new Swiper(".mySwiper", {
 //   //   disableOnInteraction: false,
 //   //   reverseDirection: true,
 //   // },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '#sliderPrev',
-//     prevEl: '#sliderNext',
-//     },
 // });
 
+// swiper.controller.control = swiper2;
+// swiper2.controller.control = swiper;
 
 var swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 1,
@@ -102,14 +95,24 @@ var swiper3 = new Swiper(".mySwiper3", {
 });
 
 // GSAP Animation
-swiper.on('transitionStart', function(){
-  gsap.to('.anim-description', { duration: 0.2, opacity: 0 });
-  gsap.to('.anim-tag', { duration: 0.2, opacity: 0 });
+// Анимация уходящего слайда
+swiper.on('slideChange', function(){
+  gsap.to('.anim-title', { duration: 0.2, y: '200px' });
+  gsap.to('.anim-tag', { duration: 0.2, autoAlpha: 0 });
+  gsap.to('.anim-description', { duration: 0.2, autoAlpha: 0 });
 });
+// Анимация приходящего слайда
+swiper.on('slideChangeTransitionEnd', function(){
+  gsap.to('.anim-title', { duration: 0, y: '-200px' }); // Стартовая позиция заголовка
+  gsap.to('.anim-title', { duration: 0.2, y: 0 }); // Конечная позиция заголовка
+  gsap.to('.anim-tag', { duration: 0.2, autoAlpha: 1 });
+  gsap.to('.anim-description', { duration: 0.2, autoAlpha: 1 });
 
-swiper.on('transitionEnd', function(){
-  gsap.to('.anim-description', { duration: 0.5, opacity: 1, delay: 0.5 });
-  gsap.to('.anim-tag', { duration: 0.5, opacity: 1, delay: 0.5 });
+  gasp.to('.swiper-slide-active .port-text', { duration: 0, autoAlpha: 1 })
+  gasp.to('.swiper-slide-next .port-text', { duration: 0, autoAlpha: 0 })
+  gasp.to('.swiper-slide-prev .port-text', { duration: 0, autoAlpha: 0 })
+  gasp.to('.swiper-slide-active', { duration: 0.5, scale: 1, ease: Power4.easeOut })
 });
-
-
+gsap.to('.swiper-slide-prev .port-text', { duration: 0, autoAlpha: 0 });
+gsap.to('.swiper-slide-next .port-text', { duration: 0, autoAlpha: 0 });
+gsap.to('.swiper-slide-active', { duration: 0, scale: 1, ease: Power4.easeOut });

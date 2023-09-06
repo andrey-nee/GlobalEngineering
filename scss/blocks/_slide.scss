@@ -66,11 +66,20 @@
   flex-direction: column;
   max-width: 60%;
 }
-.slide__subtitle {
+.slide__title-box {
+  order: 2;
+}
+.slide__title {
+  position: relative;
   margin: 0 0 39px 0;
   padding: 0;
-  order: 2;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
 
+  .anim-title {
+    position: absolute;
+  }
 }
 .slide__tag {
   margin: 0 0 28px 0;
