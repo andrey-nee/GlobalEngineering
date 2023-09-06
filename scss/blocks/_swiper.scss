@@ -40,3 +40,19 @@
   border-radius: 0 !important;
   background-color: rgba(255, 255, 255, 1) !important;
 }
+
+// Стили для Слайдера Текста
+.mySwiper2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  background-color: red;
+  z-index: 25;
+
+  .swiper-slide {
+  }
+  .slide__subtitle {
+    max-width: 60%;
+  }
+}

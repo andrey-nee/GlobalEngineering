@@ -1,7 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
   // Optional parameters
   loop: true,
-  speed: 1000,
+  speed: 1500,
   hashNavigation: true,
 
   // autoplay: {
@@ -55,8 +55,29 @@ var swiper = new Swiper(".mySwiper", {
 
 });
 
+// // Прокрутка текста на слайдере (слайдер поверх слайдера)
+// var swiper2 = new Swiper(".mySwiper2", {
+//   slidesPerView: 1,
+//   spaceBetween: 44,
+//   speed: 1000,
+//   loop: true,
+//   direction: 'vertical',
 
-var swiper2 = new Swiper(".mySwiper2", {
+//   // autoplay: {
+//   //   delay: 2500,
+//   //   disableOnInteraction: false,
+//   //   reverseDirection: true,
+//   // },
+
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '#sliderPrev',
+//     prevEl: '#sliderNext',
+//     },
+// });
+
+
+var swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 1,
   spaceBetween: 44,
   centeredSlides: true,
@@ -79,3 +100,16 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
   },
 });
+
+// GSAP Animation
+swiper.on('transitionStart', function(){
+  gsap.to('.anim-description', { duration: 0.2, opacity: 0 });
+  gsap.to('.anim-tag', { duration: 0.2, opacity: 0 });
+});
+
+swiper.on('transitionEnd', function(){
+  gsap.to('.anim-description', { duration: 0.5, opacity: 1, delay: 0.5 });
+  gsap.to('.anim-tag', { duration: 0.5, opacity: 1, delay: 0.5 });
+});
+
+
