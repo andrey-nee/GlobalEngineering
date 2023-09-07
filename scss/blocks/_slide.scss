@@ -64,10 +64,11 @@
 .slide__main-content {
   display: flex;
   flex-direction: column;
-  max-width: 60%;
+  max-width: 65%;
 }
 .slide__title-box {
   order: 2;
+  width: 100%;
 }
 .slide__title {
   position: relative;
@@ -79,6 +80,7 @@
 
   .anim-title {
     position: absolute;
+    max-width: 100%;
   }
 }
 .slide__tag {

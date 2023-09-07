@@ -1,6 +1,8 @@
 .main-header {
   color: $white;
+  position: relative;
 }
+
 .main-header__container {
   display: flex;
   justify-content: space-between;

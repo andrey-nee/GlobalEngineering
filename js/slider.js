@@ -3,6 +3,7 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
   speed: 1000,
   hashNavigation: true,
+
   // autoplay: {
   //   delay: 2500,
   //   disableOnInteraction: false,
@@ -33,6 +34,7 @@ var swiper = new Swiper(".mySwiper", {
     // Кастомные номера слайдов (type: fraction)
     // И здесь же создаем <div></div> для скроллбара
     renderFraction: function (currentClass, totalClass) {
+      // return '<div class="' + currentClass + '"></div>' + '<div class="' + totalClass + '"></div>';
       return '<div class="' + currentClass + '"></div>' + '<div class="slider-controls__scrollbar"></div>' + '<div class="' + totalClass + '"></div>';
     },
   },
@@ -108,11 +110,11 @@ swiper.on('slideChangeTransitionEnd', function(){
   gsap.to('.anim-tag', { duration: 0.2, autoAlpha: 1 });
   gsap.to('.anim-description', { duration: 0.2, autoAlpha: 1 });
 
-  gasp.to('.swiper-slide-active .port-text', { duration: 0, autoAlpha: 1 })
-  gasp.to('.swiper-slide-next .port-text', { duration: 0, autoAlpha: 0 })
-  gasp.to('.swiper-slide-prev .port-text', { duration: 0, autoAlpha: 0 })
-  gasp.to('.swiper-slide-active', { duration: 0.5, scale: 1, ease: Power4.easeOut })
+  // gasp.to('.swiper-slide-active .slide__title-box', { duration: 0, autoAlpha: 1 })
+  // gasp.to('.swiper-slide-next .slide__title-box', { duration: 0, autoAlpha: 0 })
+  // gasp.to('.swiper-slide-prev .slide__title-box', { duration: 0, autoAlpha: 0 })
+  // gasp.to('.swiper-slide-active', { duration: 0.5, scale: 1, ease: Power4.easeOut })
 });
-gsap.to('.swiper-slide-prev .port-text', { duration: 0, autoAlpha: 0 });
-gsap.to('.swiper-slide-next .port-text', { duration: 0, autoAlpha: 0 });
-gsap.to('.swiper-slide-active', { duration: 0, scale: 1, ease: Power4.easeOut });
+// gsap.to('.swiper-slide-prev .slide__title-box', { duration: 0, autoAlpha: 0 });
+// gsap.to('.swiper-slide-next .slide__title-box', { duration: 0, autoAlpha: 0 });
+// gsap.to('.swiper-slide-active', { duration: 0, scale: 1, ease: Power4.easeOut });

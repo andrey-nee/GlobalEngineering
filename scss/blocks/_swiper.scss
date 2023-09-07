@@ -3,9 +3,14 @@
   max-width: 1512px;
 
   &.mySwiper {
-    width: 100vw;
+    // width: 100vw;
   }
   &.mySwiper2 {
+    padding-left: 144px;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  &.mySwiper3 {
     padding-left: 144px;
     width: 100vw;
     box-sizing: border-box;
