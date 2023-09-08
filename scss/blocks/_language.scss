@@ -15,6 +15,11 @@
   transition: 0.2s;
   background-color: rgba(236, 238, 243, 1);
 
+  &.theme-transparent {
+    transition: 0.2s;
+    background-color: rgba(50, 57, 71, 1);
+  }
+
   &.theme-blue {
     transition: 0.2s;
     background-color: rgba(28, 61, 131, 1);
@@ -30,6 +35,11 @@
   border-radius: 50%;
   transition: 0.2s;
   background-color: $dark-blue;
+
+  &.theme-transparent {
+    transition: 0.2s;
+    background-color: $white;
+  }
 
   &.theme-blue {
     transition: 0.2s;
@@ -48,6 +58,11 @@
 .language__current {
   transition: 0.2s;
   color: $dark-blue;
+
+  &.theme-transparent {
+    transition: 0.2s;
+    color: $white;
+  }
 
   &.theme-blue {
     transition: 0.2s;

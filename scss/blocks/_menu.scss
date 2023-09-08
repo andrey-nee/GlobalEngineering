@@ -16,10 +16,17 @@
   border-radius: 50%;
   background-color: $dark-blue;
   transform: scale(0.1);
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease 0.2s;
   z-index: 9;
+  &.theme-transparent {
+    top: 35%;
+    left: -30%;
+  }
   &.activated {
+    background-color: $dark-blue;
+    opacity: 1;
     transform: scale(50);
+    transition: opacity 1s ease 2s;
     transition: transform 0.8s ease;
   }
 }
@@ -30,11 +37,11 @@
   column-gap: 100px;
   padding: 203px 121px;
   box-sizing: border-box;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease 0.2s;
   pointer-events: all;
   z-index: 10;
   &.deactivated {
-    transform: translate(-100%, 0%);
+    transform: translate(-250%, 0%);
     transition: transform 0.8s ease;
   }
 }
