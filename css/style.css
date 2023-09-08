@@ -454,7 +454,7 @@
   z-index: 20;
   pointer-events: all;
   background-color: #ffffff;
-  transition: 0.2s;
+  transition: all 0.2s ease;
 }
 .side-bar.theme-transparent {
   position: absolute;
@@ -579,7 +579,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
-  transition: 0.2s;
+  transition: all 0.2s ease;
 }
 .side-bar__language.theme-transparent {
   color: rgb(62, 68, 80);

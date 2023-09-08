@@ -7,7 +7,7 @@
   z-index: 20;
   pointer-events: all;
   background-color: $white;
-  transition: 0.2s;
+  transition: all 0.2s ease;
 
   &.theme-transparent {
     position: absolute;
@@ -65,27 +65,6 @@
   position: relative;
   // overflow: hidden;
 }
-
-// .side-bar__circle-mask {
-//   position: absolute;
-//   top: -50%;
-//   left: -50%;
-//   width: 100px;
-//   height: 100px;
-//   transition: transform 0.5s ease;
-//   -webkit-transition: all 2s ease-in-out;
-//   -moz-transition: all 2s ease-in-out;
-//   -o-transition: all 2s ease-in-out;
-//   transform: scale(0.1);
-//   transform-origin: 50% 50%;
-//   border-radius: 50%;
-//   background-color: tomato;
-//   z-index: 19;
-
-//   &.grow {
-//     transform: scale(100);
-//   }
-// }
 
 .side-bar__burger-menu {
   position: relative;
@@ -168,7 +147,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
-  transition: 0.2s;
+  transition: all 0.2s ease;
 
   &.theme-transparent {
     color: rgba(62, 68, 80, 1);
