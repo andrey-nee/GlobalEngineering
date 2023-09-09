@@ -1,13 +1,13 @@
-var swiper = new Swiper(".mySwiper", {
-  // Optional parameters
+// Свайпер слайдов на главной
+var mainSwiper1 = new Swiper(".mainSwiper", {
   loop: true,
   speed: 1000,
   hashNavigation: true,
-
   // autoplay: {
   //   delay: 2500,
   //   disableOnInteraction: false,
   // },
+
   keyboard: {
     enabled: true,
   },
@@ -34,7 +34,6 @@ var swiper = new Swiper(".mySwiper", {
     // Кастомные номера слайдов (type: fraction)
     // И здесь же создаем <div></div> для скроллбара
     renderFraction: function (currentClass, totalClass) {
-      // return '<div class="' + currentClass + '"></div>' + '<div class="' + totalClass + '"></div>';
       return '<div class="' + currentClass + '"></div>' + '<div class="slider-controls__scrollbar"></div>' + '<div class="' + totalClass + '"></div>';
     },
   },
@@ -54,25 +53,57 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// // Прокрутка текста на слайдере (слайдер поверх слайдера)
-// var swiper2 = new Swiper(".mySwiper2", {
-//   slidesPerView: 1,
-//   spaceBetween: 44,
-//   speed: 1000,
-//   loop: true,
-//   direction: 'vertical',
+// Свайпер тега на главной (прокрутка тега)
+var mainSwiper2 = new Swiper(".mainSwiper-tag", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  speed: 1000,
+  loop: true,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true
+  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  //   reverseDirection: true,
+  // },
+});
 
-//   // autoplay: {
-//   //   delay: 2500,
-//   //   disableOnInteraction: false,
-//   //   reverseDirection: true,
-//   // },
-// });
+// Свайпер текста-заголовка на главной (прокрутка заголовка)
+var mainSwiper3 = new Swiper(".mainSwiper-title", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  speed: 1000,
+  loop: true,
+  direction: 'vertical',
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  //   reverseDirection: true,
+  // },
+});
 
-// swiper.controller.control = swiper2;
-// swiper2.controller.control = swiper;
+// Свайпер текста-заголовка на главной (прокрутка заголовка)
+var mainSwiper4 = new Swiper(".mainSwiper-description", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  speed: 1000,
+  loop: true,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true
+  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  //   reverseDirection: true,
+  // },
+});
 
-var swiper3 = new Swiper(".mySwiper3", {
+mainSwiper1.controller.control = [mainSwiper2, mainSwiper3, mainSwiper4];
+
+var servicesSwiper = new Swiper(".servicesSwiper", {
   slidesPerView: 1,
   spaceBetween: 44,
   centeredSlides: true,
@@ -96,25 +127,9 @@ var swiper3 = new Swiper(".mySwiper3", {
   },
 });
 
-// GSAP Animation
-// Анимация уходящего слайда
-swiper.on('slideChange', function(){
-  gsap.to('.anim-title', { duration: 0.2, y: '200px' });
-  gsap.to('.anim-tag', { duration: 0.2, autoAlpha: 0 });
-  gsap.to('.anim-description', { duration: 0.2, autoAlpha: 0 });
+mainSwiper1.on('slideChangeTransitionEnd', function() {
+  document.querySelector('.slide-navigation__link__current').classList.remove('slide-navigation__link__current');
+  var hash = window.location.hash.replace('#', '');
+  document.querySelector("a[href='#"+hash+"']").classList.add('slide-navigation__link__current');
+  console.log("a[href='#"+hash+"']");
 });
-// Анимация приходящего слайда
-swiper.on('slideChangeTransitionEnd', function(){
-  gsap.to('.anim-title', { duration: 0, y: '-200px' }); // Стартовая позиция заголовка
-  gsap.to('.anim-title', { duration: 0.2, y: 0 }); // Конечная позиция заголовка
-  gsap.to('.anim-tag', { duration: 0.2, autoAlpha: 1 });
-  gsap.to('.anim-description', { duration: 0.2, autoAlpha: 1 });
-
-  // gasp.to('.swiper-slide-active .slide__title-box', { duration: 0, autoAlpha: 1 })
-  // gasp.to('.swiper-slide-next .slide__title-box', { duration: 0, autoAlpha: 0 })
-  // gasp.to('.swiper-slide-prev .slide__title-box', { duration: 0, autoAlpha: 0 })
-  // gasp.to('.swiper-slide-active', { duration: 0.5, scale: 1, ease: Power4.easeOut })
-});
-// gsap.to('.swiper-slide-prev .slide__title-box', { duration: 0, autoAlpha: 0 });
-// gsap.to('.swiper-slide-next .slide__title-box', { duration: 0, autoAlpha: 0 });
-// gsap.to('.swiper-slide-active', { duration: 0, scale: 1, ease: Power4.easeOut });

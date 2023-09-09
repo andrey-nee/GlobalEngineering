@@ -1,20 +1,28 @@
 .swiper {
-  min-width: 320px;
+  // min-width: 320px;
   max-width: 1512px;
 
-  &.mySwiper {
+  &.mainSwiper {
     // width: 100vw;
   }
-  &.mySwiper2 {
+  &.mainSwiper-tag {
+    width: 100%;
+    max-height: 100%;
+  }
+  &.mainSwiper-title {
+    max-height: 100%;
+  }
+  &.mainSwiper-description {
+    max-height: 100%;
+  }
+  &.servicesSwiper {
     padding-left: 144px;
     width: 100vw;
     box-sizing: border-box;
   }
-  &.mySwiper3 {
-    padding-left: 144px;
-    width: 100vw;
-    box-sizing: border-box;
-  }
+}
+
+.mainSwiper {
 }
 
 .swiper-pagination-current {
@@ -47,25 +55,23 @@
 }
 
 // Стили для Слайдера Текста
-.mySwiper2 {
+.mainSwiper-title {
   position: absolute;
   top: 0;
   left: 0;
   margin: 0 auto;
   height: 200px;
   max-width: 100%;
-  background-color: tomato;
+  // background-color: tomato;
 
   .swiper-slide {
   }
-  .slide__subtitle {
-    max-width: 60%;
-  }
+
 }
 
 
 // Код с ютуба
-.mySwiper .swiper-wrapper {
+.mainSwiper .swiper-wrapper {
   // transition-delay: 0.2s;
 }
 // .port-text {

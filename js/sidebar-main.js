@@ -37,7 +37,7 @@ window.addEventListener('scroll', function () {
     langCur.classList.add('theme-transparent');
     menuMask.classList.add('theme-transparent');
   }
-  console.log("Расстояние до точки появления сайдбара ",diff);
+  // console.log("Расстояние до точки появления сайдбара ",diff);
 });
 
 // Функиця для вычисления координат (X,Y) элемента на странице

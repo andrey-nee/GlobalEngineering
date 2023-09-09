@@ -60,6 +60,15 @@
   overflow: hidden;
 }
 
+.header__slide-container {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: flex-end;
+  height: calc(100% - 60px);
+}
+
 .header__content {
   position: absolute;
   z-index: 9;
@@ -79,12 +88,17 @@
   pointer-events: all;
 }
 
+.header__column-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  max-height: 100%;
+}
+
 .header__column-right {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  width: auto;
 }
 
 .header__services {
@@ -99,11 +113,9 @@
 }
 
 .header__request-button {
-  position: absolute;
-  bottom: 0;
-  right: 31%;
-  transform: translate(-50%, 0%);
+  position: relative;
   padding: 0;
+  align-self: flex-end;
   width: 158px;
   height: 158px;
   min-width: 158px;
@@ -267,17 +279,27 @@
 .slide__main-content {
   display: flex;
   flex-direction: column;
-  max-width: 65%;
+  margin-bottom: 20px;
+  height: 100%;
 }
 
-.slide__title-box {
-  order: 2;
-  width: 100%;
+.slide__tag-container {
+  margin-bottom: 34px;
+  max-height: 30px;
+}
+
+.slide__title-container {
+  margin-bottom: 39px;
+  max-height: 200px;
+}
+
+.slide__description-container {
+  max-height: 100px;
+  max-width: 60%;
 }
 
 .slide__title {
   position: relative;
-  margin: 0 0 39px 0;
   padding: 0;
   height: 200px;
   width: 100%;
@@ -289,29 +311,32 @@
 }
 
 .slide__tag {
-  margin: 0 0 28px 0;
+  margin: 0;
   padding: 6px 12px;
   width: -moz-min-content;
   width: min-content;
-  order: 1;
   white-space: nowrap;
   font-size: 12px;
   line-height: 1.2;
   background-color: #07286f;
+  color: #ffffff;
   border-radius: 100px;
+}
+
+.slide__subtitle {
+  margin: 0;
+  color: #ffffff;
 }
 
 .slide__description {
   margin: 0;
   padding: 0;
-  order: 3;
-  max-width: 54%;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.6;
 }
 
 .slide-navigation {
-  align-self: flex-end;
   margin-bottom: 51px;
 }
 
@@ -322,19 +347,17 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 1.4;
-  color: rgba(255, 255, 255, 0.32);
-}
-
-.slide-navigation__item__active {
-  color: #ffffff;
 }
 
 .slide-navigation__link {
+  text-wrap: nowrap;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.32);
+  transition: all 0.2s ease;
 }
 .slide-navigation__link__current {
   color: #ffffff;
+  transition: all 0.2s ease;
 }
 
 .slider-controls {
@@ -384,15 +407,19 @@
 }
 
 .swiper {
-  min-width: 320px;
   max-width: 1512px;
 }
-.swiper.mySwiper2 {
-  padding-left: 144px;
-  width: 100vw;
-  box-sizing: border-box;
+.swiper.mainSwiper-tag {
+  width: 100%;
+  max-height: 100%;
 }
-.swiper.mySwiper3 {
+.swiper.mainSwiper-title {
+  max-height: 100%;
+}
+.swiper.mainSwiper-description {
+  max-height: 100%;
+}
+.swiper.servicesSwiper {
   padding-left: 144px;
   width: 100vw;
   box-sizing: border-box;
@@ -428,19 +455,14 @@
   background-color: rgb(255, 255, 255) !important;
 }
 
-.mySwiper2 {
+.mainSwiper-title {
   position: absolute;
   top: 0;
   left: 0;
   margin: 0 auto;
   height: 200px;
   max-width: 100%;
-  background-color: tomato;
 }
-.mySwiper2 .slide__subtitle {
-  max-width: 60%;
-}
-
 .main-content {
   position: relative;
 }

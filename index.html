@@ -15,30 +15,12 @@
 
   <header class="header">
 
-
-    <!-- Слайдер Текста -->
-    <!-- <div class="swiper mySwiper2 swiper-no-swiping">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide main-title">
-          <h2 class="slide__subtitle main-title">Медицинский инжиринг</h2>
-        </div>
-        <div class="swiper-slide main-title">
-          <h2 class="slide__subtitle main-title">Операционные блоки</h2>
-        </div>
-        <div class="swiper-slide main-title">
-          <h2 class="slide__subtitle main-title">Кислородные станции</h2>
-        </div>
-      </div>
-    </div> -->
-
-
     <!-- Слайдер на главной -->
-    <div class="swiper mySwiper">
+    <div class="swiper mainSwiper">
       <div class="swiper-wrapper">
-
         <div class="swiper-slide" data-hash="slide1">
           <div class="slide slide--medical inner-wrapper">
-            <div class="slide__main-content">
+            <!-- <div class="slide__main-content">
               <div class="slide__title-box">
                 <h2 class="slide__title main-title">
                   <span class="anim-title elevator">Медицинский инжиринг</span>
@@ -46,13 +28,12 @@
               </div>
               <h3 class="slide__tag anim-tag fade">Global Engineering</h3>
               <p class="slide__description anim-description fade">Лишь базовые сценарии поведения пользователей, инициированные исключительно синтетически, разоблачены</p>
-            </div>
+            </div> -->
           </div>
         </div>
-
         <div class="swiper-slide" data-hash="slide2">
           <div class="slide slide--blocks inner-wrapper">
-            <div class="slide__main-content">
+            <!-- <div class="slide__main-content">
               <div class="slide__title-box">
                 <h2 class="slide__title main-title">
                   <span class="anim-title elevator">Операционные блоки</span>
@@ -60,13 +41,12 @@
               </div>
               <h3 class="slide__tag anim-tag fade">Услуга</h3>
               <p class="slide__description anim-description fade">Операционный блок представляет собой подразделение больницы, которое состоит из ряда операционных, а также вспомогательных помещений, предназначенных для проведения хирургических операций</p>
-            </div>
+            </div> -->
           </div>
         </div>
-
         <div class="swiper-slide" data-hash="slide3">
           <div class="slide slide--oxygen inner-wrapper">
-            <div class="slide__main-content">
+            <!-- <div class="slide__main-content">
               <div class="slide__title-box">
                 <h2 class="slide__title main-title">
                   <span class="anim-title elevator">Кислородные станции</span>
@@ -74,17 +54,14 @@
               </div>
               <h3 class="slide__tag anim-tag fade">Услуга</h3>
               <p class="slide__description anim-description fade">Кислородные газовые станции подходят для установки в любых климатических условиях, а благодаря небольшим размерам и малому весу подходит для размещения в любом необходимом для покупателя месте</p>
-            </div>
+            </div> -->
           </div>
         </div>
-
       </div>
     </div>
 
-
     <div class="header__content">
       <div class="header__navigation main-header">
-
         <div class="main-header__container">
           <p class="main-header__company">Инжиринговые услуги по Узбекистану и Центральной Азии</p>
           <nav class="main-header__navigation navigation">
@@ -114,41 +91,98 @@
         </div>
       </div>
 
-      <div class="header__column-right">
-        <div class="header__services slide-navigation">
-          <ul class="slide-navigation__list">
-            <li class="slide-navigation__item slide-navigation__item__active">
-              <a href="#slide1" class="slide-navigation__link">Компания</a>
-            </li>
-            <li class="slide-navigation__item">
-              <a href="#slide2" class="slide-navigation__link">Операционные блоки</a>
-            </li>
-            <li class="slide-navigation__item">
-              <a href="#slide3" class="slide-navigation__link">Кислородные станции</a>
-            </li>
-            <li class="slide-navigation__item">
-              <a href="#slide4" class="slide-navigation__link">Промышленный альпинизм</a>
-            </li>
-            <li class="slide-navigation__item">
-              <a href="#slide5" class="slide-navigation__link">Системы вентиляции</a>
-            </li>
-          </ul>
+      <div class="header__slide-container">
+
+        <div class="header__column-left">
+          <div class="slide__main-content">
+            <!-- Слайдер тега на главной -->
+            <div class="slide__tag-container">
+              <div class="swiper mainSwiper-tag swiper-no-swiping">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <h3 class="slide__tag anim-tag fade">Global Engineering</h3>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3 class="slide__tag anim-tag fade">Услуга</h3>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3 class="slide__tag anim-tag fade">Услуга</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Слайдер текста-заголовка на главной -->
+            <div class="slide__title-container">
+              <div class="swiper mainSwiper-title swiper-no-swiping">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide main-title">
+                    <h2 class="slide__subtitle main-title">Медицинский инжиниринг</h2>
+                  </div>
+                  <div class="swiper-slide main-title">
+                    <h2 class="slide__subtitle main-title">Операционные блоки</h2>
+                  </div>
+                  <div class="swiper-slide main-title">
+                    <h2 class="slide__subtitle main-title">Кислородные станции</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Слайдер текста-описания на главной -->
+            <div class="slide__description-container">
+              <div class="swiper mainSwiper-description swiper-no-swiping">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <p class="slide__description anim-description fade">Лишь базовые сценарии поведения пользователей, инициированные исключительно синтетически, разоблачены</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="slide__description anim-description fade">Операционный блок представляет собой подразделение больницы, которое состоит из ряда операционных, а также вспомогательных помещений, предназначенных для проведения хирургических операций</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="slide__description anim-description fade">Кислородные газовые станции подходят для установки в любых климатических условиях, а благодаря небольшим размерам и малому весу подходит для размещения в любом необходимом для покупателя месте</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="header__request-button"></button>
         </div>
-        <div class="header__slider-controls slider-controls">
-          <!-- <div class="slider-controls__counter__container"></div> -->
-          <div class="slider-controls__counter"></div>
-          <!-- <div class="slider-controls__scrollbar"></div> -->
-          <div class="slider-controls__arrows">
-            <button id="sliderPrev" class="slider-controls__button">
-              <img src="./img/intro/intro-icon-left.svg" alt="">
-            </button>
-            <button id="sliderNext" class="slider-controls__button">
-              <img src="./img/intro/intro-icon-right.svg" alt="">
-            </button>
+
+        <div class="header__column-right">
+          <div class="header__services slide-navigation">
+            <ul class="slide-navigation__list">
+              <li class="slide-navigation__item">
+                <a href="#slide1" class="slide-navigation__link slide-navigation__link__current" id="#slide1">Компания</a>
+              </li>
+              <li class="slide-navigation__item">
+                <a href="#slide2" class="slide-navigation__link" id="#slide2">Операционные блоки</a>
+              </li>
+              <li class="slide-navigation__item">
+                <a href="#slide3" class="slide-navigation__link" id="#slide3">Кислородные станции</a>
+              </li>
+              <li class="slide-navigation__item">
+                <a href="#slide4" class="slide-navigation__link" id="#slide4">Промышленный альпинизм</a>
+              </li>
+              <li class="slide-navigation__item">
+                <a href="#slide5" class="slide-navigation__link" id="#slide5">Системы вентиляции</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__slider-controls slider-controls">
+            <!-- <div class="slider-controls__counter__container"></div> -->
+            <div class="slider-controls__counter"></div>
+            <!-- <div class="slider-controls__scrollbar"></div> -->
+            <div class="slider-controls__arrows">
+              <button id="sliderPrev" class="slider-controls__button">
+                <img src="./img/intro/intro-icon-left.svg" alt="">
+              </button>
+              <button id="sliderNext" class="slider-controls__button">
+                <img src="./img/intro/intro-icon-right.svg" alt="">
+              </button>
+            </div>
           </div>
         </div>
+
       </div>
-      <button class="header__request-button"></button>
     </div>
 
     <nav class="main-content__sidebar side-bar theme-transparent">
@@ -271,33 +305,6 @@
 
   <main class="main-content wrapper">
 
-    <!-- <nav class="main-content__sidebar side-bar theme-white theme-transparent">
-      <div class="side-bar__container">
-        <div class="side-bar__top">
-          <a href="./index.html" class="side-bar__link">
-            <svg width="52" height="55" viewBox="0 0 52 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="side-bar__logo theme-white">
-              <path id="logo-vector" d="M39.7957 37.8088L42.9008 42.1695C45.2097 40.5469 47.1743 38.4885 48.6824 36.1117C50.1905 33.7349 51.2127 31.0863 51.6904 28.317C52.1682 25.5478 52.0923 22.7121 51.467 19.972C50.8417 17.2319 49.6793 14.641 48.0461 12.3472C46.4129 10.0534 44.3409 8.10165 41.9485 6.60337C39.5561 5.10509 36.89 4.08963 34.1025 3.61497C31.3151 3.1403 28.4608 3.21573 25.7027 3.83695C22.9446 4.45816 20.3366 5.613 18.0277 7.23552L21.149 11.6124C24.2088 9.46084 27.9274 8.43548 31.6656 8.71254C35.4039 8.9896 38.9282 10.5518 41.6327 13.1305C37.7787 14.7112 34.0875 16.6584 30.6106 18.9448C23.446 23.5362 17.3495 29.5928 12.728 36.7105C9.55356 32.0912 8.33358 26.4176 9.33107 20.9129C10.3285 15.4082 13.4636 10.5135 18.0602 7.28397L12.8743 0C6.27537 4.63895 1.80168 11.6922 0.437356 19.6081C-0.926964 27.524 0.929851 35.654 5.59931 42.2098C10.2688 48.7656 17.3684 53.2101 25.3363 54.5655C33.3043 55.9209 41.4878 54.0762 48.0867 49.4373L42.9008 42.1533C38.9921 44.8962 34.2732 46.2635 29.4931 46.0382C24.713 45.8129 20.1456 44.0079 16.5158 40.9097C20.7783 33.9285 26.5611 27.9848 33.4393 23.5154C37.0377 21.1175 40.8992 19.1344 44.9492 17.6043C46.6306 21.0342 47.0355 24.9447 46.0922 28.6429C45.149 32.3411 42.9184 35.5882 39.7957 37.8088Z" fill="#07286F"/>
-              </svg>
-          </a>
-        </div>
-        <div class="side-bar__middle">
-          <div class="side-bar__burger-menu theme-white burger-menu" onclick="menuOnClick()"></div>
-        </div>
-        <div class="side-bar__bottom">
-          <div class="side-bar__language language">
-            <p class="language__ru language__current theme-white">RU</p>
-            <div class="language__switch theme-white">
-              <div class="language__position theme-white"></div>
-            </div>
-            <p class="language__uz">UZ</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-bg" id="menu-bg"></div>
-
-    </nav> -->
-
     <section class="about" id="position">
       <div class="about__container inner-wrapper">
         <div class="about__main-content">
@@ -316,7 +323,7 @@
         </div>
         <div class="services__slider">
 
-          <div class="swiper mySwiper3">
+          <div class="swiper servicesSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="services__slide services__slide-1">
@@ -585,10 +592,6 @@
     </div>
   </footer>
 
-  <!-- jquery -->
-  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
-  <!-- gsap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!-- custom slider js -->
