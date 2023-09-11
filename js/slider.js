@@ -127,6 +127,29 @@ var servicesSwiper = new Swiper(".servicesSwiper", {
   },
 });
 
+var servicesSwiper2 = new Swiper(".servicesSwiper2", {
+  slidesPerView: 1,
+  spaceBetween: 44,
+  mousewheel: true,
+  mousewheel: {
+    releaseOnEdges: true,
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  },
+});
+
 mainSwiper1.on('slideChangeTransitionEnd', function() {
   document.querySelector('.slide-navigation__link__current').classList.remove('slide-navigation__link__current');
   var hash = window.location.hash.replace('#', '');

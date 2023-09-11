@@ -1,9 +1,8 @@
 .swiper {
-  // min-width: 320px;
   max-width: 1512px;
 
   &.mainSwiper {
-    // width: 100vw;
+    width: 100vw;
   }
   &.mainSwiper-tag {
     width: 100%;
@@ -17,7 +16,12 @@
   }
   &.servicesSwiper {
     padding-left: 144px;
-    width: 100vw;
+    max-width: 1368px;
+    box-sizing: border-box;
+  }
+  &.servicesSwiper2 {
+    padding-left: 144px;
+    max-width: 1368px;
     box-sizing: border-box;
   }
 }
@@ -62,32 +66,7 @@
   margin: 0 auto;
   height: 200px;
   max-width: 100%;
-  // background-color: tomato;
 
   .swiper-slide {
   }
-
 }
-
-
-// Код с ютуба
-.mainSwiper .swiper-wrapper {
-  // transition-delay: 0.2s;
-}
-// .port-text {
-//   position: absolute;
-//   top: 0;
-//   margin-left: -50px;
-//   transform: translateY(-50%);
-//   z-index: 10;
-//   overflow: hidden;
-//   width: 100%;
-//   height: 50px;
-// }
-// .port-text h4 {
-//   position: relative;
-// }
-// .port-text h4 span {
-//   position: absolute;
-// }
-// Конец кода с ютуба

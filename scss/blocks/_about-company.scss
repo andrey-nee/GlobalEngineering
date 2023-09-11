@@ -1,0 +1,37 @@
+.about-company {
+  margin-bottom: 120px;
+  color: $black;
+}
+.about-company__container {
+  display: flex;
+  column-gap: 50px;
+}
+.about-company__column-left {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  width: 45%;
+}
+.about-company__subtitle-main {
+  margin: 0 0 60px;
+}
+.about-company__image {
+  img {
+    object-fit: cover;
+    background-size: cover;
+  }
+}
+.about-company__column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+}
+.about-company__description {
+  margin: 0 0 80px;
+}
+.about-company__statistics {
+  margin: 0 0 100px;
+}
+.about-company__mission {
+}

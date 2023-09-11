@@ -1,0 +1,66 @@
+.quote-about {
+  margin-bottom: 120px;
+}
+.quote-about__container {
+  display: flex;
+  background-color: $dark-blue;
+}
+.quote-about__title {
+}
+.quote-about__column-left {
+  display: flex;
+  align-items: center;
+  // width: 55%;
+  max-width: 55%;
+}
+.quote-about__quote-container {
+  margin-left: calc(143px + 109px);
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  color: $white;
+}
+.quote-about__autor {
+  display: flex;
+
+}
+.quote-about__avatar {
+  margin-right: 28px;
+  display: flex;
+  object-fit: cover;
+  flex-shrink: 0;
+  width: 78px;
+  height: 78px;
+  object-position: center center;
+  border-radius: 50%;
+}
+.quote-about__autor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.quote-about__name {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.0;
+}
+.quote-about__position {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.0;
+}
+.quote-about__column-right {
+  width: auto;
+  max-width: 50%;
+}
+.quote-about__photo {
+  display: flex;
+  img {
+    height: 729px;
+    object-fit: cover;
+    background-size: cover;
+  }
+}

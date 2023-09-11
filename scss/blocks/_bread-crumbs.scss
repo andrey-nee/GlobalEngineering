@@ -1,0 +1,34 @@
+.bread-crumbs__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-bottom: 40px;
+}
+.bread-crumbs__item {
+  position: relative;
+  list-style: none;
+
+  &:not(:last-child) {
+    margin-right: 32px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 12px;
+      right: -24px;
+      width: 16px;
+      height: 16px;
+      background-image: url('../img/bread-crumbs/bread-crumbs-icon-arrow-right.svg');
+    }
+  }
+}
+.bread-crumbs__link {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  &.disabled {
+    color: $white;
+  }
+}
+.bread-crumbs__section {
+}
+.bread-crumbs__subsection {
+}

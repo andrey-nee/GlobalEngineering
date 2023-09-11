@@ -1,9 +1,14 @@
 .reasons {
-  margin-bottom: 135px;
-  background-image: url("../img/reasons/reasons-logo.svg");
-  background-position: 3% 33%;
-  background-repeat: no-repeat;
-  background-size: 368px;
+  &__page__main {
+    margin-bottom: 135px;
+    background-image: url("../img/reasons/reasons-logo.svg");
+    background-position: 10% 33%;
+    background-repeat: no-repeat;
+    background-size: 368px;
+  }
+  &__page__about {
+    margin-bottom: 10px;
+  }
 }
 .reasons__container {
 }
@@ -63,6 +68,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+
+  &__line {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 .reasons__item {
   display: flex;

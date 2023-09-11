@@ -1,11 +1,35 @@
 .header {
+}
+.header__page {
+  &__main-page {
   position: relative;
   height: 100vh;
   max-height: 832px;
   background-color: #FFFFFF;
   overflow: hidden;
+  }
+  &__pages {
+  margin-bottom: 146px;
+  padding: 40px 0 108px;
+  background-color: $dark-blue;
+  overflow: hidden;
+  }
+  &__services {
+    margin-bottom: calc(-264px - 121px + 146px); // Половина слайда Services + Margin от заголовка - Margin блока Header
+  }
 }
-
+.header__content__pages {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+}
+.header__main-title {
+  margin: 0;
+  order: 2;
+}
+.header__bread-crumbs {
+  order: 1;
+}
 .header__slide {
 }
 .header__slide-container {
@@ -15,7 +39,7 @@
   align-items: flex-end;
   height: calc(100% - 60px);
 }
-.header__content {
+.header__content__main-page {
   position: absolute;
   z-index: 9;
   top: 28px;
@@ -34,6 +58,9 @@
 	// 	right: 5%; //$rigth767: 5%;
 	// 	bottom: 30px;
 	// }
+}
+.header__content__pages {
+
 }
 
 .header__navigation {
@@ -110,4 +137,9 @@
   height: 100%;
   max-width: 1512px;
   // overflow: hidden;
+}
+.header__decoration__services {
+  height: calc(264px + 121px - 146px); // Половина слайда Services + Margin от заголовка - Margin блока Header
+  background-color: $dark-blue;
+  order: 3;
 }

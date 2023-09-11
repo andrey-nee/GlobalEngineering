@@ -51,43 +51,7 @@
   line-height: 1.0;
 }
 .ceo__quote-container {
-  display: flex;
   padding: 0 0 0 calc(126px + 109px);
-  box-sizing: border-box;
-  width: 100%;
-
-  @media (max-width: 1000px) {
-    padding: 0 0 0 calc(56px + 109px);
-  }
-}
-.ceo__quote {
-  position: relative;
-  margin: 5px 0;
-  max-width: 72%;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.4;
-
-  &::before {
-    content: '';
-    background-image: url("../img/ceo/ceo-icon-quote.svg");
-    position: absolute;
-    top: -61px;
-    left: -166px;
-    height: 110px;
-    width: 100px;
-
-    @media (max-width: 1000px) {
-      left: -96px;
-    }
-  }
-
-  @media (max-width: 1300px) {
-    max-width: 100%;
-	}
-	@media (max-width: 767px) {
-	}
 }
 .ceo__name {
   margin: 0;

@@ -1,0 +1,56 @@
+.quote {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+
+  @media (max-width: 1000px) {
+    padding: 0 0 0 calc(56px + 109px);
+  }
+}
+.quote__blockquote {
+  position: relative;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.4;
+
+  &::before {
+    margin: 5px 0;
+    content: '';
+    background-image: url("../img/ceo/ceo-icon-quote.svg");
+    position: absolute;
+    height: 110px;
+    width: 100px;
+  }
+
+  &__main {
+    max-width: 72%;
+    font-size: 20px;
+    &::before {
+      top: -61px;
+      left: -166px;
+      @media (max-width: 1000px) {
+      left: -96px;
+      }
+    }
+  }
+
+  &__about {
+    margin: 0 0 70px;
+    max-width: 70%;
+    font-size: 24px;
+    &::before {
+      top: -100px;
+      left: -103px;
+      @media (max-width: 1000px) {
+      // left: -96px;
+      }
+    }
+  }
+
+
+  @media (max-width: 1300px) {
+    max-width: 100%;
+	}
+	@media (max-width: 767px) {
+	}
+}

@@ -1,7 +1,9 @@
 .services {
   margin: 0 0 120px;
   overflow: hidden;
-  // background-color: $dark-blue;
+  &__page__services {
+    margin: 0 0 45px 144px;
+  }
 }
 .services__container {
   // margin-left: 144px;

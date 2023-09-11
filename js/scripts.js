@@ -26,3 +26,15 @@ burger.addEventListener('click', function () {
   menuContainer.classList.toggle("deactivated");
   document.getElementById("menuMask").classList.toggle("activated");
 });
+
+// Акардион
+// const movieParent = document.querySelector(".movie-parent");
+// const movieGenres = document.querySelector(".movie-genres");
+
+// movieParent.addEventListener("mouseover", function() {
+//   movieGenres.style.display = "block";
+// });
+
+// movieParent.addEventListener("mouseout", function() {
+//   movieGenres.style.display = "none";
+// });
