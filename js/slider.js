@@ -3,10 +3,10 @@ var mainSwiper1 = new Swiper(".mainSwiper", {
   loop: true,
   speed: 1000,
   hashNavigation: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true, // Отключение автопрокрутки после того как пользователь начал перелистывать слайды
+  },
 
   keyboard: {
     enabled: true,
@@ -63,11 +63,6 @@ var mainSwiper2 = new Swiper(".mainSwiper-tag", {
   fadeEffect: {
     crossFade: true
   },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  //   reverseDirection: true,
-  // },
 });
 
 // Свайпер текста-заголовка на главной (прокрутка заголовка)
@@ -77,14 +72,9 @@ var mainSwiper3 = new Swiper(".mainSwiper-title", {
   speed: 1000,
   loop: true,
   direction: 'vertical',
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  //   reverseDirection: true,
-  // },
 });
 
-// Свайпер текста-заголовка на главной (прокрутка заголовка)
+// Свайпер текста-описания на главной (прокрутка описания)
 var mainSwiper4 = new Swiper(".mainSwiper-description", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -94,19 +84,16 @@ var mainSwiper4 = new Swiper(".mainSwiper-description", {
   fadeEffect: {
     crossFade: true
   },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  //   reverseDirection: true,
-  // },
 });
 
+// Вешаем управление слайдеров текста-заголовка/тега/текста-описания на Главный слайдер
 mainSwiper1.controller.control = [mainSwiper2, mainSwiper3, mainSwiper4];
 
+// Свайпер услуг на главной странице
 var servicesSwiper = new Swiper(".servicesSwiper", {
   slidesPerView: 1,
-  spaceBetween: 44,
-  centeredSlides: true,
+  spaceBetween: 10,
+  // centeredSlides: true,
   mousewheel: true,
   mousewheel: {
     releaseOnEdges: true,
@@ -127,9 +114,10 @@ var servicesSwiper = new Swiper(".servicesSwiper", {
   },
 });
 
+// Свайпер услуг на странице Услуги
 var servicesSwiper2 = new Swiper(".servicesSwiper2", {
   slidesPerView: 1,
-  spaceBetween: 44,
+  spaceBetween: 10,
   mousewheel: true,
   mousewheel: {
     releaseOnEdges: true,
@@ -147,6 +135,30 @@ var servicesSwiper2 = new Swiper(".servicesSwiper2", {
       slidesPerView: 3,
       spaceBetween: 40,
     },
+  },
+});
+
+// Свайпер-предпросмотр услуг на странице Операционные блоки
+var operBlocksSwiperMini = new Swiper(".operationalBlocksSwiper-mini", {
+  slidesPerView: 13,
+  spaceBetween: 10,
+  speed: 1000,
+  loop: true,
+  watchSlidesProgress: true,
+  centerInsufficientSlides: true,
+});
+// Свайпер услуг на странице Операционные блоки
+var operBlocksSwiper = new Swiper(".operationalBlocksSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  speed: 1000,
+  loop: true,
+  thumbs: {
+    swiper: operBlocksSwiperMini,
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true, // Отключение автопрокрутки после того как пользователь начал перелистывать слайды
   },
 });
 
@@ -154,5 +166,5 @@ mainSwiper1.on('slideChangeTransitionEnd', function() {
   document.querySelector('.slide-navigation__link__current').classList.remove('slide-navigation__link__current');
   var hash = window.location.hash.replace('#', '');
   document.querySelector("a[href='#"+hash+"']").classList.add('slide-navigation__link__current');
-  console.log("a[href='#"+hash+"']");
+  // console.log("a[href='#"+hash+"']");
 });

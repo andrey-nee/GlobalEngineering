@@ -1,0 +1,59 @@
+.operational-blocks {
+  // box-sizing: content-box;
+}
+.operational-blocks__title {
+}
+.operational-blocks__container {
+  padding: 50px 0 45px;
+}
+.operational-blocks__main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+  column-gap: 20px;
+  background-image: url("../img/operational-blocks/operational-blocks-bg-logo.svg");
+  background-position: 60% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.operational-blocks__column-left {
+  margin-top: calc(-50px - 80px); //Padding блока operational-blocks + высота на которую должен заступать блок-карточка Request
+}
+.operational-blocks__column-right {
+  max-width: 45%;
+}
+.operational-blocks__main-description {
+  margin: 0 0 53px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.6;
+  span {
+    color: $blue;
+  }
+}
+.operational-blocks__description {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.operational-blocks__slider {
+}
+.operational-blocks__slide {
+  display: flex;
+  border-radius: 40px;
+  overflow: hidden;
+  &__mini {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      background-size: cover;
+      height: 79px;
+    }
+  }
+}
+
+

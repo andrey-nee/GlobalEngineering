@@ -10,12 +10,15 @@
   }
   &__pages {
   margin-bottom: 146px;
-  padding: 40px 0 108px;
+  padding: 28px 0 108px;
   background-color: $dark-blue;
   overflow: hidden;
   }
   &__services {
     margin-bottom: calc(-264px - 121px + 146px); // Половина слайда Services + Margin от заголовка - Margin блока Header
+  }
+  &__operational-blocks {
+    margin-bottom: 0;
   }
 }
 .header__content__pages {
