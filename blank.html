@@ -9,8 +9,9 @@
 </head>
 
 <body class="page__body wrapper">
-
+  <!-- ШАПКА -->
   <header class="header header__page__pages">
+    <!-- Основная шапка сайта -->
     <div class="header__navigation main-header main-header__page__pages inner-wrapper">
       <div class="main-header__container">
         <p class="main-header__company">Инжиринговые услуги по Узбекистану и Центральной Азии</p>
@@ -19,8 +20,22 @@
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link">Главная</a>
             </li>
-            <li class="navigation__item">
-              <a href="./services.html" class="navigation__link">Услуги</a>
+            <li class="navigation__item navigation__item__sublist">
+              <a href="./services.html" class="navigation__link navigation__link__sublist">Услуги</a>
+              <ul class="navigation__sublist">
+                <li class="navigation__subitem">
+                  <a href="./operational-blocks.html" class="navigation__link">Операционные блоки</a>
+                </li>
+                <li class="navigation__subitem">
+                  <a href="./blank.html" class="navigation__link">Кислородные станции</a>
+                </li>
+                <li class="navigation__subitem">
+                  <a href="./blank.html" class="navigation__link">Промышленный альпинизм</a>
+                </li>
+                <li class="navigation__subitem">
+                  <a href="./blank.html" class="navigation__link">Системы вентиляции</a>
+                </li>
+              </ul>
             </li>
             <li class="navigation__item">
               <a href="./about.html" class="navigation__link">О компании</a>
@@ -40,7 +55,8 @@
         </div>
       </div>
     </div>
-    <nav class="main-content__sidebar side-bar">
+    <!-- Боковая навигационная панель -->
+    <nav class="header__sidebar side-bar">
       <div class="side-bar__container">
         <div class="side-bar__top">
           <a href="./index.html" class="side-bar__link">
@@ -62,8 +78,9 @@
           </div>
         </div>
       </div>
-        <div class="menu-bg" id="menu-bg"></div>
-      </nav>
+      <div class="menu-bg" id="menu-bg"></div>
+    </nav>
+    <!-- Всплывающее окно (Меню бургер) -->
     <div class="header__menu menu deactivated">
       <div class="menu__mask" id="menuMask"></div>
       <div class="menu__container deactivated">
@@ -169,8 +186,9 @@
     </div>
   </header>
 
-
+  <!-- Основной контент -->
   <main class="main-content">
+    <!-- БЛОК "ОШИБКА 404" -->
     <section class="blank">
       <div class="blank__container inner-wrapper">
         <h2 class="blank__title">Упс! Что-то пошло не так :(</h2>
@@ -178,7 +196,7 @@
     </section>
   </main>
 
-
+  <!-- ПОДВАЛ -->
   <footer class="main-footer">
     <div class="main-footer__container inner-wrapper">
       <div class="main-footer__company">

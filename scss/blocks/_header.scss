@@ -6,7 +6,7 @@
   height: 100vh;
   max-height: 832px;
   background-color: #FFFFFF;
-  overflow: hidden;
+  // overflow: hidden;
   }
   &__pages {
   margin-bottom: 146px;
@@ -18,6 +18,9 @@
     margin-bottom: calc(-264px - 121px + 146px); // Половина слайда Services + Margin от заголовка - Margin блока Header
   }
   &__operational-blocks {
+    margin-bottom: 0;
+  }
+  &__contacts {
     margin-bottom: 0;
   }
 }
@@ -97,9 +100,6 @@
 
 .header__request-button {
   position: relative;
-  // bottom: 0;
-  // right: 31%;
-  // transform: translate(-50%, 0%);
   padding: 0;
   align-self: flex-end;
   width: 158px;
@@ -139,10 +139,14 @@
   top: 0;
   height: 100%;
   max-width: 1512px;
-  // overflow: hidden;
 }
 .header__decoration__services {
   height: calc(264px + 121px - 146px); // Половина слайда Services + Margin от заголовка - Margin блока Header
   background-color: $dark-blue;
   order: 3;
+}
+
+.header__sidebar {
+}
+.header__request {
 }

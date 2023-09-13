@@ -7,14 +7,18 @@
   z-index: 20;
   pointer-events: all;
   background-color: $white;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease 0.4s;
+  &.hidden {
+    transform: translate(-100%, 0);
+    transition: transform 0.2s ease 0.4s;
+  }
 
   &.theme-transparent {
     position: absolute;
     top: 0;
     height: 100%;
     background-color: transparent;
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease 0.4s;
   }
   &.theme-transparent path {
     fill: white;

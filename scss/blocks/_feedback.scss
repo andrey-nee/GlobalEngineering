@@ -1,13 +1,23 @@
+.feedback {
+  &__pop-up {
+    padding: 40px 100px;
+  }
+}
 .feedback__container {
   padding: 120px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   background-image: url("../img/feedback/feedback-logo.svg");
   background-position: 45% 55%;
   background-repeat: no-repeat;
   background-size: 322px;
+  &__pop-up {
+    background-image: url("../img/feedback/feedback-logo-popup.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 .feedback__column-left {
   width: 50%;
@@ -15,6 +25,9 @@
 .feedback__subtitle {
   margin: 0 0 53px;
   width: 90%;
+  &__pop-up {
+    color: $white;
+  }
 }
 .feedback__form {
 }

@@ -3,10 +3,10 @@ var mainSwiper1 = new Swiper(".mainSwiper", {
   loop: true,
   speed: 1000,
   hashNavigation: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: true, // Отключение автопрокрутки после того как пользователь начал перелистывать слайды
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: true, // Отключение автопрокрутки после того как пользователь начал перелистывать слайды
+  // },
 
   keyboard: {
     enabled: true,

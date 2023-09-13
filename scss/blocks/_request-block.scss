@@ -8,17 +8,30 @@
   border-radius: 40px;
   background-color: rgba(247, 247, 249, 0.90);
   backdrop-filter: blur(20px);
+
+  &__contacts {
+    position: absolute;
+    top: -55px;
+    right: 100px;
+  }
 }
 .request-block__title {
+  margin: 0 0 19px;
   font-size: 30px;
   font-weight: 400;
   line-height: 1.6;
 }
 .request-block__description {
+  margin: 0 0 31px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
+
+  &__contacts {
+    max-width: 70%;
+  }
 }
 .request-block__button {
   color: $white;
+  text-decoration: none;
 }

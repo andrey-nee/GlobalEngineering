@@ -11,8 +11,9 @@
 </head>
 
 <body class="page__body wrapper">
-
+  <!-- ШАПКА -->
   <header class="header header__page__pages header__page__services">
+    <!-- Основная шапка сайта -->
     <div class="header__navigation main-header main-header__page__pages inner-wrapper">
       <div class="main-header__container">
         <p class="main-header__company">Инжиринговые услуги по Узбекистану и Центральной Азии</p>
@@ -21,9 +22,22 @@
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link">Главная</a>
             </li>
-            <li class="navigation__item navigation__item__current">
-              <a href="./services.html" class="navigation__link navigation__link__current">Услуги</a>
-            </li>
+            <li class="navigation__item navigation__item__sublist">
+              <a href="./services.html" class="navigation__link navigation__link__sublist">Услуги</a>
+              <ul class="navigation__sublist">
+                <li class="navigation__subitem">
+                  <a href="./operational-blocks.html" class="navigation__link">Операционные блоки</a>
+                </li>
+                <li class="navigation__subitem">
+                  <a href="./blank.html" class="navigation__link">Кислородные станции</a>
+                </li>
+                <li class="navigation__subitem">
+                  <a href="./blank.html" class="navigation__link">Промышленный альпинизм</a>
+                </li>
+                <li class="navigation__subitem">
+                  <a href="./blank.html" class="navigation__link">Системы вентиляции</a>
+                </li>
+              </ul>
             <li class="navigation__item">
               <a href="./about.html" class="navigation__link">О компании</a>
             </li>
@@ -42,7 +56,8 @@
         </div>
       </div>
     </div>
-    <nav class="main-content__sidebar side-bar">
+    <!-- Боковая навигационная панель -->
+    <nav class="header__sidebar side-bar">
       <div class="side-bar__container">
         <div class="side-bar__top">
           <a href="./index.html" class="side-bar__link">
@@ -64,8 +79,9 @@
           </div>
         </div>
       </div>
-        <div class="menu-bg" id="menu-bg"></div>
-      </nav>
+      <div class="menu-bg" id="menu-bg"></div>
+    </nav>
+    <!-- Всплывающее окно (Меню бургер) -->
     <div class="header__menu menu deactivated">
       <div class="menu__mask" id="menuMask"></div>
       <div class="menu__container deactivated">
@@ -168,22 +184,21 @@
           </li>
         </ul>
       </div>
-
+      <!-- Декаративная пустышка -->
       <div class="header__decoration__services"></div>
     </div>
-
   </header>
 
-
+  <!-- Основной контент -->
   <main class="main-content">
-
+    <!-- БЛОК "УСЛУГИ" -->
     <section class="services services__page__services">
       <div class="services__container">
         <div class="services__title-container inner-wrapper">
           <h2 class="services__title title-underline visually-hidden">Услуги</h2>
         </div>
         <div class="services__slider">
-
+          <!-- Слайдер "Услуги" -->
           <div class="swiper servicesSwiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -256,11 +271,10 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
-
+    <!-- БЛОК "БУДЕМ РАДЫ ОТВЕТИТЬ НА ВАШИ ВОПРОСЫ" -->
     <section class="feedback">
       <div class="feedback__container inner-wrapper">
         <h2 class="feedback__title visually-hidden">Обратная связь</h2>
@@ -337,10 +351,9 @@
         </div>
       </div>
     </section>
-
   </main>
 
-
+  <!-- ПОДВАЛ -->
   <footer class="main-footer">
     <div class="main-footer__container inner-wrapper">
       <div class="main-footer__company">
