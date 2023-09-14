@@ -4,6 +4,9 @@
 .quote-about__container {
   display: flex;
   background-color: $dark-blue;
+  @media (max-width: 940px) {
+    margin: 0 40px 0 144px;
+  }
 }
 .quote-about__title {
 }
@@ -11,10 +14,23 @@
   display: flex;
   align-items: center;
   // width: 55%;
-  max-width: 55%;
+  max-width: 33%;
+  padding: 50px 40px 50px calc(143px + 109px);
+
+  @media (max-width: 1060px) {
+    padding: 50px 40px 50px (101px + 109px);
+  }
+  @media (max-width: 940px) {
+    padding: 80px 60px 80px 120px;
+    max-width: 100%;
+  }
+  @media (max-width: 700px) {
+    padding: 80px 40px 60px 80px;
+  }
 }
 .quote-about__quote-container {
-  margin-left: calc(143px + 109px);
+  // margin-left: calc(143px + 109px);
+  // margin-right: 40px;
   display: flex;
   flex-direction: column;
   // align-items: center;
@@ -55,6 +71,9 @@
 .quote-about__column-right {
   width: auto;
   max-width: 50%;
+  @media (max-width: 940px) {
+    display: none;
+  }
 }
 .quote-about__photo {
   display: flex;

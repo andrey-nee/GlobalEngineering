@@ -140,12 +140,63 @@ var servicesSwiper2 = new Swiper(".servicesSwiper2", {
 
 // Свайпер-предпросмотр услуг на странице Операционные блоки
 var operBlocksSwiperMini = new Swiper(".operationalBlocksSwiper-mini", {
-  slidesPerView: 13,
+  slidesPerView: 1,
   spaceBetween: 10,
   speed: 1000,
   loop: true,
   watchSlidesProgress: true,
   centerInsufficientSlides: true,
+  // Ширина слайдов зависит от их количества в ленте
+  breakpoints: {
+    400: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    500: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+    },
+    600: {
+      slidesPerView: 6,
+      spaceBetween: 10,
+    },
+    700: {
+      slidesPerView: 7,
+      spaceBetween: 10,
+    },
+    800: {
+      slidesPerView: 8,
+      spaceBetween: 10,
+    },
+    900: {
+      slidesPerView: 9,
+      spaceBetween: 10,
+    },
+    1000: {
+      slidesPerView: 10,
+      spaceBetween: 10,
+    },
+    1100: {
+      slidesPerView: 11,
+      spaceBetween: 10,
+    },
+    1200: {
+      slidesPerView: 12,
+      spaceBetween: 10,
+    },
+    1300: {
+      slidesPerView: 13,
+      spaceBetween: 10,
+    },
+    1400: {
+      slidesPerView: 14,
+      spaceBetween: 10,
+    },
+    1500: {
+      slidesPerView: 15,
+      spaceBetween: 10,
+    },
+  },
 });
 // Свайпер услуг на странице Операционные блоки
 var operBlocksSwiper = new Swiper(".operationalBlocksSwiper", {

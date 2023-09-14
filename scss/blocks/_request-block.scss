@@ -1,20 +1,36 @@
 .request-block {
   display: flex;
   flex-direction: column;
-  padding: 40px 55px;
+  padding: 40px 53px;
   width: 390px;
   height: 320px;
   flex-shrink: 0;
   border-radius: 40px;
   background-color: rgba(247, 247, 249, 0.90);
   backdrop-filter: blur(20px);
+  box-sizing: border-box;
+}
 
-  &__contacts {
-    position: absolute;
-    top: -55px;
-    right: 100px;
+.request-block__contacts-page {
+  position: absolute;
+  height: 295px;
+  top: -55px;
+  right: 100px;
+  box-sizing: border-box;
+  @media (max-width: 1200px) {
+    right: 40px;
+  }
+  @media (max-width: 900px) {
+    position: static;
+    width: 100%;
   }
 }
+.request-block__operational-block-page {
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
+}
+
 .request-block__title {
   margin: 0 0 19px;
   font-size: 30px;
@@ -34,4 +50,8 @@
 .request-block__button {
   color: $white;
   text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
 }

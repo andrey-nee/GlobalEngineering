@@ -35,15 +35,9 @@ img {
 .inner-wrapper {
   padding-left:144px;
   padding-right: 100px;
-
   @media (max-width: 1200px) {
-    // padding-left:84px;
     padding-right: 40px;
 	}
-	// @media (max-width: 767px) {
-  //   padding-left:5%;
-  //   padding-right: 5%;
-	// }
 }
 
 .main-title {
@@ -55,9 +49,9 @@ img {
     // Шрифт подстраивается под ширину экрана
     font-size: 6.61vw; // Значение при котором font-size:100px при ширине экрана 1512px
   }
-  @media (max-width: 767px) {
+  @media (max-width: 900px) {
     // Шрифт подстраивается под ширину экрана
-    font-size: 9vw; // Увеличиваем значение, чтобы шрифт не был мелким
+    font-size: 8vw; // Увеличиваем значение, чтобы шрифт не был мелким
   }
 }
 .title {

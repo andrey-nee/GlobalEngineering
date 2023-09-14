@@ -11,6 +11,9 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 30px;
+    @media (max-width: 800px) {
+      justify-content: flex-end;
+	}
 }
 .main-header__company {
   margin: auto 0;
@@ -24,12 +27,19 @@
   @media (max-width: 1200px) {
     max-width: 20%;
 	}
+  @media (max-width: 800px) {
+    display: none;
+	}
 }
 .main-header__navigation {
 }
 .main-header__contacts {
   display: flex;
   column-gap: 45px;
+  // @media (max-width: 800px) {
+  //   width: 100%;
+  //   justify-content: space-between;
+	// }
 }
 .main-header__number {
   margin: auto 0;

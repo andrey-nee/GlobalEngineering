@@ -11,7 +11,7 @@ var page = document.querySelector('.page')
 // var body = document.querySelector('.page__body')
 
 // Объявляем переменные для модалки (Оставить заявку)
-var buttonRequestOpen = document.querySelector('.header__request-button')
+var buttonRequestOpen = document.querySelector('.modal-request__open-button')
 var buttonRequestClose = document.querySelector('.modal-request__close-button')
 var modalRequestContainer = document.querySelector('.modal-request__container')
 
@@ -39,6 +39,7 @@ buttonRequestOpen.addEventListener('click', function () {
   sidebar.classList.add('hidden');
   buttonRequestOpen.classList.add('activated');
   modalRequestContainer.classList.remove("deactivated");
+  modalRequestContainer.classList.add("activated");
   document.getElementById("modalRequestMask").classList.add("activated");
 });
 buttonRequestClose.addEventListener('click', function () {
@@ -46,6 +47,7 @@ buttonRequestClose.addEventListener('click', function () {
   // body.classList.remove('lock');
   sidebar.classList.remove('hidden');
   buttonRequestOpen.classList.remove('activated');
+  modalRequestContainer.classList.remove("activated");
   modalRequestContainer.classList.add("deactivated");
   document.getElementById("modalRequestMask").classList.remove("activated");
 });

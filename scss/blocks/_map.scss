@@ -1,11 +1,18 @@
 .map {
 }
 .map__container {
-  // display: flex;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 144px;
+  }
 }
 .map__title {
 }
 .map__iframe-container {
-  padding-left: 100px;
+  margin: 0 0 0 100px;
   filter: grayscale(100%);
+  @media (max-width: 900px) {
+    margin: 0 -40px 40px -44px;
+  }
 }

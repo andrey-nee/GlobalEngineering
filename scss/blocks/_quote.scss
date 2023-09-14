@@ -2,11 +2,32 @@
   display: flex;
   box-sizing: border-box;
   width: 100%;
+}
 
-  @media (max-width: 1000px) {
+.quote__main-page {
+  @media (max-width: 1060px) {
     padding: 0 0 0 calc(56px + 109px);
   }
+  @media (max-width: 940px) {
+    padding: 0 0 0 70px;
+  }
+  @media (max-width: 700px) {
+    padding: 0 0 0 20px;
+  }
 }
+
+.quote__about-page {
+  // @media (max-width: 1060px) {
+  //   padding: 0 0 0 calc(56px + 109px);
+  // }
+  // @media (max-width: 940px) {
+  //   padding: 0 0 0 70px;
+  // }
+  // @media (max-width: 700px) {
+  //   padding: 0 0 0 20px;
+  // }
+}
+
 .quote__blockquote {
   position: relative;
   font-style: italic;
@@ -18,39 +39,61 @@
     content: '';
     background-image: url("../img/ceo/ceo-icon-quote.svg");
     position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 110px;
     width: 100px;
   }
-
-  &__main {
-    max-width: 72%;
-    font-size: 20px;
-    &::before {
-      top: -61px;
-      left: -166px;
-      @media (max-width: 1000px) {
-      left: -96px;
-      }
-    }
-  }
-
-  &__about {
-    margin: 0 0 70px;
-    max-width: 70%;
-    font-size: 24px;
-    &::before {
-      top: -100px;
-      left: -103px;
-      @media (max-width: 1000px) {
-      // left: -96px;
-      }
-    }
-  }
-
 
   @media (max-width: 1300px) {
     max-width: 100%;
 	}
 	@media (max-width: 767px) {
 	}
+}
+
+
+.quote__blockquote__main-page {
+  max-width: 72%;
+  font-size: 20px;
+  @media (max-width: 940px) {
+    margin-bottom: 35px;
+  }
+  &::before {
+    top: -61px;
+    left: -166px;
+    @media (max-width: 1000px) {
+      left: -96px;
+    }
+    @media (max-width: 940px) {
+      left: -120px;
+    }
+    @media (max-width: 700px) {
+      left: -70px;
+      height: 80px;
+      width: 70px;
+    }
+  }
+}
+
+.quote__blockquote__about-page {
+  margin: 0 0 70px;
+  font-size: 24px;
+  &::before {
+    top: -100px;
+    left: -103px;
+    @media (max-width: 1000px) {
+      left: -96px;
+    }
+    @media (max-width: 940px) {
+      left: -120px;
+    }
+    @media (max-width: 700px) {
+      margin: 0 0 50px;
+      top: -60px;
+      left: -70px;
+      height: 80px;
+      width: 70px;
+    }
+  }
 }

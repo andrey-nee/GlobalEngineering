@@ -66,6 +66,10 @@
   flex-direction: column;
   margin-bottom: 20px;
   height: 100%;
+  @media (max-width: 900px) {
+    max-width: 100%;
+    // justify-content: space-around;
+  }
 }
 .slide__tag-container {
   margin-bottom: 34px;
@@ -74,10 +78,18 @@
 .slide__title-container {
   margin-bottom: 39px;
   max-height: 200px;
+  @media (max-width: 900px) {
+    margin-bottom: 20px;
+    max-height: 150px;
+  }
 }
 .slide__description-container {
   max-height: 100px;
   max-width: 60%;
+  @media (max-width: 900px) {
+    max-width: 65%;
+    max-height: 45%;
+  }
 }
 .slide__title {
   position: relative;
@@ -115,4 +127,7 @@
   // max-width: 54%;
   font-size: 16px;
   line-height: 1.6;
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
 }

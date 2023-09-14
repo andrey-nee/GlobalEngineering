@@ -3,7 +3,7 @@
 
   // Главный свайпер (главная странциа)
   &.mainSwiper {
-    // width: 100vw;
+    width: 100vw;
   }
   &.mainSwiper-tag {
     width: 100%;
@@ -27,6 +27,7 @@
   // Свайпер с услугами (странциа Услуги)
   &.servicesSwiper2 {
     padding-left: 144px;
+    width: calc(100vw - 144px);
     max-width: 1368px;
     box-sizing: border-box;
   }
@@ -42,7 +43,7 @@
     max-width: 1268px;
 
     .swiper-slide {
-      width: 75px !important;
+      // width: 75px !important;
       height: 79px !important;
       object-fit: cover;
       filter: grayscale(100%);

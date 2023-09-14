@@ -5,6 +5,9 @@
     background-position: 10% 33%;
     background-repeat: no-repeat;
     background-size: 368px;
+    @media (max-width: 1100px) {
+      background-position: 50% 10%;
+    }
   }
   &__page__about {
     margin-bottom: 10px;
@@ -23,9 +26,16 @@
   display: flex;
   column-gap: 40px;
   justify-content: space-between;
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    row-gap: 40px;
+  }
 }
 .reasons__column {
   width: 50%;
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
 }
 .reasons__column-left {
   display: flex;
@@ -68,9 +78,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-
-  &__line {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.reasons__list__line {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
   }
 }
 .reasons__item {

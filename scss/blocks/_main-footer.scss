@@ -34,6 +34,9 @@
 .main-footer__contacts {
   display: flex;
   flex-direction: column;
+  @media (max-width: 900px) {
+    display: none;
+  }
 }
 .main-footer__phone {
   margin: 0 0 26px;

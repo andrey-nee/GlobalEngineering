@@ -44,6 +44,13 @@
   column-gap: 20px;
   align-items: flex-end;
   height: calc(100% - 60px);
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    row-gap: 50px;
+  }
 }
 .header__content__main-page {
   position: absolute;
@@ -78,6 +85,10 @@
   max-width: 70%;
   max-height: 100%;
   // pointer-events: all;
+  @media (max-width: 900px) {
+    max-width: 100%;
+    height: auto;
+  }
 }
 .header__column-right {
   display: flex;
@@ -87,51 +98,68 @@
   // position: absolute;
   // right: 0;
   // bottom: 0;
+  @media (max-width: 900px) {
+    align-self: flex-end;
+  }
 }
 .header__services {
   pointer-events: all;
   margin-bottom: 51px;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 }
 .header__slider-controls {
   display: flex;
   justify-content: space-between;
   pointer-events: all;
+  @media (max-width: 900px) {
+    min-width: 270px;
+  }
 }
 
 .header__request-button {
-  position: relative;
-  padding: 0;
   align-self: flex-end;
-  width: 158px;
-  height: 158px;
-  min-width: 158px;
-  min-height: 158px;
-  pointer-events: all;
-  order: 4;
-  border: none;
-  border-radius: 50%;
-  background-color: $dark-blue;
-  color: $white;
-  cursor: pointer;
-
-  &::after,
-  &::before {
+  @media (max-width: 900px) {
     position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    background-color: $white;
+    bottom: 70px;
+    right: 50px;
   }
-  &::before {
-    width: 40px;
-    height: 2px;
-    transform: translate(-50%, -50%);
-  }
-  &::after {
-    width: 2px;
-    height: 40px;
-    transform: translate(-50%, -50%);
-  }
+
+
+  // position: relative;
+  // padding: 0;
+  // align-self: flex-end;
+  // width: 158px;
+  // height: 158px;
+  // min-width: 158px;
+  // min-height: 158px;
+  // pointer-events: all;
+  // order: 4;
+  // border: none;
+  // border-radius: 50%;
+  // background-color: $dark-blue;
+  // color: $white;
+  // cursor: pointer;
+  // &::after,
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   top: 50%;
+  //   left: 50%;
+  //   background-color: $white;
+  // }
+  // &::before {
+  //   width: 40px;
+  //   height: 2px;
+  //   transform: translate(-50%, -50%);
+  // }
+  // &::after {
+  //   width: 2px;
+  //   height: 40px;
+  //   transform: translate(-50%, -50%);
+  // }
 }
 
 .header__menu {

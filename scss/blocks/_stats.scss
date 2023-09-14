@@ -7,6 +7,10 @@
   padding: 0;
   display: flex;
   list-style: none;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    row-gap: 40px;
+  }
 }
 .stats__item {
   width: 210px;
