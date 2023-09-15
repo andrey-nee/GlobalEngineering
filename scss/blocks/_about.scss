@@ -2,6 +2,9 @@
   margin: 0 0 -467px;
   padding: 39px 0;
   background-color: $dark-blue;
+  @media (max-width: 400px) {
+    margin: 0 0 -200px;
+  }
 }
 .about__container {
   height: 540px;
@@ -9,6 +12,9 @@
   background-position: 40% center;
   background-repeat: no-repeat;
   background-size: contain;
+  @media (max-width: 400px) {
+    height: 100%;
+  }
 }
 .about__main-content {
   display: flex;
@@ -17,6 +23,9 @@
   @media (max-width: 900px) {
     flex-direction: column;
     padding: 50px 0 0;
+  }
+  @media (max-width: 400px) {
+    padding: 0;
   }
 }
 .about__subtitle {
@@ -51,4 +60,7 @@
 }
 .about__decoration {
   height: 467px;
+  @media (max-width: 400px) {
+    height: 200px;
+  }
 }

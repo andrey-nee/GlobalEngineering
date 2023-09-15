@@ -5,6 +5,9 @@
   @media (max-width: 800px) {
     padding: 40px 40px;
   }
+  @media (max-width: 400px) {
+    padding: 20px;
+  }
 }
 .feedback__container {
   padding: 120px 0;
@@ -47,6 +50,9 @@
   @media (max-width: 600px) {
     row-gap: 30px;
   }
+  @media (max-width: 400px) {
+    padding: 20px;
+  }
   // @media (max-width: 1060px) {
   //   flex-direction: column;
   //   row-gap: 80px;
@@ -67,6 +73,9 @@
   }
   @media (max-width: 1000px) {
     margin: 0 0 30px;
+  }
+  @media (max-width: 400px) {
+    margin: 0 0 20px;
   }
 }
 .feedback__subtitle__pop-up {

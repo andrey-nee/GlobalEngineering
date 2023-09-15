@@ -4,6 +4,9 @@
   &__page__services {
     margin: 0 0 45px 144px;
   }
+  @media (max-width: 400px) {
+    margin: 0 0 40px;
+  }
 }
 .services__container {
   // margin-left: 144px;

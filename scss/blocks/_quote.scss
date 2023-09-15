@@ -16,6 +16,9 @@
     display: flex;
     justify-content: center;
   }
+  @media (max-width: 700px) {
+    padding: 0;
+  }
 }
 
 .quote__about-page {
@@ -65,6 +68,10 @@
     margin: 20px;
     max-width: 100%;
   }
+  @media (max-width: 400px) {
+    margin: 0 20px 20px;
+    font-size: 16px;
+  }
   &::before {
     top: -61px;
     left: -166px;
@@ -84,6 +91,9 @@
       left: -50px;
       height: 50px;
       width: 50px;
+    }
+    @media (max-width: 400px) {
+      display: none;
     }
   }
 }

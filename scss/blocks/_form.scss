@@ -103,6 +103,9 @@
 }
 .form__lock-person__pop-up {
   color: $white;
+  @media (max-width: 800px) {
+    max-width: 100%;
+  }
 
   &::before {
     background-image: url("../img/feedback/feedback-icon-lock-popup.svg");

@@ -39,6 +39,9 @@
   @media (max-width: 700px) {
     height: 400px;
   }
+  @media (max-width: 400px) {
+    height: 200px;
+  }
 }
 .ceo__photo img {
   object-fit: cover;
@@ -79,6 +82,9 @@
   @media (max-width: 600px) {
     padding: 40px;
   }
+  @media (max-width: 400px) {
+    padding: 30px 20px;
+  }
 }
 .ceo__subtitle {
   margin: 0;
@@ -101,5 +107,8 @@
   @media (max-width: 940px) {
     max-width: 100%;
     text-align: end;
+  }
+  @media (max-width: 400px) {
+    font-size: 18px !important;
   }
 }

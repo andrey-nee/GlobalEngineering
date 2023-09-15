@@ -32,6 +32,10 @@
     width: 120px;
     height: 120px;
   }
+  @media (max-width: 400px) {
+    width: 80px;
+    height: 80px;
+  }
 }
 .modal-request__container {
   position: fixed;
@@ -72,6 +76,12 @@
     min-width: 120px;
     min-height: 120px;
   }
+  @media (max-width: 400px) {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+  }
 
   &::after,
   &::before {
@@ -106,6 +116,20 @@
   background-color: rgba(255, 255, 255, 0.10);
   rotate: 45deg;
   cursor: pointer;
+
+  @media (max-width: 700px) {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+  }
+  @media (max-width: 400px) {
+    margin: -35px auto 0;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+  }
 
   &::after,
   &::before {

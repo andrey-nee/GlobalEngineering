@@ -2,17 +2,17 @@
 }
 .header__page {
   &__main-page {
-  position: relative;
-  height: 100vh;
-  max-height: 832px;
-  background-color: #FFFFFF;
-  // overflow: hidden;
+    position: relative;
+    height: 100vh;
+    max-height: 832px;
+    background-color: #FFFFFF;
+    // overflow: hidden;
   }
   &__pages {
-  margin-bottom: 146px;
-  padding: 28px 0 108px;
-  background-color: $dark-blue;
-  overflow: hidden;
+    margin-bottom: 146px;
+    padding: 28px 0 108px;
+    background-color: $dark-blue;
+    overflow: hidden;
   }
   &__services {
     margin-bottom: calc(-264px - 121px + 146px); // Половина слайда Services + Margin от заголовка - Margin блока Header
@@ -51,6 +51,9 @@
     justify-content: flex-end;
     row-gap: 50px;
   }
+  @media (max-width: 400px) {
+    // justify-content: flex-start;
+  }
 }
 .header__content__main-page {
   position: absolute;
@@ -67,6 +70,11 @@
   @media (max-width: 700px) {
     top: 28px;
     left: 100px;
+    bottom: 40px;
+	}
+  @media (max-width: 400px) {
+    top: 28px;
+    left: 75px;
     bottom: 40px;
 	}
 
@@ -89,6 +97,9 @@
   @media (max-width: 900px) {
     max-width: 100%;
     // height: auto;
+  }
+  @media (max-width: 400px) {
+    height: 80%;
   }
 }
 .header__column-right {
@@ -113,6 +124,7 @@
 }
 .header__slider-controls {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
   pointer-events: all;
   @media (max-width: 900px) {
