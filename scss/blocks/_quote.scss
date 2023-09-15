@@ -115,6 +115,9 @@
 .quote__blockquote__about-page {
   margin: 0 0 70px;
   font-size: 24px;
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
   &::before {
     top: -100px;
     left: -103px;
@@ -141,4 +144,5 @@
       display: none;
     }
   }
+
 }

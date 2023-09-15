@@ -8,6 +8,7 @@
   position: relative;
   list-style: none;
 
+
   &:not(:last-child) {
     margin-right: 32px;
     &::after {
@@ -24,6 +25,9 @@
 .bread-crumbs__link {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
   &.disabled {
     color: $white;
   }

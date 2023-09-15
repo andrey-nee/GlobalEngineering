@@ -111,6 +111,9 @@ img {
   padding: 15px 40px;
   border-radius: 100px;
   border: 2px solid rgba(255, 255, 255, 0.24);
+  @media (max-width: 500px) {
+    padding: 15px 20px;
+  }
 }
 
 .button__type__blue {
@@ -121,4 +124,7 @@ img {
   padding: 15px 40px;
   border-radius: 100px;
   background-color: $blue;
+  @media (max-width: 500px) {
+    padding: 15px 20px;
+  }
 }

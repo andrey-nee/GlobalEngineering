@@ -4,6 +4,9 @@
 }
 .main-header__page__pages {
   margin-bottom: 80px;
+  .main-header__contacts {
+
+  }
 }
 
 .main-header__container {
@@ -13,6 +16,9 @@
   column-gap: 30px;
   @media (max-width: 800px) {
     justify-content: flex-end;
+  }
+  @media (max-width: 500px) {
+    justify-content: center;
   }
 }
 .main-header__company {
@@ -36,10 +42,16 @@
 .main-header__contacts {
   display: flex;
   column-gap: 45px;
-
+}
+.main-header__contacts__main-page {
   @media (max-width: 500px) {
     flex-direction: column;
     align-items: end;
+  }
+}
+.main-header__contacts__pages {
+  @media (max-width: 500px) {
+    justify-content: space-between;
   }
 }
 .main-header__number {
