@@ -69,6 +69,7 @@
 @media (max-width: 700px) {
   .header__page__pages {
     margin-bottom: 60px;
+    padding: 28px 0 40px;
   }
 }
 @media (max-width: 500px) {
@@ -244,6 +245,12 @@
 .main-header__page__pages {
   margin-bottom: 80px;
 }
+@media (max-width: 700px) {
+  .main-header__page__pages {
+    margin-bottom: 20px;
+  }
+}
+
 .main-header__container {
   display: flex;
   justify-content: space-between;
@@ -251,13 +258,15 @@
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
+
 @media (max-width: 800px) {
-  .main-header__container {
+  .main-header__container__main-page {
     justify-content: flex-end;
   }
 }
+
 @media (max-width: 500px) {
-  .main-header__container {
+  .main-header__container__pages {
     justify-content: center;
   }
 }
@@ -295,8 +304,11 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .main-header__contacts__pages {
+    width: 100%;
+    -moz-column-gap: normal;
+         column-gap: normal;
     justify-content: space-between;
   }
 }
@@ -2676,7 +2688,7 @@
 .bread-crumbs__item:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 12px;
+  top: 15px;
   right: -24px;
   width: 16px;
   height: 16px;
@@ -3263,11 +3275,6 @@ img {
 .inner-wrapper {
   padding-left: 144px;
   padding-right: 100px;
-}
-@media (max-width: 1200px) {
-  .inner-wrapper {
-    padding-right: 40px;
-  }
 }
 @media (max-width: 700px) {
   .inner-wrapper {
