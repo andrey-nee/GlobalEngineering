@@ -1292,6 +1292,7 @@
 }
 .modal-request__container.activated {
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .modal-request__open-button {
