@@ -6,14 +6,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 700px) {
+    padding: 40px 0;
+  }
+  @media (max-width: 700px) {
+    padding: 20px 0;
+  }
 }
 .main-footer__company {
   align-self: flex-start;
   width: 206px;
   height: 64px;
-
+  @media (max-width: 700px) {
+    width: 160px;
+  }
   a {
     margin: 0 0 42px;
+    @media (max-width: 700px) {
+      margin: 0 0 25px;
+    }
   }
 }
 .main-footer__link {
@@ -23,6 +34,12 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 1.2;
+  @media (max-width: 700px) {
+    font-size: 16px;
+  }
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
 }
 .main-footer__description {
   margin: 0;
@@ -60,7 +77,9 @@
   margin: 0 0 69px;
   padding: 0;
   list-style: none;
-
+  @media (max-width: 700px) {
+    margin: 0 0 25px;
+  }
 }
 .main-footer__item {
   margin: 0 0 14px;

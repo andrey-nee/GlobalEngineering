@@ -21,6 +21,9 @@
   &.theme-transparent {
     top: 35%;
     left: -30%;
+    @media (max-width: 700px) {
+      display: block;
+    }
   }
   &.activated {
     background-color: $dark-blue;
@@ -28,6 +31,9 @@
     transform: scale(50);
     transition: opacity 1s ease 2s;
     transition: transform 0.8s ease;
+  }
+  @media (max-width: 700px) {
+    display: none;
   }
 }
 
@@ -71,11 +77,17 @@
   @media (max-width: 700px) {
     font-size: 30px;
   }
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
 }
 .menu__item {
 }
 .menu__nav-item {
   margin-bottom: 35px;
+  @media (max-width: 600px) {
+    margin-bottom: 20px;
+  }
 }
 .menu__link {
   text-decoration: none;

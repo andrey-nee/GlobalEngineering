@@ -38,6 +38,14 @@ img {
   @media (max-width: 1200px) {
     padding-right: 40px;
 	}
+  @media (max-width: 700px) {
+    padding-left: 60px;
+    padding-right: 60px;
+	}
+  @media (max-width: 500px) {
+    padding-left: 30px;
+    padding-right: 30px;
+	}
 }
 
 .main-title {
@@ -65,18 +73,31 @@ img {
   }
   @media (max-width: 767px) {
     // Шрифт подстраивается под ширину экрана
-    font-size: 7vw; // Увеличиваем значение, чтобы шрифт не был мелким
+    font-size: 6vw; // Увеличиваем значение, чтобы шрифт не был мелким
   }
 }
 .subtitle {
   font-size: 42px;
   font-weight: 500;
   line-height: 1.2;
+  @media (max-width: 767px) {
+    // Шрифт подстраивается под ширину экрана
+    font-size: 5vw; // Увеличиваем значение, чтобы шрифт не был мелким
+  }
 }
 
 .title-underline {
   padding-bottom: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  @media (max-width: 700px) {
+    padding-bottom: 10px;
+  }
+}
+
+.description {
+  @media (max-width: 700px) {
+    font-size: 18px;
+  }
 }
 
 .button__type__transparent {

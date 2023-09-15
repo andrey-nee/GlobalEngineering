@@ -13,6 +13,13 @@
     transition: transform 0.2s ease 0.4s;
   }
 
+  @media (max-width: 700px) {
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+  }
+
   &.theme-transparent {
     position: absolute;
     top: 0;
@@ -41,6 +48,9 @@
   box-sizing: border-box;
   height: 100%;
   z-index: 20;
+  @media (max-width: 700px) {
+    padding: 20px 10px;
+  }
 }
 
 .side-bar__top {

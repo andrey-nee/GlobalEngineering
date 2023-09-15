@@ -16,6 +16,9 @@
     overflow: hidden;
     // padding: 0 40px 0 144px;
   }
+  @media (max-width: 700px) {
+    margin: 0 60px 60px;
+	}
 }
 .ceo__title {
 }
@@ -34,7 +37,7 @@
     max-width: 100%;
   }
   @media (max-width: 700px) {
-    height: 500px;
+    height: 400px;
   }
 }
 .ceo__photo img {
@@ -43,6 +46,9 @@
   border-radius: 40px 0 0 40px;
   @media (max-width: 940px) {
     border-radius: 40px 40px 0 0;
+  }
+  @media (max-width: 700px) {
+    object-position: 50% 30%;
   }
 }
 .ceo__position {
@@ -67,6 +73,12 @@
     margin: 0;
     padding: 70px 50px;
   }
+  @media (max-width: 700px) {
+    padding: 50px;
+  }
+  @media (max-width: 600px) {
+    padding: 40px;
+  }
 }
 .ceo__subtitle {
   margin: 0;
@@ -75,6 +87,9 @@
   line-height: 1.0;
   @media (max-width: 940px) {
     margin-bottom: 30px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 15px;
   }
 }
 .ceo__quote-container {

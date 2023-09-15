@@ -62,15 +62,14 @@
   pointer-events: none;
 
   @media (max-width: 1200px) {
-	  // left: 84px; //$left1200: 84px;
-    right: 40px; //$rigth1200: 40px;
+    right: 40px;
+	}
+  @media (max-width: 700px) {
+    top: 28px;
+    left: 100px;
+    bottom: 40px;
 	}
 
-	// @media (max-width: 767px) {
-	// 	left: 5%; //$left767: 5%;
-	// 	right: 5%; //$rigth767: 5%;
-	// 	bottom: 30px;
-	// }
 }
 .header__content__pages {
 
@@ -82,12 +81,14 @@
 .header__column-left {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100%;
   max-width: 70%;
   max-height: 100%;
   // pointer-events: all;
   @media (max-width: 900px) {
     max-width: 100%;
-    height: auto;
+    // height: auto;
   }
 }
 .header__column-right {
@@ -125,6 +126,9 @@
     position: absolute;
     bottom: 70px;
     right: 50px;
+  }
+  @media (max-width: 700px) {
+    right: 0;
   }
 
 

@@ -11,9 +11,9 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 30px;
-    @media (max-width: 800px) {
-      justify-content: flex-end;
-	}
+  @media (max-width: 800px) {
+    justify-content: flex-end;
+  }
 }
 .main-header__company {
   margin: auto 0;
@@ -36,13 +36,17 @@
 .main-header__contacts {
   display: flex;
   column-gap: 45px;
-  // @media (max-width: 800px) {
-  //   width: 100%;
-  //   justify-content: space-between;
-	// }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: end;
+  }
 }
 .main-header__number {
   margin: auto 0;
+  @media (max-width: 500px) {
+    margin-bottom: 15px;
+  }
 }
 .main-header__link {
   display: flex;

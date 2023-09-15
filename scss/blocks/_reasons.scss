@@ -8,6 +8,9 @@
     @media (max-width: 1100px) {
       background-position: 50% 10%;
     }
+    @media (max-width: 700px) {
+      margin-bottom: 60px;
+    }
   }
   &__page__about {
     margin-bottom: 10px;
@@ -21,6 +24,9 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 1.0;
+  @media (max-width: 700px) {
+    margin-bottom: 20px;
+  }
 }
 .reasons__content {
   display: flex;
@@ -49,9 +55,11 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 1.6;
-
   span {
     color: $blue;
+  }
+  @media (max-width: 700px) {
+    max-width: 100%;
   }
 }
 .reasons__main-description {
@@ -61,6 +69,9 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.6;
+  @media (max-width: 700px) {
+    max-width: 100%;
+  }
 }
 .reasons__link {
   width: min-content;
@@ -78,6 +89,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
 }
 .reasons__list__line {
   grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -28,6 +28,10 @@
     z-index: 30;
     transition: transform 2s ease 0.2s;
   }
+  @media (max-width: 700px) {
+    width: 120px;
+    height: 120px;
+  }
 }
 .modal-request__container {
   position: fixed;
@@ -61,6 +65,13 @@
   background-color: $dark-blue;
   // color: $white;
   cursor: pointer;
+
+  @media (max-width: 700px) {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+  }
 
   &::after,
   &::before {

@@ -52,6 +52,10 @@
   @media (max-width: 800px) {
     margin: 0 0 21px;
   }
+  @media (max-width: 600px) {
+    margin: 0 0 15px;
+    padding: 15px 0;
+  }
 }
 
 .form__input__pop-up {
@@ -75,6 +79,9 @@
 }
 .form__question {
   margin: 0 0 50px;
+  @media (max-width: 600px) {
+    margin: 0 0 20px;
+  }
 }
 .form__lock-person {
   position: relative;
