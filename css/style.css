@@ -457,6 +457,12 @@
     max-height: 110px;
   }
 }
+@media (max-width: 400px) {
+  .slide__title-container {
+    margin-bottom: 20px;
+    max-height: 70px;
+  }
+}
 
 .slide__description-container {
   max-height: 100px;
@@ -983,6 +989,16 @@
     justify-content: space-between;
   }
 }
+@media (max-width: 700px) {
+  .menu__container {
+    padding: 60px 50px 60px 80px;
+  }
+}
+@media (max-width: 400px) {
+  .menu__container {
+    padding: 40px 30px 40px 80px;
+  }
+}
 .menu__container.deactivated {
   transform: translate(-250%, 0%);
   transition: transform 0.8s ease;
@@ -1225,7 +1241,9 @@
 }
 @media (max-width: 400px) {
   .modal-request__close-button {
-    margin: -35px auto 0;
+    position: absolute;
+    top: 80px;
+    right: 10px;
     width: 80px;
     height: 80px;
     min-width: 80px;
@@ -1418,6 +1436,10 @@
   line-height: 1;
 }
 
+.reasons__page__about {
+  margin-bottom: 10px;
+}
+
 .reasons__page__main {
   margin-bottom: 135px;
   background-image: url("../img/reasons/reasons-logo.svg");
@@ -1435,8 +1457,10 @@
     margin-bottom: 60px;
   }
 }
-.reasons__page__about {
-  margin-bottom: 10px;
+@media (max-width: 400px) {
+  .reasons__page__main {
+    background-position: 50% 0%;
+  }
 }
 
 .reasons__title {
@@ -1900,7 +1924,7 @@
 }
 @media (max-width: 400px) {
   .feedback__pop-up {
-    padding: 20px;
+    padding: 80px 20px 20px;
   }
 }
 
@@ -1937,6 +1961,11 @@
 @media (max-width: 600px) {
   .feedback__container {
     margin: 0 0 10px;
+  }
+}
+@media (max-width: 400px) {
+  .feedback__container {
+    background-position: 50% 0%;
   }
 }
 
@@ -2369,6 +2398,11 @@
   font-weight: 500;
   line-height: 1.4;
 }
+@media (max-width: 400px) {
+  .main-footer__description {
+    font-size: 12px;
+  }
+}
 
 .main-footer__contacts {
   display: flex;
@@ -2422,6 +2456,14 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
+}
+.main-footer__copyrights a {
+  display: inline-block;
+}
+@media (max-width: 400px) {
+  .main-footer__copyrights a {
+    display: block;
+  }
 }
 
 .bread-crumbs__list {

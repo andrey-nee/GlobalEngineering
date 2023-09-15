@@ -1,19 +1,22 @@
 .reasons {
-  &__page__main {
-    margin-bottom: 135px;
-    background-image: url("../img/reasons/reasons-logo.svg");
-    background-position: 10% 33%;
-    background-repeat: no-repeat;
-    background-size: 368px;
-    @media (max-width: 1100px) {
-      background-position: 50% 10%;
-    }
-    @media (max-width: 700px) {
-      margin-bottom: 60px;
-    }
-  }
   &__page__about {
     margin-bottom: 10px;
+  }
+}
+.reasons__page__main {
+  margin-bottom: 135px;
+  background-image: url("../img/reasons/reasons-logo.svg");
+  background-position: 10% 33%;
+  background-repeat: no-repeat;
+  background-size: 368px;
+  @media (max-width: 1100px) {
+    background-position: 50% 10%;
+  }
+  @media (max-width: 700px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 400px) {
+    background-position: 50% 0%;
   }
 }
 .reasons__container {
