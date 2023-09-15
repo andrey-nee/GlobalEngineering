@@ -643,10 +643,10 @@
 }
 .slider-controls__button img {
   margin: auto 0;
-  width: 100%;
+  width: auto;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper {
@@ -1303,8 +1303,8 @@
   transition: transform 0.8s ease;
 }
 .modal-request__container.activated {
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow-Y: scroll;
+  overflow-x: hidden;
 }
 
 .modal-request__open-button {

@@ -68,8 +68,8 @@
     transition: transform 0.8s ease;
   }
   &.activated {
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-Y: scroll;
+    overflow-x: hidden;
   }
 }
 
