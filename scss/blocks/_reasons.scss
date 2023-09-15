@@ -1,7 +1,4 @@
 .reasons {
-  &__page__about {
-    margin-bottom: 10px;
-  }
 }
 .reasons__page__main {
   margin-bottom: 135px;
@@ -17,6 +14,15 @@
   }
   @media (max-width: 400px) {
     background-position: 50% 0%;
+  }
+}
+.reasons__page__about {
+  margin-bottom: 10px;
+  @media (max-width: 700px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 40px;
   }
 }
 .reasons__container {

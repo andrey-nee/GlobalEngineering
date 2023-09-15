@@ -1,5 +1,11 @@
 .quote-about {
   margin-bottom: 120px;
+  @media (max-width: 700px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 40px;
+  }
 }
 .quote-about__container {
   display: flex;
@@ -7,6 +13,12 @@
   @media (max-width: 940px) {
     margin: 0 40px 0 144px;
   }
+  @media (max-width: 700px) {
+    margin: 0 60px 60px;
+	}
+  @media (max-width: 500px) {
+    margin: 0 30px 60px;
+	}
 }
 .quote-about__title {
 }
@@ -19,13 +31,19 @@
 
   @media (max-width: 1060px) {
     padding: 50px 40px 50px (101px + 109px);
+    max-width: 100%;
   }
   @media (max-width: 940px) {
     padding: 80px 60px 80px 120px;
-    max-width: 100%;
   }
   @media (max-width: 700px) {
     padding: 80px 40px 60px 80px;
+  }
+  @media (max-width: 600px) {
+    padding: 50px 40px 50px 70px;
+  }
+  @media (max-width: 400px) {
+    padding: 30px 20px;
   }
 }
 .quote-about__quote-container {

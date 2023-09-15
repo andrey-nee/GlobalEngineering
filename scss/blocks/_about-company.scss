@@ -1,6 +1,12 @@
 .about-company {
   margin-bottom: 120px;
   color: $black;
+  @media (max-width: 700px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 40px;
+  }
 }
 .about-company__container {
   display: flex;
@@ -21,6 +27,9 @@
 }
 .about-company__subtitle-main {
   margin: 0 0 60px;
+  @media (max-width: 500px) {
+    margin-bottom: 40px;
+  }
 }
 .about-company__image {
   @media (max-width: 1100px) {

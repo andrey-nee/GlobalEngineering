@@ -12,14 +12,6 @@
     transform: translate(-100%, 0);
     transition: transform 0.2s ease 0.4s;
   }
-
-  @media (max-width: 700px) {
-    position: absolute;
-    top: 0;
-    width: 80px;
-    height: 100%;
-  }
-
   &.theme-transparent {
     position: absolute;
     top: 0;
@@ -31,10 +23,24 @@
     fill: white;
     transition: all 0.2s ease;
   }
-
   &.theme-blue {
     background-color: $dark-blue;
     transition: all 0.2s ease;
+  }
+}
+
+.side-bar__page__main {
+  @media (max-width: 700px) {
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+  }
+}
+
+.side-bar__page__pages {
+  @media (max-width: 700px) {
+    display: none;
   }
 }
 

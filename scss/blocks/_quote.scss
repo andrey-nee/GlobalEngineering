@@ -22,6 +22,20 @@
 }
 
 .quote__about-page {
+  @media (max-width: 1060px) {
+    padding: 0 0 0 calc(56px + 109px);
+  }
+  @media (max-width: 940px) {
+    padding: 0 0 0 70px;
+  }
+  @media (max-width: 700px) {
+    padding: 0 0 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 700px) {
+    padding: 0;
+  }
   // @media (max-width: 1060px) {
   //   padding: 0 0 0 calc(56px + 109px);
   // }
@@ -116,6 +130,15 @@
       left: -70px;
       height: 80px;
       width: 70px;
+    }
+    @media (max-width: 500px) {
+      top: -30px;
+      left: -50px;
+      height: 50px;
+      width: 50px;
+    }
+    @media (max-width: 400px) {
+      display: none;
     }
   }
 }

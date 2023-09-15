@@ -148,8 +148,12 @@ var operBlocksSwiperMini = new Swiper(".operationalBlocksSwiper-mini", {
   centerInsufficientSlides: true,
   // Ширина слайдов зависит от их количества в ленте
   breakpoints: {
-    400: {
+    200: {
       slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    400: {
+      slidesPerView: 4,
       spaceBetween: 10,
     },
     500: {

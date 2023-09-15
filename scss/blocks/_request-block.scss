@@ -45,6 +45,9 @@
 
   &__contacts {
     max-width: 70%;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
   }
 }
 .request-block__button {
