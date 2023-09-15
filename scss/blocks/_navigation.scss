@@ -3,6 +3,7 @@
 		display: none;
 	}
 }
+
 .navigation__list {
   margin: auto 0;
   padding: 0;
@@ -40,6 +41,7 @@
     transition: all 0.2s ease;
   }
 }
+
 .navigation__link {
   display: flex;
   align-items: center;
@@ -77,8 +79,8 @@
   &__main {
     background-color: $black;
   }
-
 }
+
 .navigation__subitem {
   &:not(:last-child) {
     margin-bottom: 10px;

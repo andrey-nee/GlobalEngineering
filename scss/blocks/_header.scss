@@ -1,5 +1,3 @@
-.header {
-}
 .header__page {
   &__main-page {
     position: relative;
@@ -37,15 +35,16 @@
   flex-direction: column;
   color: $white;
 }
+
 .header__main-title {
   margin: 0;
   order: 2;
 }
+
 .header__bread-crumbs {
   order: 1;
 }
-.header__slide {
-}
+
 .header__slide-container {
   display: flex;
   justify-content: space-between;
@@ -59,10 +58,8 @@
     justify-content: flex-end;
     row-gap: 50px;
   }
-  @media (max-width: 400px) {
-    // justify-content: flex-start;
-  }
 }
+
 .header__content__main-page {
   position: absolute;
   z-index: 9;
@@ -85,16 +82,12 @@
     left: 75px;
     bottom: 40px;
 	}
-
-}
-.header__content__pages {
-
 }
 
 .header__navigation {
-  // box-sizing: border-box;
   pointer-events: all;
 }
+
 .header__column-left {
   display: flex;
   flex-direction: column;
@@ -102,35 +95,31 @@
   height: 100%;
   max-width: 70%;
   max-height: 100%;
-  // pointer-events: all;
   @media (max-width: 900px) {
     max-width: 100%;
-    // height: auto;
   }
   @media (max-width: 400px) {
     height: 80%;
   }
 }
+
 .header__column-right {
   display: flex;
   flex-direction: column;
   width: auto;
-  // align-self: flex-end;
-  // position: absolute;
-  // right: 0;
-  // bottom: 0;
   @media (max-width: 900px) {
     align-self: flex-end;
   }
 }
+
 .header__services {
   pointer-events: all;
   margin-bottom: 51px;
-
   @media (max-width: 900px) {
     display: none;
   }
 }
+
 .header__slider-controls {
   display: flex;
   align-items: baseline;
@@ -154,40 +143,6 @@
   @media (max-width: 700px) {
     right: 0;
   }
-
-
-  // position: relative;
-  // padding: 0;
-  // align-self: flex-end;
-  // width: 158px;
-  // height: 158px;
-  // min-width: 158px;
-  // min-height: 158px;
-  // pointer-events: all;
-  // order: 4;
-  // border: none;
-  // border-radius: 50%;
-  // background-color: $dark-blue;
-  // color: $white;
-  // cursor: pointer;
-  // &::after,
-  // &::before {
-  //   position: absolute;
-  //   content: "";
-  //   top: 50%;
-  //   left: 50%;
-  //   background-color: $white;
-  // }
-  // &::before {
-  //   width: 40px;
-  //   height: 2px;
-  //   transform: translate(-50%, -50%);
-  // }
-  // &::after {
-  //   width: 2px;
-  //   height: 40px;
-  //   transform: translate(-50%, -50%);
-  // }
 }
 
 .header__menu {
@@ -196,13 +151,9 @@
   height: 100%;
   max-width: 1512px;
 }
+
 .header__decoration__services {
   height: calc(264px + 121px - 146px); // Половина слайда Services + Margin от заголовка - Margin блока Header
   background-color: $dark-blue;
   order: 3;
-}
-
-.header__sidebar {
-}
-.header__request {
 }

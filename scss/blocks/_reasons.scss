@@ -1,5 +1,3 @@
-.reasons {
-}
 .reasons__page__main {
   margin-bottom: 135px;
   background-image: url("../img/reasons/reasons-logo.svg");
@@ -16,6 +14,7 @@
     background-position: 50% 0%;
   }
 }
+
 .reasons__page__about {
   margin-bottom: 10px;
   @media (max-width: 700px) {
@@ -25,8 +24,7 @@
     margin-bottom: 40px;
   }
 }
-.reasons__container {
-}
+
 .reasons__title {
   margin: 0 0 73px;
   color: $blue;
@@ -37,6 +35,7 @@
     margin-bottom: 20px;
   }
 }
+
 .reasons__content {
   display: flex;
   column-gap: 40px;
@@ -46,17 +45,20 @@
     row-gap: 40px;
   }
 }
+
 .reasons__column {
   width: 50%;
   @media (max-width: 1100px) {
     width: 100%;
   }
 }
+
 .reasons__column-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .reasons__main-subtitle {
   margin: 0 0 53px;
   padding: 0;
@@ -75,6 +77,7 @@
     font-size: 20px;
   }
 }
+
 .reasons__main-description {
   margin: 0 0 57px;
   padding: 0;
@@ -89,11 +92,13 @@
     margin: 0 0 20px;
   }
 }
+
 .reasons__main-button {
   @media (max-width: 700px) {
     width: 100%;
   }
 }
+
 .reasons__link {
   width: min-content;
   text-decoration: none;
@@ -107,8 +112,7 @@
     width: 100%;
   }
 }
-.reasons__column-right {
-}
+
 .reasons__list {
   margin: 0;
   padding: 0;
@@ -119,6 +123,7 @@
     grid-template-columns: 1fr;
   }
 }
+
 .reasons__list__line {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   @media (max-width: 1100px) {
@@ -128,6 +133,7 @@
     grid-template-columns: 1fr;
   }
 }
+
 .reasons__item {
   display: flex;
   flex-direction: column;
@@ -141,17 +147,15 @@
     column-gap: 15px;
   }
 }
-.reasons__item-content {
 
-}
 .reasons__subtitle {
   margin: 0 0 17px;
   padding: 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
-
 }
+
 .reasons__icon {
   order: -1;
   margin: 0 0 24px;
@@ -161,6 +165,7 @@
     width: 120px;
   }
 }
+
 .reasons__description {
   margin: 0;
   padding: 0;

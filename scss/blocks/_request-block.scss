@@ -26,6 +26,7 @@
     height: 100%;
   }
 }
+
 .request-block__operational-block-page {
   @media (max-width: 1100px) {
     width: 100%;
@@ -38,6 +39,7 @@
   font-weight: 400;
   line-height: 1.6;
 }
+
 .request-block__description {
   margin: 0 0 31px;
   font-size: 16px;
@@ -51,11 +53,46 @@
     }
   }
 }
+
 .request-block__button {
+  position: relative;
+  padding: 15px 40px 15px 60px !important;
   color: $white;
   text-decoration: none;
   display: block;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: calc(50% - 100px);
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/feedback/feedback-icon-send.svg");
+  }
+}
+
+.request-block__button__map {
+  position: relative;
+  padding: 15px 40px 15px 60px !important;
+  color: $white;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: calc(50% - 100px);
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/contacts/contacts-icon-travel.svg");
+  }
 }

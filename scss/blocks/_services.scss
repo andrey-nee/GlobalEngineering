@@ -5,15 +5,14 @@
     margin: 0 0 40px;
   }
 }
+
 .services__page__services {
   margin: 0 0 45px 144px;
   @media (max-width: 500px) {
     margin: 0 0 40px;
   }
 }
-.services__container {
-  // margin-left: 144px;
-}
+
 .services__title {
   position: relative;
   margin: 0 0 44px 0;
@@ -22,12 +21,11 @@
   font-weight: 500;
   line-height: 1.0;
 }
+
 .services__slider {
-  // display: flex;
-  // width: calc(1512px - 100px - 144px);
   overflow: hidden;
-  // box-sizing: border-box;
 }
+
 .services__slide {
   position: relative;
   display: flex;
@@ -39,12 +37,15 @@
   border-radius: 40px;
   overflow: hidden;
 }
+
 .services__item {
   backdrop-filter: blur(0px); //Нужен чтобы избавиться от бага в .services__item-desctription
 }
+
 .services__item-image {
   display: flex;
 }
+
 .services__item-desctription {
   position: absolute;
   bottom: 0;
@@ -64,6 +65,7 @@
     min-height: 75px;
   }
 }
+
 .services__item-name {
   margin: 0;
   padding: 0;
@@ -75,6 +77,7 @@
     font-size: 16px;
   }
 }
+
 .services__item-page {
   margin: 0;
   padding: 0;
@@ -85,8 +88,4 @@
   @media (max-width: 400px) {
     font-size: 14px;
   }
-}
-.services__slide-2 {
-}
-.services__slide-3 {
 }

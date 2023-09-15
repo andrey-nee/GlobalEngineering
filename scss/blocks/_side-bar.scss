@@ -59,11 +59,10 @@
   }
 }
 
-.side-bar__top {
-}
 .side-bar__link {
   text-decoration: none;
 }
+
 .side-bar__logo {
   width: 52px;
   height: 55px;
@@ -74,7 +73,6 @@
     fill: white;
     transition: all 0.2s ease;
   }
-
   &.theme-blue path {
     fill: white;
     transition: all 0.2s ease;
@@ -83,7 +81,6 @@
 }
 .side-bar__middle {
   position: relative;
-  // overflow: hidden;
 }
 
 .side-bar__burger-menu {
@@ -159,8 +156,7 @@
   height: 2px;
   display: block;
 }
-.side-bar__bottom {
-}
+
 .side-bar__language {
   color: rgba(0, 0, 0, 0.50);
   text-align: center;

@@ -1,6 +1,7 @@
 .main-footer {
   background-color: $dark-blue;
 }
+
 .main-footer__container {
   padding: 53px 0 75px;
   display: flex;
@@ -13,6 +14,7 @@
     padding: 20px 0;
   }
 }
+
 .main-footer__company {
   align-self: flex-start;
   width: 206px;
@@ -27,6 +29,7 @@
     }
   }
 }
+
 .main-footer__link {
   display: block;
   color: $white;
@@ -41,6 +44,7 @@
     font-size: 14px;
   }
 }
+
 .main-footer__description {
   margin: 0;
   color: $white;
@@ -51,6 +55,7 @@
     font-size: 12px;
   }
 }
+
 .main-footer__contacts {
   display: flex;
   flex-direction: column;
@@ -58,6 +63,7 @@
     display: none;
   }
 }
+
 .main-footer__phone {
   margin: 0 0 26px;
   color: $white;
@@ -66,6 +72,7 @@
   font-weight: 600;
   line-height: 1.2;
 }
+
 .main-footer__mail {
   margin: 0 0 89px;
   color: $white;
@@ -74,8 +81,7 @@
   font-weight: 600;
   line-height: 1.2;
 }
-.main-footer__info {
-}
+
 .main-footer__list {
   margin: 0 0 69px;
   padding: 0;
@@ -84,6 +90,7 @@
     margin: 0 0 25px;
   }
 }
+
 .main-footer__item {
   margin: 0 0 14px;
 
@@ -91,6 +98,7 @@
     margin: 0;
   }
 }
+
 .main-footer__copyrights {
   margin: 0;
   color: $white;

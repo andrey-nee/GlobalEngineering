@@ -2,6 +2,7 @@
   color: $white;
   position: relative;
 }
+
 .main-header__page__pages {
   margin-bottom: 80px;
   @media (max-width: 700px) {
@@ -15,16 +16,19 @@
   align-items: center;
   column-gap: 30px;
 }
+
 .main-header__container__main-page {
   @media (max-width: 800px) {
   justify-content: flex-end;
   }
 }
+
 .main-header__container__pages {
   @media (max-width: 500px) {
     justify-content: center;
   }
 }
+
 .main-header__company {
   margin: auto 0;
   padding: 0;
@@ -41,18 +45,19 @@
     display: none;
 	}
 }
-.main-header__navigation {
-}
+
 .main-header__contacts {
   display: flex;
   column-gap: 45px;
 }
+
 .main-header__contacts__main-page {
   @media (max-width: 500px) {
     flex-direction: column;
     align-items: end;
   }
 }
+
 .main-header__contacts__pages {
   // box-sizing: border-box;
   @media (max-width: 800px) {
@@ -61,12 +66,14 @@
     justify-content: space-between;
   }
 }
+
 .main-header__number {
   margin: auto 0;
   @media (max-width: 500px) {
     margin-bottom: 15px;
   }
 }
+
 .main-header__link {
   display: flex;
   align-items: center;
@@ -75,8 +82,4 @@
   line-height: 1.2;
   text-decoration: none;
   color: $white;
-}
-.main-header__button {
-}
-.main-header__link__button {
 }

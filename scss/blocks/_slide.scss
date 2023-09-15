@@ -13,19 +13,11 @@
   display: flex;
   padding-top: 85px;
   padding-bottom: 60px;
-  // flex-direction: column;
-  // padding-left: 144px;
-  // padding-bottom: calc(60px + 158px); //нижний отступ + высота кнопки "+"
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
   color: $white;
   box-sizing: border-box;
-
-  // &::before {
-  //   content: '';
-  //   box-sizing: border-box;
-  // }
 
   &--medical {
     background:
@@ -50,15 +42,6 @@
     var(--linear-bg);
   background-blend-mode: overlay;
   }
-
-  // @media (max-width: 1200px) {
-  //   padding-left: 84px;
-  // }
-
-  // @media (max-width: 767px) {
-  //   padding-left: 5%;
-  //   padding-bottom: calc(30px + 158px); //нижний отступ + высота кнопки "+"
-  // }
 }
 
 .slide__main-content {
@@ -69,9 +52,9 @@
   height: 100%;
   @media (max-width: 900px) {
     max-width: 100%;
-    // justify-content: space-around;
   }
 }
+
 .slide__tag-container {
   margin-bottom: 34px;
   max-height: 30px;
@@ -79,6 +62,7 @@
     margin-bottom: 20px;
   }
 }
+
 .slide__title-container {
   margin-bottom: 39px;
   max-height: 200px;
@@ -95,6 +79,7 @@
     max-height: 70px;
   }
 }
+
 .slide__description-container {
   max-height: 100px;
   max-width: 60%;
@@ -111,6 +96,7 @@
     max-height: 65%;
   }
 }
+
 .slide__title {
   position: relative;
   padding: 0;
@@ -123,6 +109,7 @@
     max-width: 100%;
   }
 }
+
 .slide__tag {
   margin: 0;
   padding: 6px 12px;
@@ -134,17 +121,16 @@
   color: $white;
   border-radius: 100px;
 }
+
 .slide__subtitle {
   margin: 0;
   color: $white;
-  // max-width: 60%;
 }
+
 .slide__description {
   margin: 0;
   padding: 0;
   color: $white;
-  // order: 3;
-  // max-width: 54%;
   font-size: 16px;
   line-height: 1.6;
   @media (max-width: 900px) {

@@ -2,12 +2,14 @@
   display: flex;
   color: $white;
 }
+
 .slider-controls__counter__container {
   position: relative;
   display: flex;
   justify-content: space-between;
   width: 135px;
 }
+
 .slider-controls__counter {
   display: flex;
   position: relative;
@@ -15,9 +17,7 @@
   justify-content: space-between;
   max-width: 135px;
 }
-.slider-controls__count-current,
-.swiper-pagination-current {
-}
+
 .slider-controls__scrollbar {
   position: absolute;
   top: 50%;
@@ -28,8 +28,7 @@
   min-width: 0;
   pointer-events: all;
 }
-.slider-controls__slide-total {
-}
+
 .slider-controls__arrows {
   display: flex;
   align-items: center;
@@ -39,6 +38,7 @@
     border: none;
   }
 }
+
 .slider-controls__button {
   display: flex;
   align-items: center;

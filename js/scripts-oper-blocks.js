@@ -11,9 +11,10 @@ var page = document.querySelector('.page')
 // var body = document.querySelector('.page__body')
 
 // Объявляем переменные для модалки (Оставить заявку)
-var buttonRequestOpen = document.querySelector('.modal-request__open-button')
+var buttonRequestOpenOperBlocks = document.querySelector('.request-block__button')
 var buttonRequestClose = document.querySelector('.modal-request__close-button')
 var modalRequestContainer = document.querySelector('.modal-request__container')
+var sliderOperBlocks = document.querySelector('.operational-blocks__slider')
 
 // Меню бургер для мобилок
 burger.addEventListener('click', function () {
@@ -32,34 +33,24 @@ burger.addEventListener('click', function () {
   document.getElementById("menuMask").classList.toggle("activated");
 });
 
-// Модалка Оставить заявку
-buttonRequestOpen.addEventListener('click', function () {
+// Модалка Оставить заявку (на странице Операционные блоки)
+buttonRequestOpenOperBlocks.addEventListener('click', function () {
   page.classList.add('lock');
   // body.classList.add('lock');
   sidebar.classList.add('hidden');
-  buttonRequestOpen.classList.add('activated');
+  sliderOperBlocks.classList.add('hidden');
+  buttonRequestOpenOperBlocks.classList.add('activated');
   modalRequestContainer.classList.remove("deactivated");
   modalRequestContainer.classList.add("activated");
-  document.getElementById("modalRequestMask").classList.add("activated");
+  document.getElementById("modalRequestMask2").classList.add("activated");
 });
 buttonRequestClose.addEventListener('click', function () {
   page.classList.remove('lock');
   // body.classList.remove('lock');
   sidebar.classList.remove('hidden');
-  buttonRequestOpen.classList.remove('activated');
+  sliderOperBlocks.classList.remove('hidden');
+  buttonRequestOpenOperBlocks.classList.remove('activated');
   modalRequestContainer.classList.remove("activated");
   modalRequestContainer.classList.add("deactivated");
-  document.getElementById("modalRequestMask").classList.remove("activated");
+  document.getElementById("modalRequestMask2").classList.remove("activated");
 });
-
-// Акардион
-// const movieParent = document.querySelector(".movie-parent");
-// const movieGenres = document.querySelector(".movie-genres");
-
-// movieParent.addEventListener("mouseover", function() {
-//   movieGenres.style.display = "block";
-// });
-
-// movieParent.addEventListener("mouseout", function() {
-//   movieGenres.style.display = "none";
-// });
