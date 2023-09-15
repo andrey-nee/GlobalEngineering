@@ -83,6 +83,11 @@
     margin: 0 0 20px;
   }
 }
+.reasons__main-button {
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+}
 .reasons__link {
   width: min-content;
   text-decoration: none;
@@ -90,6 +95,11 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
+  display: block;
+  box-sizing: border-box;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 }
 .reasons__column-right {
 }

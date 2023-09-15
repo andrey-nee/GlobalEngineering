@@ -24,6 +24,10 @@
     box-sizing: border-box;
     @media (max-width: 700px) {
       padding-left: 0;
+      width: calc(100vw - 60px);
+    }
+    @media (max-width: 500px) {
+      width: calc(100vw - 30px);
     }
   }
 
@@ -33,6 +37,12 @@
     width: calc(100vw - 144px);
     max-width: 1368px;
     box-sizing: border-box;
+    @media (max-width: 700px) {
+      width: calc(100vw - 60px);
+    }
+    @media (max-width: 500px) {
+      width: calc(100vw - 30px);
+    }
   }
 
   // Свайпер с операционными блоками (странциа Операционные блоки)
@@ -40,10 +50,22 @@
     width: calc(100vw - 144px);
     max-width: 1268px;
     margin-bottom: 33px;
+    @media (max-width: 700px) {
+      width: calc(100vw - 60px);
+    }
+    @media (max-width: 500px) {
+      width: calc(100vw - 30px);
+    }
   }
   &.operationalBlocksSwiper-mini {
     width: calc(100vw - 144px);
     max-width: 1268px;
+    @media (max-width: 700px) {
+      width: calc(100vw - 60px);
+    }
+    @media (max-width: 500px) {
+      width: calc(100vw - 30px);
+    }
 
     .swiper-slide {
       // width: 75px !important;

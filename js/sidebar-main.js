@@ -17,7 +17,6 @@ window.addEventListener('scroll', function () {
   var slideChangePosition = getCoords(element);
   // Сколько пикселей осталось до нашего элемента
   let diff = slideChangePosition.top - scrollPosition;
-
   if (window.scrollY >= slideChangePosition.top) {
     burger.classList.remove('theme-transparent');
     sidebar.classList.remove('theme-transparent');

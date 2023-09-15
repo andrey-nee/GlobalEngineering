@@ -69,6 +69,12 @@
   @media (max-width: 950px) {
     margin: 0 0 30px;
   }
+  @media (max-width: 700px) {
+    margin: 0 0 20px;
+  }
+  @media (max-width: 550px) {
+    margin-bottom: 15px;
+  }
 }
 .menu__list {
   list-style: none;
@@ -116,8 +122,11 @@
   @media (max-width: 950px) {
     order: 2;
   }
+  @media (max-width: 700px) {
+    margin-bottom: 20px;
+  }
   @media (max-width: 550px) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     order: 1;
   }
 }

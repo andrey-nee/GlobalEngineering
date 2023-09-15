@@ -90,6 +90,10 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 1.4;
+  @media (max-width: 800px) {
+    margin: 0 0 31px;
+    max-width: 80%;
+  }
 
   &::before {
     content: '';
@@ -103,9 +107,6 @@
 }
 .form__lock-person__pop-up {
   color: $white;
-  @media (max-width: 800px) {
-    max-width: 100%;
-  }
 
   &::before {
     background-image: url("../img/feedback/feedback-icon-lock-popup.svg");
