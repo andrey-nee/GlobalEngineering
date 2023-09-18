@@ -1,7 +1,11 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
   padding: 53px;
+  align-items: flex-start;
+  box-sizing: border-box;
   border-radius: 40px;
-  background: $light-grey;
+  background-color: $info-bg-1;
   @media (max-width: 800px) {
     padding: 30px;
   }
@@ -31,11 +35,17 @@
 }
 
 .contacts__link {
-  color: $black;
+  color: $main-text-1;
   text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+    transition: all 0.2s ease;
+  }
 
   &__white {
-    color: $white;
+    color: $main-text-2;
   }
 }
 
@@ -104,10 +114,13 @@
 
 .contacts__address {
   margin: 0 0 16px;
-  color: #898989;
+  color: $address-text-1;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
+  &.menu__address {
+    color: $address-text-2;
+  }
 }
 
 .contacts__address__pop-up {
@@ -119,10 +132,11 @@
 
 .contacts__map {
   margin: 0 0 55px;
-  color: $blue;
+  color: $span-text-1;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
+
   @media (max-width: 950px) {
     margin: 0 0 30px;
   }
@@ -134,7 +148,13 @@
   }
 
   &__white {
-    color: $white;
+    color: $main-text-2;
+    transition: all 0.2s ease;
+
+    &:hover {
+      text-decoration: underline;
+      transition: all 0.2s ease;
+      }
   }
 }
 

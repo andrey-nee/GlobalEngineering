@@ -29,7 +29,7 @@
       right: 50px;
       width: 10px;
       height: 10px;
-      background-image: url("../../img/header/header-icon-more.svg");
+      background-image: url("../img/header/header-icon-more.svg");
     }
   }
   &__current {
@@ -50,14 +50,14 @@
   font-size: 14px;
   line-height: 1.2;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.50);
+  color: $inactive-text-1;
   transition: all 0.2s ease;
 
   &__current {
-    color: $white;
+    color: $main-text-2;
   }
   &:hover {
-    color: rgba(255, 255, 255, 1.0);
+    color: $main-text-2;
     transition: all 0.2s ease;
   }
 }
@@ -73,11 +73,11 @@
   list-style: none;
   opacity: 0;
   pointer-events: none;
-  background-color: $dark-blue;
+  background-color: $main-bg-2;
   z-index: 10;
   transition: all 0.2s ease;
   &__main {
-    background-color: $black;
+    background-color: $main-bg-4;
   }
 }
 

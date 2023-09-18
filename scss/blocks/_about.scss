@@ -1,7 +1,7 @@
 .about {
   margin: 0 0 -467px;
   padding: 39px 0;
-  background-color: $dark-blue;
+  background-color: $main-bg-2;
   @media (max-width: 400px) {
     margin: 0 0 -200px;
   }
@@ -35,14 +35,14 @@
   margin: 0;
   &__white {
     max-width: 40%;
-    color: $white;
+    color: $main-text-2;
     @media (max-width: 900px) {
       max-width: 100%;
       margin-bottom: 40px;
     }
   }
   &__black {
-    color: $black;
+    color: $main-text-1;
   }
 }
 
@@ -53,13 +53,13 @@
     margin: 0;
     padding: 0;
     max-width: 50%;
-    color: $white;
+    color: $main-text-2;
     @media (max-width: 900px) {
       max-width: 100%;
     }
   }
   &__black {
-    color: $black;
+    color: $main-text-1;
   }
 }
 

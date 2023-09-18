@@ -10,7 +10,7 @@
 
 .quote-about__container {
   display: flex;
-  background-color: $dark-blue;
+  background-color: $main-bg-2;
   @media (max-width: 940px) {
     margin: 0 40px 0 144px;
   }
@@ -49,7 +49,7 @@
 .quote-about__quote-container {
   display: flex;
   flex-direction: column;
-  color: $white;
+  color: $main-text-2;
 }
 
 .quote-about__autor {
@@ -82,7 +82,7 @@
 
 .quote-about__position {
   margin: 0;
-  color: rgba(255, 255, 255, 0.50);
+  color: $inactive-text-1;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.0;

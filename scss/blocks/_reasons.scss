@@ -27,7 +27,7 @@
 
 .reasons__title {
   margin: 0 0 73px;
-  color: $blue;
+  color: $span-text-1;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.0;
@@ -67,7 +67,7 @@
   font-weight: 500;
   line-height: 1.6;
   span {
-    color: $blue;
+    color: $span-text-1;
   }
   @media (max-width: 700px) {
     max-width: 100%;
@@ -102,7 +102,7 @@
 .reasons__link {
   width: min-content;
   text-decoration: none;
-  color: $white;
+  color: $main-text-2;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
@@ -140,7 +140,7 @@
   padding: 24px;
   list-style: none;
   border-radius: 20px;
-  background: rgba(95, 104, 131, 0.05);
+  background-color: $cards-bg-2;
   backdrop-filter: blur(9px);
   @media (max-width: 400px) {
     flex-direction: row;

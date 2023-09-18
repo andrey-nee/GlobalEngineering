@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  background-color: $dark-blue;
-  color: $white;
+  background-color: $main-bg-2;
+  color: $main-text-2;
   border-radius: 40px 0 0 40px;
   @media (max-width: 940px) {
     margin: 0 40px 0 144px;
@@ -61,7 +61,7 @@
   position: absolute;
   left: 58px;
   bottom: 65px;
-  color: rgba(255, 255, 255, 0.50);
+  color: $inactive-text-1;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.0;

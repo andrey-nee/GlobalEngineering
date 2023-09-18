@@ -1,7 +1,7 @@
 :root {
   --mask-bg: url("../img/intro/intro-pattern.png") repeat 0% 0%/14.9%;
   --linear-bg: linear-gradient(
-      180deg, #000 0%,
+      180deg, #000000 0%,
       rgba(0, 0, 0, 0.00) 32.29%),
       rgba(0, 0, 0, 0.70
     );
@@ -16,7 +16,7 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  color: $white;
+  color: $main-text-2;
   box-sizing: border-box;
 
   &--medical {
@@ -117,20 +117,20 @@
   white-space: nowrap;
   font-size: 12px;
   line-height: 1.2;
-  background-color: $dark-blue;
-  color: $white;
+  background-color: $main-bg-2;
+  color: $main-text-2;
   border-radius: 100px;
 }
 
 .slide__subtitle {
   margin: 0;
-  color: $white;
+  color: $main-text-2;
 }
 
 .slide__description {
   margin: 0;
   padding: 0;
-  color: $white;
+  color: $main-text-2;
   font-size: 16px;
   line-height: 1.6;
   @media (max-width: 900px) {

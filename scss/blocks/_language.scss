@@ -14,16 +14,16 @@
   border-radius: 50px;
   cursor: pointer;
   transition: 0.2s;
-  background-color: rgba(236, 238, 243, 1);
+  background-color: $switch-bg-2;
 
   &.theme-transparent {
     transition: 0.2s;
-    background-color: rgba(50, 57, 71, 1);
+    background-color: $switch-bg-1;
   }
 
   &.theme-blue {
     transition: 0.2s;
-    background-color: rgba(28, 61, 131, 1);
+    background-color: $switch-bg-3;
   }
 }
 
@@ -36,16 +36,16 @@
   height: 18px;
   border-radius: 50%;
   transition: 0.2s;
-  background-color: $dark-blue;
+  background-color: $switch-bg-4;
 
   &.theme-transparent {
     transition: 0.2s;
-    background-color: $white;
+    background-color: $switch-bg-2;
   }
 
   &.theme-blue {
     transition: 0.2s;
-    background-color: $white;
+    background-color: $switch-bg-2;
   }
 
   &__uz {
@@ -60,14 +60,14 @@
 
 .language__current {
   transition: 0.2s;
-  color: $dark-blue;
+  color: $switch-text-2;
 
   &.theme-transparent {
     transition: 0.2s;
-    color: $white;
+    color: $switch-text-1;
   }
   &.theme-blue {
     transition: 0.2s;
-    color: $white;
+    color: $switch-text-1;
   }
 }

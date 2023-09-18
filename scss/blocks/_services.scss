@@ -16,7 +16,7 @@
 .services__title {
   position: relative;
   margin: 0 0 44px 0;
-  color: rgba(255, 255, 255, 0.50);
+  color: $inactive-text-1;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.0;
@@ -40,9 +40,78 @@
 
 .services__item {
   backdrop-filter: blur(0px); //Нужен чтобы избавиться от бага в .services__item-desctription
+
+  &:hover .services__button-plus::before {
+    transform: scale(1.3);
+  }
+
+  &:hover .services__item-desctription {
+    min-height: calc(110px + 20px);
+    padding: calc(21px + 20px) 29px 23px;
+    transition: all 0.2s ease;
+
+    @media (max-width: 400px) {
+      padding: calc(15px + 10px) 15px 15px;
+      min-height: calc(75px + 10px);
+    }
+  }
+}
+
+.services__button-plus {
+  position: absolute;
+  top: 35%;
+  left: calc(50% - calc(74px / 2));
+  transition: transform 0.2s ease;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 74px;
+    height: 74px;
+    min-width: 74px;
+    min-height: 74px;
+    border-radius: 50%;
+    transform: scale(1);
+    background-color: $main-bg-3;
+    transition: transform 0.2s ease;
+  }
+}
+
+.services__plus {
+  position: relative;
+  width: 74px;
+  height: 74px;
+  min-width: 74px;
+  min-height: 74px;
+  transform: scale(1);
+  pointer-events: all;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    background-color: $main-bg-4;
+  }
+  &::before {
+    width: 22px;
+    height: 2px;
+    transform: translate(-50%, -50%);
+  }
+  &::after {
+    width: 2px;
+    height: 22px;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .services__item-image {
+  display: flex;
+}
+
+.services__item-link {
   display: flex;
 }
 
@@ -53,13 +122,15 @@
   right: 0;
   padding: 21px 29px 23px;
   display: flex;
+  // align-items: end;
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
   min-height: 110px;
   overflow: hidden;
-  background: rgba(216, 222, 236, 0.80);
+  background-color: $cards-bg-1;
   backdrop-filter: blur(50px); //Нужно добавить родителю blur(0px), чтобы убрать баг с краями блока
+  transition: all 0.2s ease;
   @media (max-width: 400px) {
     padding: 15px;
     min-height: 75px;
@@ -81,7 +152,7 @@
 .services__item-page {
   margin: 0;
   padding: 0;
-  color: #767C88;
+  color: $inactive-text-4;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.0;

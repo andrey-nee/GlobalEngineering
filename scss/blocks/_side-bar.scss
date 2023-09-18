@@ -6,7 +6,7 @@
   height: 100vh;
   z-index: 20;
   pointer-events: all;
-  background-color: $white;
+  background-color: $main-bg-3;
   transition: transform 0.2s ease 0.4s;
   &.hidden {
     transform: translate(-100%, 0);
@@ -20,11 +20,11 @@
     transition: transform 0.2s ease 0.4s;
   }
   &.theme-transparent path {
-    fill: white;
+    fill: $main-bg-3;
     transition: all 0.2s ease;
   }
   &.theme-blue {
-    background-color: $dark-blue;
+    background-color: $main-bg-2;
     transition: all 0.2s ease;
   }
 }
@@ -66,15 +66,15 @@
 .side-bar__logo {
   width: 52px;
   height: 55px;
-  fill: #07286F;
+  fill: $main-bg-2;
   transition: all 0.2s ease;
 
   &.theme-transparent path {
-    fill: white;
+    fill: $main-bg-3;
     transition: all 0.2s ease;
   }
   &.theme-blue path {
-    fill: white;
+    fill: $main-bg-3;
     transition: all 0.2s ease;
   }
 
@@ -90,7 +90,7 @@
   border-radius: 1000px;
   backdrop-filter: blur(25px);
   cursor: pointer;
-  background-color: rgba(7, 40, 111, 0.07);
+  background-color: $burger-bg-2;
   transition: all 0.2s ease;
   z-index: 20;
 
@@ -103,24 +103,24 @@
   &::before {
     width: 20px;
     height: 2px;
-    background-color: $dark-blue;
+    background-color: $main-bg-2;
   }
 
   &.theme-transparent {
-    background-color: rgba(25, 30, 40, 1);
+    background-color: $burger-bg-1;
     &::after,
     &::before {
-      background-color: $white;
+      background-color: $main-bg-3;
       transition: all 0.2s ease;
     }
   }
 
   &.theme-blue {
-    background: rgba(17, 64, 166, 1);
+    background-color: $main-bg-1;
     transition: all 0.2s ease;
     &::after,
     &::before {
-      background-color: $white;
+      background-color: $main-bg-3;
       transition: all 0.2s ease;
     }
     &::after {
@@ -158,7 +158,7 @@
 }
 
 .side-bar__language {
-  color: rgba(0, 0, 0, 0.50);
+  color: $switch-text-4;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -166,12 +166,12 @@
   transition: all 0.2s ease;
 
   &.theme-transparent {
-    color: rgba(62, 68, 80, 1);
+    color: $switch-text-3;
     transition: all 0.2s ease;
   }
 
   &.theme-blue {
-    color: rgba(77, 101, 151, 1);
+    color: $switch-text-5;
     transition: all 0.2s ease;
   }
 }

@@ -20,7 +20,7 @@
 .form__input {
   padding: 24px 0;
   width: 100%;
-  color: #9CA0AE;
+  color: $placeholder-text-1;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -30,17 +30,17 @@
   border: none;
   border-bottom: 1px solid #dcdce0;
   /* Современные браузеры */
-  &::placeholder {color: #9CA0AE;}
+  &::placeholder {color: $placeholder-text-1;}
   /* WebKit, Edge */
-  &::-webkit-input-placeholder {color: #9CA0AE;}
+  &::-webkit-input-placeholder {color: $placeholder-text-1;}
   /* Edge */
-  &::-ms-input-placeholder {color: #9CA0AE;}
+  &::-ms-input-placeholder {color: $placeholder-text-1;}
   /* Firefox 4-18 */
-  &:-moz-placeholder {color: #9CA0AE;opacity: 1;}
+  &:-moz-placeholder {color: $placeholder-text-1;opacity: 1;}
   /* Firefox 19+ */
-  &::-moz-placeholder {color: #9CA0AE;opacity: 1;}
+  &::-moz-placeholder {color: $placeholder-text-1;opacity: 1;}
   /* IE 10-11 */
-  &:-ms-input-placeholder {color: #9CA0AE;}
+  &:-ms-input-placeholder {color: $placeholder-text-1;}
 
   @media (max-width: 1100px) {
     margin: 0 0 21px;
@@ -58,19 +58,19 @@
 }
 
 .form__input__pop-up {
-  color: $white;
+  color: $placeholder-text-2;
   /* Современные браузеры */
-  &::placeholder {color: $white;}
+  &::placeholder {color: $placeholder-text-2;}
   /* WebKit, Edge */
-  &::-webkit-input-placeholder {color: $white;}
+  &::-webkit-input-placeholder {color: $placeholder-text-2;}
   /* Edge */
-  &::-ms-input-placeholder {color: $white;}
+  &::-ms-input-placeholder {color: $placeholder-text-2;}
   /* Firefox 4-18 */
-  &:-moz-placeholder {color: $white;opacity: 1;}
+  &:-moz-placeholder {color: $placeholder-text-2;opacity: 1;}
   /* Firefox 19+ */
-  &::-moz-placeholder {color: $white;opacity: 1;}
+  &::-moz-placeholder {color: $placeholder-text-2;opacity: 1;}
   /* IE 10-11 */
-  &:-ms-input-placeholder {color: $white;}
+  &:-ms-input-placeholder {color: $placeholder-text-2;}
 }
 
 .form__question {
@@ -104,7 +104,7 @@
 }
 
 .form__lock-person__pop-up {
-  color: $white;
+  color: $main-text-2;
 
   &::before {
     background-image: url("../img/feedback/feedback-icon-lock-popup.svg");
@@ -115,10 +115,16 @@
   position: relative;
   padding: 15px 40px 15px 60px !important;
   border: none;
-  color: $white;
+  color: $main-text-2;
   display: block;
-  background-image: url("../../img/feedback/feedback-icon-send.svg");
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='send'%3E%3Cmask id='mask0_58_578' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='21' height='20'%3E%3Crect id='Bounding box' x='0.5' width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_58_578)'%3E%3Cpath id='send_2' d='M12.4315 17.2046C12.3136 17.4795 12.1098 17.6489 11.8201 17.7128C11.5304 17.7766 11.2775 17.7005 11.0614 17.4844L8.40979 14.8328L11.9453 8.94024L6.05277 12.4758L3.40112 9.82412C3.18506 9.60806 3.10895 9.35517 3.17278 9.06546C3.23662 8.77574 3.40603 8.57196 3.68102 8.4541L16.5857 3.20973C16.9393 3.07224 17.2437 3.13116 17.4991 3.38651C17.7544 3.64185 17.8133 3.9463 17.6758 4.29985L12.4315 17.2046Z' fill='white'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: calc(50% - 80px) 50%;
   cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='send'%3E%3Cmask id='mask0_58_578' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='21' height='20'%3E%3Crect id='Bounding box' x='0.5' width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_58_578)'%3E%3Cpath id='send_2' d='M12.4315 17.2046C12.3136 17.4795 12.1098 17.6489 11.8201 17.7128C11.5304 17.7766 11.2775 17.7005 11.0614 17.4844L8.40979 14.8328L11.9453 8.94024L6.05277 12.4758L3.40112 9.82412C3.18506 9.60806 3.10895 9.35517 3.17278 9.06546C3.23662 8.77574 3.40603 8.57196 3.68102 8.4541L16.5857 3.20973C16.9393 3.07224 17.2437 3.13116 17.4991 3.38651C17.7544 3.64185 17.8133 3.9463 17.6758 4.29985L12.4315 17.2046Z' fill='%231140A6'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    transition: all 0.2s ease;
+  }
 }

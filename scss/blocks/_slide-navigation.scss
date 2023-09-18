@@ -13,11 +13,15 @@
 .slide-navigation__link {
   text-wrap: nowrap;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.32);
+  color: $inactive-text-2;
   transition: all 0.2s ease;
+  &:hover {
+    color: $main-text-2;
+    transition: all 0.2s ease;
+  }
 
   &__current {
-    color: $white;
+    color: $main-text-2;
     transition: all 0.2s ease;
   }
 }

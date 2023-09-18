@@ -24,12 +24,17 @@
 }
 
 .bread-crumbs__link {
-  color: rgba(255, 255, 255, 0.5);
+  color: $inactive-text-1;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
+  transition: all 0.2s ease;
+  &:hover {
+    color: $main-text-2;
+    transition: all 0.2s ease;
+  }
   &.disabled {
-    color: $white;
+    color: $main-text-2;
   }
 }

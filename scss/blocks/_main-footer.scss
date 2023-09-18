@@ -1,5 +1,5 @@
 .main-footer {
-  background-color: $dark-blue;
+  background-color: $main-bg-2;
 }
 
 .main-footer__container {
@@ -32,11 +32,18 @@
 
 .main-footer__link {
   display: block;
-  color: $white;
+  color: $main-text-2;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.2;
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+    transition: all 0.2s ease;
+  }
+
   @media (max-width: 700px) {
     font-size: 16px;
   }
@@ -47,7 +54,7 @@
 
 .main-footer__description {
   margin: 0;
-  color: $white;
+  color: $main-text-2;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
@@ -66,20 +73,32 @@
 
 .main-footer__phone {
   margin: 0 0 26px;
-  color: $white;
+  color: $main-text-2;
   text-decoration: none;
   font-size: 30px;
   font-weight: 600;
   line-height: 1.2;
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+    transition: all 0.2s ease;
+  }
 }
 
 .main-footer__mail {
   margin: 0 0 89px;
-  color: $white;
+  color: $main-text-2;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.2;
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+    transition: all 0.2s ease;
+  }
 }
 
 .main-footer__list {
@@ -101,7 +120,7 @@
 
 .main-footer__copyrights {
   margin: 0;
-  color: $white;
+  color: $main-text-2;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;

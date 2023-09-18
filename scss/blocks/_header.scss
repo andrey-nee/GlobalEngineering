@@ -3,13 +3,13 @@
     position: relative;
     height: 100vh;
     max-height: 832px;
-    background-color: #FFFFFF;
+    background-color: $main-bg-3;
     // overflow: hidden;
   }
   &__pages {
     margin-bottom: 146px;
     padding: 28px 0 108px;
-    background-color: $dark-blue;
+    background-color: $main-bg-2;
     overflow: hidden;
     @media (max-width: 700px) {
       margin-bottom: 60px;
@@ -28,12 +28,15 @@
   &__contacts {
     margin-bottom: 0;
   }
+  &__blank {
+    margin-bottom: 0;
+  }
 }
 
 .header__content__pages {
   display: flex;
   flex-direction: column;
-  color: $white;
+  color: $main-text-2;
 }
 
 .header__main-title {
@@ -154,6 +157,6 @@
 
 .header__decoration__services {
   height: calc(264px + 121px - 146px); // Половина слайда Services + Margin от заголовка - Margin блока Header
-  background-color: $dark-blue;
+  background-color: $main-bg-2;
   order: 3;
 }

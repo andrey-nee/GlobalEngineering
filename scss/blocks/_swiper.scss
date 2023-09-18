@@ -88,7 +88,7 @@
   display: flex;
   align-items: center;
   height: 30px !important;
-  color: $white;
+  color: $main-text-2;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.4;
@@ -97,7 +97,7 @@
   display: flex;
   align-items: center;
   height: 30px !important;
-  color: rgba(255, 255, 255, 0.63);
+  color: $inactive-text-3;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
@@ -107,12 +107,12 @@
   height: 2px !important;
   width: 70px !important;
   border-radius: 0 !important;
-  background-color: rgba(255, 255, 255, 0.21) !important;
+  background-color: $pagination-bg-1 !important;
 }
 
 .swiper-scrollbar-drag {
   border-radius: 0 !important;
-  background-color: rgba(255, 255, 255, 1) !important;
+  background-color: $main-bg-3 !important;
 }
 
 // Стили для Слайдера Текста
