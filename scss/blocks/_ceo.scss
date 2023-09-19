@@ -1,9 +1,38 @@
+.ceo {
+  position: relative;
+}
+.ceo__decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+
+}
+.ceo__decoration-column {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+.ceo__decoration-column__left {
+  left: 0;
+  right: 50%;
+  background-color: $main-bg-3;
+}
+.ceo__decoration-column__right {
+  left: 50%;
+  right: 0;
+  background-color: $main-bg-2;
+}
+
 .ceo__container {
   margin: 0 0 0 144px;
   display: flex;
   justify-content: space-between;
   position: relative;
-  background-color: $main-bg-2;
+  // background-color: $main-bg-2;
   color: $main-text-2;
   border-radius: 40px 0 0 40px;
   @media (max-width: 940px) {
@@ -32,6 +61,7 @@
   display: flex;
   position: relative;
   height: 656px;
+  z-index: 2;
   @media (max-width: 940px) {
     max-width: 100%;
   }
@@ -73,7 +103,7 @@
   justify-content: space-between;
   padding: 41px 100px 65px 0;
   margin-left: -109px;
-  z-index: 3;
+  background-color: $main-bg-2;
   @media (max-width: 940px) {
     margin: 0;
     padding: 70px 50px;
@@ -94,6 +124,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 1.0;
+  z-index: 3;
   @media (max-width: 940px) {
     margin-bottom: 30px;
   }
@@ -104,11 +135,13 @@
 
 .ceo__quote-container {
   padding: 0 0 0 calc(126px + 109px);
+  z-index: 3;
 }
 
 .ceo__name {
   margin: 0;
   max-width: 70%;
+  z-index: 3;
   @media (max-width: 940px) {
     max-width: 100%;
     text-align: end;

@@ -1,9 +1,12 @@
 .swiper {
-  max-width: 1512px;
+  // max-width: 1512px;
+  // background-color: $main-bg-4;
+  max-width: 100%;
 
   // Главный свайпер (главная странциа)
   &.mainSwiper {
-    width: 100vw;
+    width: 100%;
+    // max-width: 1512px;
   }
   &.mainSwiper-tag {
     width: 100%;
@@ -18,8 +21,8 @@
 
   // Свайпер с услугами (главная странциа)
   &.servicesSwiper {
-    padding-left: 144px;
-    width: calc(100vw - 144px);
+    margin-left: 120px;
+    width: calc(100vw - 120px);
     max-width: 1368px;
     box-sizing: border-box;
     @media (max-width: 700px) {
@@ -33,8 +36,8 @@
 
   // Свайпер с услугами (странциа Услуги)
   &.servicesSwiper2 {
-    padding-left: 144px;
-    width: calc(100vw - 144px);
+    margin-left: 120px;
+    width: calc(100vw - 120px);
     max-width: 1368px;
     box-sizing: border-box;
     @media (max-width: 700px) {
@@ -48,7 +51,7 @@
 
   // Свайпер с операционными блоками (странциа Операционные блоки)
   &.operationalBlocksSwiper {
-    width: calc(100vw - 144px);
+    width: calc(100vw - 120px);
     max-width: 1268px;
     margin-bottom: 33px;
     @media (max-width: 700px) {
@@ -59,7 +62,7 @@
     }
   }
   &.operationalBlocksSwiper-mini {
-    width: calc(100vw - 144px);
+    width: calc(100vw - 120px);
     max-width: 1268px;
     @media (max-width: 700px) {
       width: calc(100vw - 60px);

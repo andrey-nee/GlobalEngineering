@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class="page wrapper" lang="ru">
+<html class="page" lang="ru">
+<!-- <html class="page wrapper" lang="ru"> -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,28 +14,31 @@
 
 </head>
 
-<body class="page__body wrapper">
+<body class="page__body">
+<!-- <body class="page__body wrapper"> -->
   <!-- ШАПКА -->
   <header class="header header__page__main-page">
-    <!-- Слайдер с фонами на главной -->
-    <div class="swiper mainSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" data-hash="slide1">
-          <div class="slide slide--medical inner-wrapper">
+    <div class="header__slider">
+      <!-- Слайдер с фонами на главной -->
+      <div class="swiper mainSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-hash="slide1">
+            <div class="slide slide--medical">
+            </div>
           </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide2">
-          <div class="slide slide--blocks inner-wrapper">
+          <div class="swiper-slide" data-hash="slide2">
+            <div class="slide slide--blocks">
+            </div>
           </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide3">
-          <div class="slide slide--oxygen inner-wrapper">
+          <div class="swiper-slide" data-hash="slide3">
+            <div class="slide slide--oxygen">
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Основная шапка сайта -->
-    <div class="header__content__main-page">
+    <div class="header__content__main-page wrapper inner-wrapper">
       <div class="header__navigation main-header">
         <div class="main-header__container main-header__container__main-page">
           <p class="main-header__company">Инжиринговые услуги по Узбекистану и Центральной Азии</p>
@@ -295,17 +299,17 @@
       <!-- <div class="modal-request__mask" id="modalRequestMask"></div> -->
       <div class="modal-request__container deactivated">
         <section class="feedback feedback__pop-up">
-          <div class="feedback__container feedback__container__pop-up">
+          <div class="feedback__container feedback__container__pop-up wrapper inner-wrapper">
             <h2 class="feedback__title visually-hidden">Обратная связь</h2>
             <div class="feedback__column-left">
               <h3 class="feedback__subtitle feedback__subtitle__pop-up subtitle">Оставить заявку на услугу</h3>
               <form action="" method="post" class="feedback__form form">
-                <div class="form__line-box">
+                <div class="form__line-box form__line-box__pop-up">
                   <input type="text" name="name" id="name" class="form__input form__input__pop-up form__name" placeholder="Ваше имя">
                   <input type="tel" name="phone" id="phone" class="form__input form__input__pop-up form__phone" placeholder="Ваш телефон">
                 </div>
                 <input type="text" name="question" id="question" class="form__input form__input__pop-up form__question" placeholder="Ваш вопрос">
-                <div class="form__line-box">
+                <div class="form__line-box form__line-box__pop-up">
                   <p class="form__lock-person form__lock-person__pop-up">Ваши данные не будут переданы третьим лицам</p>
                   <input type="submit" value="Отправить заявку" class="form__submit-button button__type__blue">
                 </div>
@@ -379,7 +383,7 @@
   <main class="main-content">
     <!-- БЛОК "GLOBAL ENGINEERING" -->
     <section class="about" id="position">
-      <div class="about__container inner-wrapper">
+      <div class="about__container inner-wrapper wrapper">
         <div class="about__main-content">
           <h2 class="about__title visually-hidden">О нас</h2>
           <h3 class="about__subtitle about__subtitle__white title">Global Engineering</h3>
@@ -390,7 +394,7 @@
     </section>
     <!-- БЛОК "УСЛУГИ" -->
     <section class="services">
-      <div class="services__container">
+      <div class="services__container wrapper">
         <div class="services__title-container inner-wrapper">
           <h2 class="services__title title-underline">Услуги</h2>
         </div>
@@ -498,7 +502,7 @@
     </section>
     <!-- БЛОК "ПОЧЕМУ МЫ" -->
     <section class="reasons reasons__page__main">
-      <div class="reasons__container inner-wrapper">
+      <div class="reasons__container wrapper inner-wrapper">
         <h2 class="reasons__title title-underline">Почему мы</h2>
         <div class="reasons__content">
           <div class="reasons__column reasons__column-left">
@@ -553,7 +557,11 @@
     </section>
     <!-- БЛОК "ЦИТАТА РУКОВОДИТЕЛЯ" -->
     <section class="ceo">
-      <div class="ceo__container">
+      <div class="ceo__decoration">
+        <div class="ceo__decoration-column ceo__decoration-column__left"></div>
+        <div class="ceo__decoration-column ceo__decoration-column__right"></div>
+      </div>
+      <div class="ceo__container wrapper inner-wrapper">
         <h2 class="ceo__title visually-hidden">Руководитель</h2>
         <div class="ceo__column-left">
           <div class="ceo__photo">
@@ -572,7 +580,7 @@
     </section>
     <!-- БЛОК "БУДЕМ РАДЫ ОТВЕТИТЬ НА ВАШИ ВОПРОСЫ" -->
     <section class="feedback" id="feedback">
-      <div class="feedback__container inner-wrapper">
+      <div class="feedback__container wrapper inner-wrapper">
         <h2 class="feedback__title visually-hidden">Обратная связь</h2>
         <div class="feedback__column-left">
           <h3 class="feedback__subtitle subtitle">Будем рады ответить на ваши вопросы</h3>
@@ -651,7 +659,7 @@
 
   <!-- ПОДВАЛ -->
   <footer class="main-footer">
-    <div class="main-footer__container inner-wrapper">
+    <div class="main-footer__container wrapper inner-wrapper">
       <div class="main-footer__company">
         <a href="./index.html" class="main-footer__link">
           <img src="./img/footer/footer-logo.svg" alt="Логотип Global Engineering">

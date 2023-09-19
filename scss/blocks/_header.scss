@@ -33,6 +33,10 @@
   }
 }
 
+.header__slider {
+  width: 100vw;
+}
+
 .header__content__pages {
   display: flex;
   flex-direction: column;
@@ -67,9 +71,12 @@
   position: absolute;
   z-index: 9;
   top: 28px;
-  left: 144px;
-  right: 100px;
+  // left: 144px;
+  // right: 100px;
+  left: 0;
+  right: 0;
   bottom: 60px;
+  // background-color: $main-bg-4;
   pointer-events: none;
 
   @media (max-width: 1200px) {
@@ -152,7 +159,8 @@
   position: absolute;
   top: 0;
   height: 100%;
-  max-width: 1512px;
+  // max-width: 1512px;
+  // max-width: 1600px;
 }
 
 .header__decoration__services {

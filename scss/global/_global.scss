@@ -18,11 +18,13 @@ img {
 
 .wrapper {
   margin: 0 auto;
+  max-width: 1512px;
 }
 
 .inner-wrapper {
-  padding-left:144px;
-  padding-right: 100px;
+  padding-left:120px;
+  padding-right: 120px;
+  box-sizing: border-box;
 
   @media (max-width: 1200px) {
 	}

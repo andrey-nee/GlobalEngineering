@@ -1,5 +1,5 @@
 :root {
-  --mask-bg: url("../img/intro/intro-pattern.png") repeat 0% 0%/14.9%;
+  --mask-bg: url("../img/intro/intro-pattern.png") repeat 0% 0%;
   --linear-bg: linear-gradient(
       180deg, #000000 0%,
       rgba(0, 0, 0, 0.00) 32.29%),
@@ -9,6 +9,7 @@
 
 .slide {
   height: 100vh;
+  width: 100%;
   max-height: 832px;
   display: flex;
   padding-top: 85px;
@@ -24,7 +25,8 @@
     url("../img/intro/intro-bg-01.jpg") no-repeat center,
     var(--mask-bg),
     var(--linear-bg);
-  background-blend-mode: overlay;
+    background-blend-mode: overlay;
+    background-size: cover, 14.9%;
   }
 
   &--blocks {
@@ -32,7 +34,8 @@
     url("../img/intro/intro-bg-02.jpg") no-repeat center,
     var(--mask-bg),
     var(--linear-bg);
-  background-blend-mode: overlay;
+    background-blend-mode: overlay;
+    background-size: cover, 14.9%;
   }
 
   &--oxygen {
@@ -40,7 +43,8 @@
     url("../img/intro/intro-bg-03.jpg") no-repeat center,
     var(--mask-bg),
     var(--linear-bg);
-  background-blend-mode: overlay;
+    background-blend-mode: overlay;
+    background-size: cover, 14.9%;
   }
 }
 

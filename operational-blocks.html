@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page wrapper" lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 
-<body class="page__body wrapper">
+<body class="page__body">
   <!-- ШАПКА -->
   <header class="header header__page__pages  header__page__operational-blocks">
     <!-- Основная шапка сайта -->
-    <div class="header__navigation main-header main-header__page__pages inner-wrapper">
+    <div class="header__navigation main-header main-header__page__pages wrapper inner-wrapper">
       <div class="main-header__container main-header__container__pages">
         <p class="main-header__company">Инжиринговые услуги по Узбекистану и Центральной Азии</p>
         <nav class="main-header__navigation navigation">
@@ -174,7 +174,7 @@
         </div>
       </div>
     </div>
-    <div class="header__content__pages inner-wrapper">
+    <div class="header__content__pages wrapper inner-wrapper">
       <h1 class="header__main-title title">Операционные блоки</h1>
       <!-- Хлебные крошки -->
       <div class="header__bread-crumbs bread-crumbs">
@@ -196,17 +196,17 @@
       <!-- <div class="modal-request__mask" id="modalRequestMask"></div> -->
       <div class="modal-request__container deactivated">
         <section class="feedback feedback__pop-up">
-          <div class="feedback__container feedback__container__pop-up">
+          <div class="feedback__container feedback__container__pop-up wrapper inner-wrapper">
             <h2 class="feedback__title visually-hidden">Обратная связь</h2>
             <div class="feedback__column-left">
               <h3 class="feedback__subtitle feedback__subtitle__pop-up subtitle">Оставить заявку на услугу</h3>
               <form action="" method="post" class="feedback__form form">
-                <div class="form__line-box">
+                <div class="form__line-box form__line-box__pop-up">
                   <input type="text" name="name" id="name" class="form__input form__input__pop-up form__name" placeholder="Ваше имя">
                   <input type="tel" name="phone" id="phone" class="form__input form__input__pop-up form__phone" placeholder="Ваш телефон">
                 </div>
                 <input type="text" name="question" id="question" class="form__input form__input__pop-up form__question" placeholder="Ваш вопрос">
-                <div class="form__line-box">
+                <div class="form__line-box form__line-box__pop-up">
                   <p class="form__lock-person form__lock-person__pop-up">Ваши данные не будут переданы третьим лицам</p>
                   <input type="submit" value="Отправить заявку" class="form__submit-button button__type__blue">
                 </div>
@@ -280,7 +280,7 @@
   <main class="main-content">
     <!-- БЛОК "ОБЛОЖКА СТРАНИЦЫ" -->
     <section class="cover">
-      <div class="cover__container">
+      <div class="cover__container wrapper">
         <h2 class="cover__title visually-hidden">Обложка страницы</h2>
         <div class="cover__image">
           <img src="./img/operational-blocks/operational-blocks-bg-image.jpg" alt="">
@@ -288,9 +288,9 @@
       </div>
     </section>
     <!-- БЛОК "ОПЕРАЦИОННЫЕ УСЛУГИ" -->
-    <section class="operational-blocks inner-wrapper">
+    <section class="operational-blocks">
       <h2 class="operational-blocks__title visually-hidden">Операционные блоки</h2>
-      <div class="operational-blocks__container">
+      <div class="operational-blocks__container wrapper inner-wrapper">
         <div class="operational-blocks__main-content">
           <div class="operational-blocks__column-left">
             <div class="request-block request-block__operational-block-page">
@@ -385,7 +385,7 @@
     </section>
     <!-- БЛОК "БУДЕМ РАДЫ ОТВЕТИТЬ НА ВАШИ ВОПРОСЫ" -->
     <section class="feedback" id="feedback">
-      <div class="feedback__container inner-wrapper">
+      <div class="feedback__container wrapper inner-wrapper">
         <h2 class="feedback__title visually-hidden">Обратная связь</h2>
         <div class="feedback__column-left">
           <h3 class="feedback__subtitle subtitle">Будем рады ответить на ваши вопросы</h3>
@@ -464,7 +464,7 @@
 
   <!-- ПОДВАЛ -->
   <footer class="main-footer">
-    <div class="main-footer__container inner-wrapper">
+    <div class="main-footer__container wrapper inner-wrapper">
       <div class="main-footer__company">
         <a href="./index.html" class="main-footer__link">
           <img src="./img/footer/footer-logo.svg" alt="Логотип Global Engineering">
