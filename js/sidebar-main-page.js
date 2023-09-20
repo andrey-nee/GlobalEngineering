@@ -1,11 +1,6 @@
-var burger = document.querySelector('.side-bar__burger-menu')
-var sidebar = document.querySelector('.side-bar')
-var logo = document.querySelector('.side-bar__logo')
-var langSwitch = document.querySelector('.language__switch')
-var langPos = document.querySelector('.language__position')
-var lang = document.querySelector('.side-bar__language')
-var langCur = document.querySelector('.language__current')
+// Объявляем переменные
 var menuMask = document.querySelector('.menu__mask')
+
 
 // Отлеживаем скролл
 window.addEventListener('scroll', function () {
@@ -38,6 +33,7 @@ window.addEventListener('scroll', function () {
   }
   // console.log("Расстояние до точки появления сайдбара ",diff);
 });
+
 
 // Функиця для вычисления координат (X,Y) элемента на странице
 function getCoords(elem) {
