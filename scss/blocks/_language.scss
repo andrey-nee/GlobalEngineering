@@ -9,47 +9,47 @@
 
 .language__switch {
   position: relative;
+  border-radius: 50px;
   width: 24px;
   height: 38px;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.2s;
   background-color: $switch-bg-2;
+  transition: 0.2s;
+  cursor: pointer;
 
   &.theme-transparent {
-    transition: 0.2s;
     background-color: $switch-bg-1;
+    transition: 0.2s;
   }
 
   &.theme-blue {
-    transition: 0.2s;
     background-color: $switch-bg-3;
+    transition: 0.2s;
   }
 }
 
 .language__position {
   position: absolute;
-  top: 5px;
   left: 50%;
-  transform: translate(-50%, 0%);
+  top: 5px;
+  border-radius: 50%;
   width: 18px;
   height: 18px;
-  border-radius: 50%;
-  transition: 0.2s;
   background-color: $switch-bg-4;
-
-  &.theme-transparent {
-    transition: 0.2s;
-    background-color: $switch-bg-2;
-  }
-
-  &.theme-blue {
-    transition: 0.2s;
-    background-color: $switch-bg-2;
-  }
+  transform: translate(-50%, 0%);
+  transition: 0.2s;
 
   &__uz {
     transform: translate(-50%, 60%);
+  }
+
+  &.theme-transparent {
+    background-color: $switch-bg-2;
+    transition: 0.2s;
+  }
+
+  &.theme-blue {
+    background-color: $switch-bg-2;
+    transition: 0.2s;
   }
 }
 
@@ -59,15 +59,16 @@
 }
 
 .language__current {
-  transition: 0.2s;
   color: $switch-text-2;
+  transition: 0.2s;
 
   &.theme-transparent {
-    transition: 0.2s;
     color: $switch-text-1;
+    transition: 0.2s;
   }
+
   &.theme-blue {
-    transition: 0.2s;
     color: $switch-text-1;
+    transition: 0.2s;
   }
 }

@@ -1,10 +1,11 @@
 .main-header {
-  color: $main-text-2;
   position: relative;
+  color: $main-text-2;
 }
 
 .main-header__page__pages {
   margin-bottom: 80px;
+
   @media (max-width: 700px) {
     margin-bottom: 20px;
   }
@@ -12,14 +13,14 @@
 
 .main-header__container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   column-gap: 30px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-header__container__main-page {
   @media (max-width: 800px) {
-  justify-content: flex-end;
+    justify-content: flex-end;
   }
 }
 
@@ -33,17 +34,18 @@
   margin: auto 0;
   padding: 0;
   max-width: 15%;
-  font-size: 11px;
   font-weight: 400;
+  font-size: 11px;
   line-height: 1.4;
   color: $inactive-text-3;
 
   @media (max-width: 1200px) {
     max-width: 20%;
-	}
+  }
+
   @media (max-width: 800px) {
     display: none;
-	}
+  }
 }
 
 .main-header__contacts {
@@ -59,16 +61,16 @@
 }
 
 .main-header__contacts__pages {
-  // box-sizing: border-box;
   @media (max-width: 800px) {
-    width: 100%;
     column-gap: normal;
     justify-content: space-between;
+    width: 100%;
   }
 }
 
 .main-header__number {
   margin: auto 0;
+
   @media (max-width: 500px) {
     margin-bottom: 15px;
   }
@@ -77,13 +79,15 @@
 .main-header__link {
   display: flex;
   align-items: center;
-  white-space: nowrap;
   font-size: 14px;
   line-height: 1.2;
+  white-space: nowrap;
   text-decoration: none;
   color: $main-text-2;
+
   &__phone {
     transition: all 0.2s ease;
+
     &:hover {
       text-decoration: underline;
       transition: all 0.2s ease;
@@ -93,13 +97,15 @@
 
 .main-header__link__button {
   transition: all 0.2s ease;
-  &:hover {
-    color: $span-text-2;
-    transition: all 0.2s ease;
-  }
+
   &__main-page {
     &:hover {
       color: $main-text-1;
     }
+  }
+
+  &:hover {
+    color: $span-text-2;
+    transition: all 0.2s ease;
   }
 }

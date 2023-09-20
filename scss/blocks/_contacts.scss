@@ -1,11 +1,12 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  padding: 53px;
   align-items: flex-start;
-  box-sizing: border-box;
   border-radius: 40px;
+  padding: 53px;
+  box-sizing: border-box;
   background-color: $info-bg-1;
+
   @media (max-width: 800px) {
     padding: 30px;
   }
@@ -13,16 +14,19 @@
 
 .contacts__description {
   margin: 0 0 16px;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.6;
+
+  &__main {
+  }
+
   @media (max-width: 1000px) {
     width: 65%;
   }
+
   @media (max-width: 700px) {
     width: 100%;
-  }
-  &__main {
   }
 }
 
@@ -35,26 +39,27 @@
 }
 
 .contacts__link {
-  color: $main-text-1;
   text-decoration: none;
+  color: $main-text-1;
   transition: all 0.2s ease;
+
+  &__white {
+    color: $main-text-2;
+  }
 
   &:hover {
     text-decoration: underline;
     transition: all 0.2s ease;
   }
-
-  &__white {
-    color: $main-text-2;
-  }
 }
 
 .contacts__phone {
   margin: 0 0 16px;
-  white-space: nowrap;
-  font-size: 30px;
   font-weight: 400;
+  font-size: 30px;
   line-height: 1.6;
+  white-space: nowrap;
+
   @media (max-width: 500px) {
     font-size: 20px;
   }
@@ -67,18 +72,18 @@
 }
 
 .contacts__mail {
+  position: relative;
   margin: 0 0 16px;
   padding-left: 36px;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.6;
-  position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 0;
     left: 3px;
+    top: 0;
     width: 24px;
     height: 24px;
     background-image: url("../img/contacts/contacts-icon-letter.svg");
@@ -87,18 +92,18 @@
 }
 
 .contacts__mail__white {
+  position: relative;
   margin: 0 0 16px;
   padding-left: 36px;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.6;
-  position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 0;
     left: 3px;
+    top: 0;
     width: 24px;
     height: 24px;
     background-image: url("../img/contacts/contacts-icon-letter-white.svg");
@@ -114,10 +119,11 @@
 
 .contacts__address {
   margin: 0 0 16px;
-  color: $address-text-1;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.6;
+  color: $address-text-1;
+
   &.menu__address {
     color: $address-text-2;
   }
@@ -132,20 +138,10 @@
 
 .contacts__map {
   margin: 0 0 55px;
-  color: $span-text-1;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.6;
-
-  @media (max-width: 950px) {
-    margin: 0 0 30px;
-  }
-  @media (max-width: 700px) {
-    margin: 0 0 20px;
-  }
-  @media (max-width: 550px) {
-    margin: 0 0 15px;
-  }
+  color: $span-text-1;
 
   &__white {
     color: $main-text-2;
@@ -154,7 +150,19 @@
     &:hover {
       text-decoration: underline;
       transition: all 0.2s ease;
-      }
+    }
+  }
+
+  @media (max-width: 950px) {
+    margin: 0 0 30px;
+  }
+
+  @media (max-width: 700px) {
+    margin: 0 0 20px;
+  }
+
+  @media (max-width: 550px) {
+    margin: 0 0 15px;
   }
 }
 

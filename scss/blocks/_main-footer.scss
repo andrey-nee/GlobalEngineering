@@ -3,13 +3,15 @@
 }
 
 .main-footer__container {
-  padding: 53px 0 75px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 53px 0 75px;
+
   @media (max-width: 700px) {
     padding: 40px 0;
   }
+
   @media (max-width: 700px) {
     padding: 20px 0;
   }
@@ -19,24 +21,27 @@
   align-self: flex-start;
   width: 206px;
   height: 64px;
-  @media (max-width: 700px) {
-    width: 160px;
-  }
+
   a {
     margin: 0 0 42px;
+
     @media (max-width: 700px) {
       margin: 0 0 25px;
     }
+  }
+
+  @media (max-width: 700px) {
+    width: 160px;
   }
 }
 
 .main-footer__link {
   display: block;
-  color: $main-text-2;
-  text-decoration: none;
-  font-size: 18px;
   font-weight: 600;
+  font-size: 18px;
   line-height: 1.2;
+  text-decoration: none;
+  color: $main-text-2;
   transition: all 0.2s ease;
 
   &:hover {
@@ -47,6 +52,7 @@
   @media (max-width: 700px) {
     font-size: 16px;
   }
+
   @media (max-width: 500px) {
     font-size: 14px;
   }
@@ -54,10 +60,11 @@
 
 .main-footer__description {
   margin: 0;
-  color: $main-text-2;
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.4;
+  color: $main-text-2;
+
   @media (max-width: 400px) {
     font-size: 12px;
   }
@@ -66,6 +73,7 @@
 .main-footer__contacts {
   display: flex;
   flex-direction: column;
+
   @media (max-width: 900px) {
     display: none;
   }
@@ -73,11 +81,11 @@
 
 .main-footer__phone {
   margin: 0 0 26px;
-  color: $main-text-2;
-  text-decoration: none;
-  font-size: 30px;
   font-weight: 600;
+  font-size: 30px;
   line-height: 1.2;
+  text-decoration: none;
+  color: $main-text-2;
   transition: all 0.2s ease;
 
   &:hover {
@@ -88,11 +96,11 @@
 
 .main-footer__mail {
   margin: 0 0 89px;
-  color: $main-text-2;
-  text-decoration: none;
-  font-size: 18px;
   font-weight: 600;
+  font-size: 18px;
   line-height: 1.2;
+  text-decoration: none;
+  color: $main-text-2;
   transition: all 0.2s ease;
 
   &:hover {
@@ -102,9 +110,10 @@
 }
 
 .main-footer__list {
+  list-style: none;
   margin: 0 0 69px;
   padding: 0;
-  list-style: none;
+
   @media (max-width: 700px) {
     margin: 0 0 25px;
   }
@@ -120,12 +129,14 @@
 
 .main-footer__copyrights {
   margin: 0;
-  color: $main-text-2;
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.4;
+  color: $main-text-2;
+
   a {
     display: inline-block;
+
     @media (max-width: 400px) {
       display: block;
     }

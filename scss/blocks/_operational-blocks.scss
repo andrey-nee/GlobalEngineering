@@ -5,6 +5,7 @@
 .operational-blocks__container {
   padding: 50px 0 45px;
   width: 100%;
+
   @media (max-width: 500px) {
     padding: 40px 0;
   }
@@ -12,46 +13,52 @@
 
 .operational-blocks__main-content {
   display: flex;
+  column-gap: 20px;
   justify-content: space-between;
   margin-bottom: 110px;
-  column-gap: 20px;
   width: 100%;
   background-image: url("../img/operational-blocks/operational-blocks-bg-logo.svg");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
+
   @media (max-width: 1100px) {
     flex-direction: column;
     background-image: none;
   }
+
   @media (max-width: 700px) {
     margin-bottom: 60px;
   }
+
   @media (max-width: 500px) {
     margin-bottom: 40px;
   }
 }
 
 .operational-blocks__column-left {
-  margin-top: calc(-50px - 80px); //Padding блока operational-blocks + высота на которую должен заступать блок-карточка Request
+  margin-top: calc(-50px - 80px);
+  //Padding блока operational-blocks + высота на которую должен заступать блок-карточка Request
   @media (max-width: 1100px) {
+    order: 2;
     margin-top: 0;
     width: 100%;
-    order: 2;
   }
 }
 
 .operational-blocks__column-right {
   max-width: 45%;
+
   @media (max-width: 1100px) {
+    order: 1;
     margin-bottom: 50px;
     max-width: 100%;
     background-image: url("../img/operational-blocks/operational-blocks-bg-logo.svg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    order: 1;
   }
+
   @media (max-width: 500px) {
     margin-bottom: 40px;
   }
@@ -59,26 +66,29 @@
 
 .operational-blocks__main-description {
   margin: 0 0 53px;
-  font-size: 24px;
   font-weight: 500;
+  font-size: 24px;
   line-height: 1.6;
-  @media (max-width: 500px) {
-    margin-bottom: 40px;
-  }
+
   span {
     color: $span-text-1;
+  }
+
+  @media (max-width: 500px) {
+    margin-bottom: 40px;
   }
 }
 
 .operational-blocks__description {
   margin: 0;
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.6;
 }
 
 .operational-blocks__slider {
   transition: all 0.4s ease 0.2s;
+
   &.hidden {
     transform: translate(1000%, 0%);
     transition: all 0.4s ease;
@@ -87,17 +97,19 @@
 
 .operational-blocks__slide {
   display: flex;
-  border-radius: 40px;
   overflow: hidden;
+  border-radius: 40px;
+
   &__mini {
+    overflow: hidden;
+    border-radius: 20px;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-    overflow: hidden;
+
     img {
-      object-fit: cover;
-      background-size: cover;
       height: 79px;
+      background-size: cover;
+      object-fit: cover;
     }
   }
 }

@@ -1,11 +1,11 @@
 .page {
-  height: 100%;
-  width: 100vw;
   overflow-x: hidden;
+  width: 100vw;
+  height: 100%;
   font-family: "Inter", "Arial", sans-serif;
-  font-size: 24px;
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
   line-height: 1.6;
 
   &.lock {
@@ -15,12 +15,12 @@
 
 .page__body {
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  grid-template-rows: min-content 1fr min-content;
+  overflow: hidden;
+  margin: 0;
   min-width: 320px;
   min-height: 100%;
-  margin: 0;
-  overflow: hidden;
 
   &.lock {
     overflow: hidden;

@@ -1,6 +1,4 @@
 .slider-controls {
-  // display: flex;
-  // position: relative;
   color: $main-text-2;
 }
 
@@ -12,9 +10,9 @@
 }
 
 .slider-controls__counter {
-  display: flex;
   position: relative;
   top: 0 !important;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
@@ -23,12 +21,12 @@
 
 .slider-controls__scrollbar {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  height: 2px;
+  top: 50%;
   width: 25px;
+  height: 2px;
   min-width: 0;
+  transform: translate(-50%, -50%);
   pointer-events: all;
 }
 
@@ -37,8 +35,8 @@
   align-items: center;
 
   button {
-    background-color: transparent;
     border: none;
+    background-color: transparent;
   }
 }
 
@@ -52,8 +50,8 @@
 
   img {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: auto;
     height: 100%;
     object-fit: contain;

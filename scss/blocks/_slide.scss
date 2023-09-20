@@ -1,50 +1,57 @@
 :root {
   --mask-bg: url("../img/intro/intro-pattern.png") repeat 0% 0%;
-  --linear-bg: linear-gradient(
-      180deg, #000000 0%,
-      rgba(0, 0, 0, 0.00) 32.29%),
-      rgba(0, 0, 0, 0.70
+  --linear-bg:
+    linear-gradient(
+      180deg,
+      #000 0%,
+      rgba(0, 0, 0, 0) 32.29%
+    ),
+    rgba(
+      0,
+      0,
+      0,
+      0.7
     );
 }
 
 .slide {
-  height: 100vh;
-  width: 100%;
-  max-height: 832px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
   padding-top: 85px;
   padding-bottom: 60px;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  color: $main-text-2;
+  width: 100%;
+  height: 100vh;
+  max-height: 832px;
   box-sizing: border-box;
+  color: $main-text-2;
 
   &--medical {
     background:
-    url("../img/intro/intro-bg-01.jpg") no-repeat center,
-    var(--mask-bg),
-    var(--linear-bg);
-    background-blend-mode: overlay;
+      url("../img/intro/intro-bg-01.jpg") no-repeat center,
+      var(--mask-bg),
+      var(--linear-bg);
     background-size: cover, 14.9%;
+    background-blend-mode: overlay;
   }
 
   &--blocks {
     background:
-    url("../img/intro/intro-bg-02.jpg") no-repeat center,
-    var(--mask-bg),
-    var(--linear-bg);
-    background-blend-mode: overlay;
+      url("../img/intro/intro-bg-02.jpg") no-repeat center,
+      var(--mask-bg),
+      var(--linear-bg);
     background-size: cover, 14.9%;
+    background-blend-mode: overlay;
   }
 
   &--oxygen {
     background:
-    url("../img/intro/intro-bg-03.jpg") no-repeat center,
-    var(--mask-bg),
-    var(--linear-bg);
-    background-blend-mode: overlay;
+      url("../img/intro/intro-bg-03.jpg") no-repeat center,
+      var(--mask-bg),
+      var(--linear-bg);
     background-size: cover, 14.9%;
+    background-blend-mode: overlay;
   }
 }
 
@@ -54,6 +61,7 @@
   justify-content: center;
   margin-bottom: 20px;
   height: 100%;
+
   @media (max-width: 900px) {
     max-width: 100%;
   }
@@ -62,6 +70,7 @@
 .slide__tag-container {
   margin-bottom: 34px;
   max-height: 30px;
+
   @media (max-width: 600px) {
     margin-bottom: 20px;
   }
@@ -70,14 +79,17 @@
 .slide__title-container {
   margin-bottom: 39px;
   max-height: 200px;
+
   @media (max-width: 900px) {
     margin-bottom: 20px;
     max-height: 150px;
   }
+
   @media (max-width: 600px) {
     margin-bottom: 20px;
     max-height: 110px;
   }
+
   @media (max-width: 400px) {
     margin-bottom: 20px;
     max-height: 70px;
@@ -85,16 +97,19 @@
 }
 
 .slide__description-container {
-  max-height: 100px;
   max-width: 60%;
+  max-height: 100px;
+
   @media (max-width: 900px) {
     max-width: 65%;
     max-height: 45%;
   }
+
   @media (max-width: 700px) {
     max-width: 70%;
     max-height: 65%;
   }
+
   @media (max-width: 600px) {
     max-width: 100%;
     max-height: 65%;
@@ -103,10 +118,10 @@
 
 .slide__title {
   position: relative;
-  padding: 0;
-  height: 200px;
-  width: 100%;
   overflow: hidden;
+  padding: 0;
+  width: 100%;
+  height: 200px;
 
   .anim-title {
     position: absolute;
@@ -116,14 +131,14 @@
 
 .slide__tag {
   margin: 0;
+  border-radius: 100px;
   padding: 6px 12px;
   width: min-content;
-  white-space: nowrap;
   font-size: 12px;
   line-height: 1.2;
-  background-color: $main-bg-2;
+  white-space: nowrap;
   color: $main-text-2;
-  border-radius: 100px;
+  background-color: $main-bg-2;
 }
 
 .slide__subtitle {
@@ -134,9 +149,10 @@
 .slide__description {
   margin: 0;
   padding: 0;
-  color: $main-text-2;
   font-size: 16px;
   line-height: 1.6;
+  color: $main-text-2;
+
   @media (max-width: 900px) {
     font-size: 20px;
   }

@@ -1,44 +1,48 @@
 .navigation {
   @media (max-width: 1200px) {
-		display: none;
-	}
+    display: none;
+  }
 }
 
 .navigation__list {
-  margin: auto 0;
-  padding: 0;
   display: flex;
   column-gap: 20px;
   list-style: none;
+  margin: auto 0;
+  padding: 0;
 }
+
 .navigation__item {
   position: relative;
   margin: auto 0;
-  padding: 20px 0 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 0;
   width: 120px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.20);
 
   &__sublist {
-    &:hover {
-      border-bottom: 1px solid transparent;
-    }
     &::after {
-      content: '';
+      content: "";
       position: absolute;
-      top: 22px;
       right: 50px;
+      top: 22px;
       width: 10px;
       height: 10px;
       background-image: url("../img/header/header-icon-more.svg");
     }
+
+    &:hover {
+      border-bottom: 1px solid transparent;
+    }
   }
+
   &__current {
-    border-bottom: 1px solid rgba(255, 255, 255, 1.0);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
   }
+
   &:hover > .navigation__sublist {
     opacity: 1;
-    pointer-events: all;
     transition: all 0.2s ease;
+    pointer-events: all;
   }
 }
 
@@ -46,9 +50,9 @@
   display: flex;
   align-items: center;
   margin: auto 0;
-  white-space: nowrap;
   font-size: 14px;
   line-height: 1.2;
+  white-space: nowrap;
   text-decoration: none;
   color: $inactive-text-1;
   transition: all 0.2s ease;
@@ -56,6 +60,7 @@
   &__current {
     color: $main-text-2;
   }
+
   &:hover {
     color: $main-text-2;
     transition: all 0.2s ease;
@@ -64,18 +69,19 @@
 
 .navigation__sublist {
   position: absolute;
-  top: 57px;
   left: -10px;
+  top: 57px;
+  z-index: 10;
+  list-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
   padding: 10px;
   width: 120px;
-  border: 1px solid rgba(255, 255, 255, 0.20);
-  border-radius: 5px;
-  list-style: none;
-  opacity: 0;
-  pointer-events: none;
   background-color: $main-bg-2;
-  z-index: 10;
+  opacity: 0;
   transition: all 0.2s ease;
+  pointer-events: none;
+
   &__main {
     background-color: $main-bg-4;
   }
@@ -85,9 +91,10 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
+
   .navigation__link {
-    max-width: 100%;
     display: block;
+    max-width: 100%;
     white-space: wrap;
   }
 }
