@@ -71,25 +71,16 @@
   position: absolute;
   z-index: 9;
   top: 28px;
-  // left: 144px;
-  // right: 100px;
   left: 0;
   right: 0;
   bottom: 60px;
-  // background-color: $main-bg-4;
   pointer-events: none;
 
   @media (max-width: 1200px) {
     right: 40px;
 	}
   @media (max-width: 700px) {
-    top: 28px;
-    left: 100px;
-    bottom: 40px;
-	}
-  @media (max-width: 400px) {
-    top: 28px;
-    left: 75px;
+    left: 50px;
     bottom: 40px;
 	}
 }

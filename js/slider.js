@@ -100,18 +100,19 @@ var servicesSwiper = new Swiper(".servicesSwiper", {
     disableOnInteraction: true, // Отключение автопрокрутки после того как пользователь начал перелистывать слайды
   },
   breakpoints: {
-    500: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    800: {
+    1000: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    1200: {
+    1300: {
       slidesPerView: 3,
       spaceBetween: 40,
     },
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '#mainServicesSliderNext',
+    prevEl: '#mainServicesSliderPrev',
   },
 });
 
@@ -126,26 +127,27 @@ var servicesSwiper2 = new Swiper(".servicesSwiper2", {
     disableOnInteraction: true, // Отключение автопрокрутки после того как пользователь начал перелистывать слайды
   },
   breakpoints: {
-    500: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    800: {
+    1000: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    1200: {
+    1300: {
       slidesPerView: 3,
       spaceBetween: 40,
     },
   },
+    // Navigation arrows
+    navigation: {
+      nextEl: '#servicesServicesSliderNext',
+      prevEl: '#servicesServicesSliderPrev',
+    },
 });
 
 // Свайпер-предпросмотр услуг на странице Операционные блоки
 var operBlocksSwiperMini = new Swiper(".operationalBlocksSwiper-mini", {
   slidesPerView: 1,
   spaceBetween: 10,
-  speed: 1000,
+  speed: 500,
   loop: true,
   watchSlidesProgress: true,
   centerInsufficientSlides: true,

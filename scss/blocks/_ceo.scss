@@ -1,5 +1,9 @@
 .ceo {
   position: relative;
+  margin-bottom: 120px;
+  @media (max-width: 700px) {
+    margin-bottom: 60px;
+  }
 }
 .ceo__decoration {
   position: absolute;
@@ -8,7 +12,9 @@
   right: 0;
   bottom: 0;
   display: flex;
-
+  @media (max-width: 940px) {
+    display: none;
+  }
 }
 .ceo__decoration-column {
   position: absolute;
@@ -101,7 +107,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 41px 100px 65px 0;
+  padding: 41px 0 65px 0;
   margin-left: -109px;
   background-color: $main-bg-2;
   @media (max-width: 940px) {

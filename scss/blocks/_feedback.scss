@@ -1,3 +1,9 @@
+.feedback {
+  margin-bottom: 120px;
+  @media (max-width: 700px) {
+    margin-bottom: 60px;
+  }
+}
 .feedback__pop-up {
   padding: 40px 100px;
   @media (max-width: 800px) {
@@ -9,7 +15,7 @@
 }
 
 .feedback__container {
-  padding: 120px 0;
+  // padding: 120px 0;
   display: flex;
   column-gap: 40px;
   justify-content: space-between;
@@ -26,6 +32,9 @@
     flex-direction: column;
     row-gap: 60px;
     background-position: 50% 28%;
+  }
+  .wrapper {
+
   }
   @media (max-width: 700px) {
     margin: 0 0 60px;

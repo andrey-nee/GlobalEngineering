@@ -1,7 +1,12 @@
+.bread-crumbs {
+
+}
+
 .bread-crumbs__list {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 

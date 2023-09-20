@@ -14,7 +14,7 @@ var buttonRequestOpenMain = document.querySelector('.modal-request__open-button'
 var buttonRequestClose = document.querySelector('.modal-request__close-button')
 var modalRequestContainer = document.querySelector('.modal-request__container')
 
-// Меню бургер для мобилок
+// Меню бургер
 burger.addEventListener('click', function () {
   page.classList.toggle('lock');
   // body.classList.toggle('lock');
@@ -86,3 +86,29 @@ anchors.forEach(function(item) {
     }, animationTime / framesCount);
   });
 });
+
+// Закрываем меню бургер, если размер окна меньше 700px (т.к. при 700px мы выключаем Sidebar меню)
+window.onresize = function() {
+  const windowInnerWidth = window.innerWidth
+  if(sidebar.classList.contains("theme-transparent")){
+    // console.log('НЕ нужно закрывать боковое меню')
+    // console.log(windowInnerWidth)
+  } else {
+    if(windowInnerWidth <= 700) {
+      console.log('Закрываем боковое меню (Ширина окна меньше 700px)');
+      page.classList.remove('lock');
+      // body.classList.toggle('lock');
+      burger.classList.remove('active');
+      // menu.classList.toggle('deactivated');
+      burger.classList.remove('theme-blue');
+      sidebar.classList.remove('theme-blue');
+      logo.classList.remove('theme-blue');
+      langSwitch.classList.toggle('theme-blue');
+      langPos.classList.remove('theme-blue');
+      lang.classList.remove('theme-blue');
+      langCur.classList.remove('theme-blue');
+      menuContainer.classList.add("deactivated");
+      document.getElementById("menuMask").classList.remove("activated");
+    }
+  }
+};

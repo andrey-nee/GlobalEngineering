@@ -21,54 +21,66 @@
 
   // Свайпер с услугами (главная странциа)
   &.servicesSwiper {
-    margin-left: 120px;
-    width: calc(100vw - 120px);
-    max-width: 1368px;
+    margin: 0 auto;
+    width: calc(100vw - 240px - 90px - 50px); // Ширина окна - отступы inner-wrapper - ширина стрелок - отступ от стрелок
+    max-width: calc(1272px - 90px - 50px); // Ширина на странице с учетом ширины стрелок навигации + отступ от стрелок
     box-sizing: border-box;
     @media (max-width: 700px) {
       padding-left: 0;
-      width: calc(100vw - 60px);
+      width: calc(100vw - 120px - 90px - 50px); // Ширина окна - отступы inner-wrapper - ширина стрелок - отступ от стрелок
+    }
+    @media (max-width: 600px) {
+      width: calc(100vw - 120px - 50px - 50px); // Ширина окна - отступы inner-wrapper - ширина стрелок - отступ от стрелок
     }
     @media (max-width: 500px) {
-      width: calc(100vw - 30px);
+      width: calc(100vw - 60px - 50px - 50px); // Ширина окна - отступы inner-wrapper - ширина стрелок - отступ от стрелок
+    }
+    @media (max-width: 450px) {
+      width: calc(100vw - 60px); // Ширина окна - отступы inner-wrapper
     }
   }
 
   // Свайпер с услугами (странциа Услуги)
   &.servicesSwiper2 {
-    margin-left: 120px;
-    width: calc(100vw - 120px);
-    max-width: 1368px;
+    margin: 0 auto;
+    width: calc(100vw - 240px - 90px - 50px); // Ширина окна - отступы inner-wrapper - ширина стрелок - отступ от стрелок
+    max-width: calc(1272px - 90px - 50px); // Ширина на странице с учетом ширины стрелок навигации + отступ от стрелок
     box-sizing: border-box;
     @media (max-width: 700px) {
       padding-left: 0;
-      width: calc(100vw - 60px);
+      width: calc(100vw - 120px - 90px - 50px); // Ширина окна - отступы inner-wrapper - ширина стрелок - отступ от стрелок
+    }
+    @media (max-width: 600px) {
+      width: calc(100vw - 120px - 50px - 50px); // Ширина окна - отступы inner-wrapper - ширина стрелок - отступ от стрелок
     }
     @media (max-width: 500px) {
-      width: calc(100vw - 30px);
+      width: calc(100vw - 60px - 50px - 50px); // Ширина окна - отступы inner-wrapper - ширина стрелок - отступ от стрелок
+    }
+    @media (max-width: 450px) {
+      width: calc(100vw - 60px); // Ширина окна - отступы inner-wrapper
     }
   }
 
   // Свайпер с операционными блоками (странциа Операционные блоки)
   &.operationalBlocksSwiper {
-    width: calc(100vw - 120px);
+    width: calc(100vw - 240px);
     max-width: 1268px;
     margin-bottom: 33px;
     @media (max-width: 700px) {
-      width: calc(100vw - 60px);
+      width: calc(100vw - 120px);
     }
     @media (max-width: 500px) {
-      width: calc(100vw - 30px);
+      width: calc(100vw - 60px);
     }
   }
   &.operationalBlocksSwiper-mini {
-    width: calc(100vw - 120px);
+    width: calc(100vw - 240px);
     max-width: 1268px;
     @media (max-width: 700px) {
-      width: calc(100vw - 60px);
+      width: calc(100vw - 120px);
     }
     @media (max-width: 500px) {
-      width: calc(100vw - 30px);
+      width: calc(100vw - 60px);
     }
 
     .swiper-slide {
