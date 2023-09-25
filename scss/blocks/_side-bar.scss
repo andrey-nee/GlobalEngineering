@@ -27,20 +27,12 @@
     background-color: $main-bg-2;
     transition: all 0.2s ease;
   }
-}
-
-.side-bar__page__main {
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     position: absolute;
     top: 0;
     width: 80px;
     height: 100%;
-  }
-}
-
-.side-bar__page__pages {
-  @media (max-width: 700px) {
-    display: none;
+    background-color: transparent;
   }
 }
 
@@ -54,11 +46,16 @@
   box-sizing: border-box;
   height: 100%;
   z-index: 20;
-  @media (max-width: 700px) {
-    padding: 20px 10px;
+  @media (max-width: 768px) {
+    padding: 28px 10px;
   }
 }
 
+.side-bar__top {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
 .side-bar__link {
   text-decoration: none;
 }
@@ -213,10 +210,47 @@
     transition: all 0.2s ease;
   }
 
+  @media (max-width: 768px) {
+    background-color: $button-bg-2;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $button-bg-4;
+      transition: all 0.2s ease;
+    }
+    &:hover::after,
+    &:hover::before {
+      background-color: $button-bg-1;
+      transition: all 0.2s ease;
+    }
+
+    &:active {
+      background-color: $button-bg-2;
+      transition: all 0.2s ease;
+    }
+    &:active::after,
+    &:active::before {
+      background-color: $button-bg-4;
+      transition: all 0.2s ease;
+    }
+
+    &::after,
+    &::before {
+      background-color: $button-bg-4;
+      transition: all 0.2s ease;
+    }
+  }
+
 }
 .side-bar__span {
   height: 2px;
   display: block;
+}
+
+.side-bar__bottom {
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .side-bar__language {

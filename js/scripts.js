@@ -28,31 +28,6 @@ burger.addEventListener('click', function () {
 });
 
 
-// Закрываем меню бургер, если размер окна меньше 700px (т.к. при 700px мы выключаем Sidebar меню)
-window.onresize = function() {
-  const windowInnerWidth = window.innerWidth
-  if(sidebar.classList.contains("theme-transparent")){
-    // console.log('НЕ нужно закрывать боковое меню')
-    // console.log(windowInnerWidth)
-  } else {
-    if(windowInnerWidth <= 700) {
-      console.log('Закрываем боковое меню (Ширина окна меньше 700px)');
-      page.classList.remove('lock');
-      burger.classList.remove('active');
-      burger.classList.remove('theme-blue');
-      sidebar.classList.remove('theme-blue');
-      logo.classList.remove('theme-blue');
-      langSwitch.classList.toggle('theme-blue');
-      langPos.classList.remove('theme-blue');
-      lang.classList.remove('theme-blue');
-      langCur.classList.remove('theme-blue');
-      menuContainer.classList.add("deactivated");
-      document.getElementById("menuMask").classList.remove("activated");
-    }
-  }
-};
-
-
 // Плавный скролл к якорям
 // собираем все якоря; устанавливаем время анимации и количество кадров
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),

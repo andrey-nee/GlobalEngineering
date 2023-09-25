@@ -5,6 +5,10 @@
   width: 100%;
   min-height: 100vh;
   pointer-events: none;
+  
+  @media (max-width: 768px) {
+    position: absolute;
+  }
 }
 
 .menu__mask {
@@ -23,8 +27,8 @@
     left: -30%;
     top: 35%;
 
-    @media (max-width: 700px) {
-      display: block;
+    @media (max-width: 768px) {
+      top: 2%;
     }
   }
 
@@ -35,8 +39,8 @@
     transition: transform 0.8s ease;
   }
 
-  @media (max-width: 700px) {
-    display: none;
+  @media (max-width: 768px) {
+    top: 2%;
   }
 }
 
