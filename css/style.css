@@ -147,7 +147,7 @@
 }
 @media (max-width: 700px) {
   .header__content__main-page {
-    left: 50px;
+    right: 0;
     bottom: 40px;
   }
 }
@@ -221,11 +221,6 @@
     position: absolute;
     bottom: 70px;
     right: 50px;
-  }
-}
-@media (max-width: 700px) {
-  .header__request-button {
-    right: 0;
   }
 }
 
