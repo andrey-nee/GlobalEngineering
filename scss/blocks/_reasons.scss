@@ -184,7 +184,7 @@
   height: 60px;
 
   @media (max-width: 400px) {
-    width: 120px;
+    min-width: 40px;
   }
 }
 
