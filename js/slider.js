@@ -93,7 +93,6 @@ mainSwiper1.controller.control = [mainSwiper2, mainSwiper3, mainSwiper4];
 var servicesSwiper = new Swiper(".servicesSwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
-  mousewheel: true,
   speed: 500,
   autoplay: {
     delay: 2500,
@@ -120,7 +119,6 @@ var servicesSwiper = new Swiper(".servicesSwiper", {
 var servicesSwiper2 = new Swiper(".servicesSwiper2", {
   slidesPerView: 1,
   spaceBetween: 10,
-  mousewheel: true,
   speed: 500,
   autoplay: {
     delay: 2500,
