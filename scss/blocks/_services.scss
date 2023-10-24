@@ -17,6 +17,9 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 1.0;
+  &__transparent {
+    color: transparent;
+  }
 }
 
 .services__slider {

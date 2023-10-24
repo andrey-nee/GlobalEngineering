@@ -19,7 +19,7 @@
     }
   }
   &__services {
-    margin-bottom: calc(-264px - 121px + 146px); // Половина слайда Services + Margin от заголовка - Margin блока Header
+    margin-bottom: calc(-420px + 40px); // (Отступ между Header и слайдами по макету) + (Отступ между Header и Services по макету)
   }
   &__operational-blocks {
     margin-bottom: 0;
@@ -156,7 +156,7 @@
 }
 
 .header__decoration__services {
-  height: calc(264px + 121px - 146px); // Половина слайда Services + Margin от заголовка - Margin блока Header
+  height: calc(420px - 108px); // (Отступ между Header и слайдами по макету) - (padding .header__page__pages)
   background-color: $main-bg-2;
   order: 3;
 }
