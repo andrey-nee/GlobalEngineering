@@ -215,6 +215,7 @@
 
 .header__request-button {
   align-self: flex-end;
+  z-index: 9;
 }
 @media (max-width: 900px) {
   .header__request-button {
@@ -1375,10 +1376,10 @@
 
 .modal-request__mask {
   position: absolute;
-  top: -1px;
-  left: -1px;
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 100px;
   background-color: rgb(7, 40, 111);
   transform: scale(1);
@@ -1433,43 +1434,7 @@
   min-width: 158px;
   min-height: 158px;
   pointer-events: all;
-  border-radius: 50%;
-  background-color: rgb(7, 40, 111);
-  cursor: pointer;
   transition: all 0.2s ease;
-}
-.modal-request__open-button:hover {
-  background-color: rgb(255, 255, 255);
-  transition: all 0.2s ease;
-}
-.modal-request__open-button:hover::after, .modal-request__open-button:hover::before {
-  background-color: rgb(7, 40, 111);
-  transition: all 0.2s ease;
-}
-.modal-request__open-button:active {
-  background-color: rgb(7, 40, 111);
-  transition: all 0.2s ease;
-}
-.modal-request__open-button:active::after, .modal-request__open-button:active::before {
-  background-color: rgb(255, 255, 255);
-  transition: all 0.2s ease;
-}
-.modal-request__open-button::after, .modal-request__open-button::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 50%;
-  background-color: rgb(255, 255, 255);
-}
-.modal-request__open-button::before {
-  width: 30px;
-  height: 3px;
-  transform: translate(-50%, -50%);
-}
-.modal-request__open-button::after {
-  width: 3px;
-  height: 30px;
-  transform: translate(-50%, -50%);
 }
 @media (max-width: 700px) {
   .modal-request__open-button {
@@ -1486,6 +1451,76 @@
     min-width: 80px;
     min-height: 80px;
   }
+}
+.modal-request__open-button::before {
+  position: absolute;
+  content: "";
+  width: 158px;
+  height: 158px;
+  min-width: 158px;
+  min-height: 158px;
+  border-radius: 50%;
+  transform: scale(1);
+  cursor: pointer;
+  background-color: rgb(7, 40, 111);
+  transition: transform 0.2s ease;
+}
+@media (max-width: 700px) {
+  .modal-request__open-button::before {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
+  }
+}
+@media (max-width: 400px) {
+  .modal-request__open-button::before {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+  }
+}
+.modal-request__open-button:hover::before {
+  background-color: rgb(22, 43, 88);
+  transform: scale(1.26);
+  transition: all 0.2s ease;
+}
+@media (max-width: 768px) {
+  .modal-request__open-button:hover::before {
+    background-color: rgb(7, 40, 111);
+    transform: scale(1);
+  }
+}
+.modal-request__open-button:active::before {
+  background-color: rgb(7, 40, 111);
+  transform: scale(1.26);
+  transition: all 0.2s ease;
+}
+
+.modal-request__plus {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  cursor: pointer;
+}
+.modal-request__plus::after, .modal-request__plus::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  background-color: rgb(255, 255, 255);
+}
+.modal-request__plus::before {
+  width: 30px;
+  height: 3px;
+  transform: translate(-50%, -50%);
+}
+.modal-request__plus::after {
+  width: 3px;
+  height: 30px;
+  transform: translate(-50%, -50%);
 }
 
 .modal-request__close-button {
@@ -1508,9 +1543,19 @@
   background-color: rgb(255, 255, 255);
   transition: all 0.2s ease;
 }
+@media (max-width: 768px) {
+  .modal-request__close-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
 .modal-request__close-button:hover::after, .modal-request__close-button:hover::before {
   background-color: rgb(7, 40, 111);
   transition: all 0.2s ease;
+}
+@media (max-width: 768px) {
+  .modal-request__close-button:hover::after, .modal-request__close-button:hover::before {
+    background-color: rgb(255, 255, 255);
+  }
 }
 .modal-request__close-button:active {
   background-color: rgba(255, 255, 255, 0.1);

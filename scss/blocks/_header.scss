@@ -138,6 +138,7 @@
 
 .header__request-button {
   align-self: flex-end;
+  z-index: 9;
   @media (max-width: 900px) {
     position: absolute;
     bottom: 70px;
