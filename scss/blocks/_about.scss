@@ -1,5 +1,5 @@
 .about {
-  margin: 0 0 -467px;
+  margin: 0 0 calc(-467px + 95px);
   padding: 39px 0;
   background-color: $main-bg-2;
 
@@ -74,7 +74,7 @@
 }
 
 .about__decoration {
-  height: 467px;
+  height: calc(467px - 95px);
 
   @media (max-width: 400px) {
     height: 200px;
