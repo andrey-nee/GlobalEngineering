@@ -1285,7 +1285,7 @@
   transition: all 0.2s ease;
 }
 .menu__link:hover {
-  text-decoration: underline;
+  color: rgb(117, 138, 183);
   transition: all 0.2s ease;
 }
 
