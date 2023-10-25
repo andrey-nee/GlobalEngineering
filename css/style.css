@@ -3101,6 +3101,11 @@
   color: rgb(255, 255, 255);
   transition: all 0.2s ease;
 }
+.main-footer__link__copirights {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+}
 .main-footer__link:hover {
   color: rgb(117, 138, 183);
   transition: all 0.2s ease;

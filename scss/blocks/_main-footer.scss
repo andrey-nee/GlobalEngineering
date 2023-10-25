@@ -44,6 +44,12 @@
   color: $main-text-2;
   transition: all 0.2s ease;
 
+  &__copirights {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
   &:hover {
     color: $hover-text-1;
     transition: all 0.2s ease;
