@@ -30,8 +30,8 @@
   max-width: calc(1512px - 240px);
   overflow: hidden;
 
-  @media (max-width: 400px) {
-    margin: 0 auto;
+  @media (max-width: 700px) {
+    margin: -80px auto 0;
   }
 }
 
@@ -73,9 +73,9 @@
   align-items: center;
   justify-content: end;
   order: -1;
-
-  @media (max-width: 450px) {
-    display: none;
+  
+  @media (max-width: 700px) {
+    margin-bottom: 46px;
   }
 }
 
