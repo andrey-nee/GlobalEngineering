@@ -1202,6 +1202,8 @@
 
 .menu__container {
   position: relative;
+  height: 100vh;
+  overflow-x: hidden;
   z-index: 10;
   display: flex;
   -moz-column-gap: 100px;
@@ -1363,6 +1365,33 @@
   .menu__map {
     margin: 0 0 30px;
   }
+}
+
+.menu__socials {
+  margin-bottom: 77px;
+}
+@media (max-width: 950px) {
+  .menu__socials {
+    margin: 0 0 60px;
+  }
+}
+@media (max-width: 700px) {
+  .menu__socials {
+    margin: 0 0 40px;
+  }
+}
+@media (max-width: 550px) {
+  .menu__socials {
+    margin-bottom: 30px;
+  }
+}
+
+.menu__company {
+  display: flex;
+}
+
+.menu__company-link {
+  max-width: 205px;
 }
 
 .header__request {
