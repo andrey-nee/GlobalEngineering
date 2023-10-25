@@ -49,8 +49,7 @@
   height: 100vh;
   overflow-x: hidden;
   z-index: 10;
-  display: flex;
-  column-gap: 100px;
+
   padding: 203px 121px;
   box-sizing: border-box;
   transition: transform 0.4s ease 0.2s;
@@ -73,6 +72,17 @@
 
   @media (max-width: 400px) {
     padding: 40px 30px 40px 80px;
+  }
+}
+
+.menu__navigation-container {
+  padding: 50px 0;
+  display: flex;
+  column-gap: 100px;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
