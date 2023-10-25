@@ -55,10 +55,16 @@ $switch-text-3: rgba(62, 68, 80, 1);
 $switch-text-4: rgba(0, 0, 0, 0.5);
 $switch-text-5: rgba(77, 101, 151, 1);
 
-$hover-text-1: rgba(117, 138, 183, 1); // #758AB7;
+$hover-text-1: rgba(117, 138, 183, 1); // #758ab7;
 
 
 // Buttons size
 $request-button-desktop: 158px;
 $request-button-tablet: 120px;
 $request-button-mobile: 80px;
+
+
+// Form input borders
+$input-border-default: rgba(220, 220, 224, 1); // #dcdce0;
+$input-border-focus: rgba(168, 168, 190, 1); // #a8a8be;
+$input-border-hover: rgba(17, 64, 166, 1); // #1140a6;
