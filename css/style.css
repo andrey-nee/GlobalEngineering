@@ -938,6 +938,11 @@
   rotate: -45deg;
   transition: all 0.2s ease;
 }
+@media (max-width: 768px) {
+  .side-bar__burger-menu:hover:not(.theme-blue) {
+    rotate: 0deg;
+  }
+}
 .side-bar__burger-menu:hover {
   background-color: rgb(7, 40, 111);
   transition: all 0.2s ease;
