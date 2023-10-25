@@ -2679,7 +2679,7 @@
 
 .form__input {
   border: none;
-  border-bottom: 1px solid #dcdce0;
+  border-bottom: 1px solid rgb(220, 220, 224);
   padding: 24px 0;
   width: 100%;
   font-family: "Inter", "Arial", sans-serif;
@@ -2695,6 +2695,12 @@
   /* Firefox 4-18 */
   /* Firefox 19+ */
   /* IE 10-11 */
+}
+.form__input:focus {
+  border-bottom: 1px solid rgb(168, 168, 190);
+}
+.form__input:hover {
+  border-bottom: 1px solid rgb(17, 64, 166);
 }
 .form__input::-moz-placeholder {
   color: rgb(156, 160, 174);
@@ -4031,4 +4037,19 @@ img {
   .button__type__blue {
     padding: 15px 20px;
   }
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5500s ease-in-out 0s;
+  transition: background-color 5500s ease-in-out 0s;
+  -webkit-text-fill-color: white !important;
 }/*# sourceMappingURL=style.css.map */

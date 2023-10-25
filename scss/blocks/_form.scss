@@ -34,7 +34,7 @@
 
 .form__input {
   border: none;
-  border-bottom: 1px solid #dcdce0;
+  border-bottom: 1px solid $input-border-default;
   padding: 24px 0;
   width: 100%;
   font-family: "Inter", "Arial", sans-serif;
@@ -44,6 +44,13 @@
   line-height: 1;
   color: $placeholder-text-1;
   background-color: transparent;
+  
+  &:focus {
+    border-bottom: 1px solid $input-border-focus;
+  }
+  &:hover {
+    border-bottom: 1px solid $input-border-hover;
+  }
 
   /* Современные браузеры */
   &::placeholder {color: $placeholder-text-1;}
