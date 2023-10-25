@@ -326,7 +326,7 @@
   transition: all 0.2s ease;
 }
 .main-header__link__phone:hover {
-  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.5);
   transition: all 0.2s ease;
 }
 
@@ -2896,7 +2896,7 @@
   color: rgb(255, 255, 255);
 }
 .contacts__link:hover {
-  text-decoration: underline;
+  color: rgb(117, 138, 183);
   transition: all 0.2s ease;
 }
 
@@ -2993,7 +2993,7 @@
   transition: all 0.2s ease;
 }
 .contacts__map__white:hover {
-  text-decoration: underline;
+  color: rgb(117, 138, 183);
   transition: all 0.2s ease;
 }
 @media (max-width: 950px) {
@@ -3097,7 +3097,7 @@
   transition: all 0.2s ease;
 }
 .main-footer__link:hover {
-  text-decoration: underline;
+  color: rgb(117, 138, 183);
   transition: all 0.2s ease;
 }
 @media (max-width: 700px) {
@@ -3144,7 +3144,7 @@
   transition: all 0.2s ease;
 }
 .main-footer__phone:hover {
-  text-decoration: underline;
+  color: rgb(117, 138, 183);
   transition: all 0.2s ease;
 }
 
@@ -3158,7 +3158,7 @@
   transition: all 0.2s ease;
 }
 .main-footer__mail:hover {
-  text-decoration: underline;
+  color: rgb(117, 138, 183);
   transition: all 0.2s ease;
 }
 

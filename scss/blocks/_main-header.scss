@@ -81,7 +81,7 @@
     transition: all 0.2s ease;
 
     &:hover {
-      text-decoration: underline;
+      color: $inactive-text-1;
       transition: all 0.2s ease;
     }
   }

@@ -48,7 +48,7 @@
   }
 
   &:hover {
-    text-decoration: underline;
+    color: $hover-text-1;
     transition: all 0.2s ease;
   }
 }
@@ -148,7 +148,7 @@
     transition: all 0.2s ease;
 
     &:hover {
-      text-decoration: underline;
+      color: $hover-text-1;
       transition: all 0.2s ease;
     }
   }
