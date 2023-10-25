@@ -3849,6 +3849,15 @@
   }
 }
 
+.map {
+  margin-bottom: 165px;
+}
+@media (max-width: 700px) {
+  .map {
+    margin-bottom: 60px;
+  }
+}
+
 .map__container {
   position: relative;
 }
