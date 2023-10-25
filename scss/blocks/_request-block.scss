@@ -30,12 +30,16 @@
 
   @media (max-width: 800px) {
     padding: 30px;
-}
+  }
 }
 
 .request-block__operational-block-page {
   @media (max-width: 1100px) {
     width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    padding: 30px;
   }
 }
 
@@ -82,11 +86,19 @@
     background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='send'%3E%3Cmask id='mask0_58_578' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='21' height='20'%3E%3Crect id='Bounding box' x='0.5' width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_58_578)'%3E%3Cpath id='send_2' d='M12.4315 17.2046C12.3136 17.4795 12.1098 17.6489 11.8201 17.7128C11.5304 17.7766 11.2775 17.7005 11.0614 17.4844L8.40979 14.8328L11.9453 8.94024L6.05277 12.4758L3.40112 9.82412C3.18506 9.60806 3.10895 9.35517 3.17278 9.06546C3.23662 8.77574 3.40603 8.57196 3.68102 8.4541L16.5857 3.20973C16.9393 3.07224 17.2437 3.13116 17.4991 3.38651C17.7544 3.64185 17.8133 3.9463 17.6758 4.29985L12.4315 17.2046Z' fill='white'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     transition: all 0.2s ease;
+
+    @media (max-width: 500px) {
+      display: none;
+    }
   }
 
   &:hover::before {
     background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='send'%3E%3Cmask id='mask0_58_578' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='21' height='20'%3E%3Crect id='Bounding box' x='0.5' width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_58_578)'%3E%3Cpath id='send_2' d='M12.4315 17.2046C12.3136 17.4795 12.1098 17.6489 11.8201 17.7128C11.5304 17.7766 11.2775 17.7005 11.0614 17.4844L8.40979 14.8328L11.9453 8.94024L6.05277 12.4758L3.40112 9.82412C3.18506 9.60806 3.10895 9.35517 3.17278 9.06546C3.23662 8.77574 3.40603 8.57196 3.68102 8.4541L16.5857 3.20973C16.9393 3.07224 17.2437 3.13116 17.4991 3.38651C17.7544 3.64185 17.8133 3.9463 17.6758 4.29985L12.4315 17.2046Z' fill='%231140A6'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
     transition: all 0.2s ease;
+  }
+
+  @media (max-width: 500px) {
+    padding: 15px 20px !important;
   }
 }
 
