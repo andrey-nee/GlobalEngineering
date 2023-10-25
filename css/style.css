@@ -1725,6 +1725,11 @@
   max-width: 1272px;
   overflow: hidden;
 }
+@media (max-width: 400px) {
+  .services__slider {
+    margin: 0 auto;
+  }
+}
 
 .services__slide {
   position: relative;
